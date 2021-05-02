@@ -1,203 +1,68 @@
-2021-05-01 00:07:52.041 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 13896 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:07:52.045 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:07:52.757 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8080 (http)
-2021-05-01 00:07:52.766 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-01 00:07:52.767 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:07:52.767 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:07:52.768 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:07:52.768 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:07:52.769 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:07:52.769 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:07:53.724 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:07:53.794 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:07:53.794 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1706 ms
-2021-05-01 00:07:53.929 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:07:54.048 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8080"]
-2021-05-01 00:07:54.065 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-01 00:07:54.075 INFO  com.cq.wiki.config.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.462 seconds (JVM running for 3.059)
-2021-05-01 00:16:20.580 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 15788 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:16:20.583 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:16:21.213 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:16:21.220 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:16:21.220 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:16:21.220 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:16:21.222 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:16:21.222 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:16:21.222 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:16:21.222 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:16:22.180 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:16:22.235 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:16:22.236 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1615 ms
-2021-05-01 00:16:22.369 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:16:22.482 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:16:22.503 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:16:22.512 INFO  com.cq.wiki.config.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.245 seconds (JVM running for 2.744)
-2021-05-01 00:16:22.514 INFO  com.cq.wiki.config.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
-2021-05-01 00:16:22.514 INFO  com.cq.wiki.config.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:16:28.283 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-01 00:16:28.284 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-05-01 00:16:28.296 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 11 ms
-2021-05-01 00:22:10.181 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 7184 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:22:10.183 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:22:10.826 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:22:10.833 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:22:10.834 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:22:10.834 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:22:10.835 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:22:10.835 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:22:10.835 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:22:10.836 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:22:11.808 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:22:11.861 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:22:11.861 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1639 ms
-2021-05-01 00:22:11.988 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:22:12.100 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:22:12.119 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:22:12.127 INFO  com.cq.wiki.config.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.29 seconds (JVM running for 2.805)
-2021-05-01 00:22:12.129 INFO  com.cq.wiki.config.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
-2021-05-01 00:22:12.130 INFO  com.cq.wiki.config.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:27:01.526 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 3560 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:27:01.529 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:27:02.202 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:27:02.208 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:27:02.209 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:27:02.209 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:27:02.210 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:27:02.211 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:27:02.211 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:27:02.211 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:27:03.175 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:27:03.227 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:27:03.227 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1665 ms
-2021-05-01 00:27:03.351 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:27:03.462 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:27:03.485 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:27:03.496 INFO  com.cq.wiki.config.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.289 seconds (JVM running for 2.773)
-2021-05-01 00:27:03.498 INFO  com.cq.wiki.config.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
-2021-05-01 00:27:03.498 INFO  com.cq.wiki.config.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:27:12.746 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-01 00:27:12.746 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-05-01 00:27:12.754 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 7 ms
-2021-05-01 00:34:17.746 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 6592 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:34:17.748 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:34:18.371 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:34:18.377 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:18.378 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:34:18.378 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:34:18.379 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:34:18.380 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:34:18.380 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:34:18.380 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:34:19.341 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:34:19.392 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:34:19.392 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1607 ms
-2021-05-01 00:34:19.523 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:34:19.636 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:19.654 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:34:19.662 INFO  com.cq.wiki.config.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.233 seconds (JVM running for 2.71)
-2021-05-01 00:34:19.664 INFO  com.cq.wiki.config.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
-2021-05-01 00:34:19.664 INFO  com.cq.wiki.config.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:34:20.808 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-01 00:34:20.808 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-05-01 00:34:20.812 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 4 ms
-2021-05-01 00:34:34.130 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 13760 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:34:34.138 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:34:34.375 INFO  com.cq.wiki.config.WikiApplication                       :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 16288 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:34:34.381 INFO  com.cq.wiki.config.WikiApplication                       :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:34:35.113 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:34:35.123 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:35.124 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:34:35.125 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:34:35.127 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:34:35.127 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:34:35.127 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:34:35.127 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:34:35.167 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:34:35.174 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:35.175 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:34:35.176 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:34:35.177 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:34:35.178 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:34:35.178 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:34:35.178 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:34:36.175 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:34:36.191 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:34:36.238 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:34:36.238 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2050 ms
-2021-05-01 00:34:36.242 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:34:36.242 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1785 ms
-2021-05-01 00:34:36.373 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:34:36.385 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:34:36.500 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:36.521 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:34:36.529 INFO  com.cq.wiki.config.WikiApplication                       :61   [32m                  [0;39m Started WikiApplication in 2.66 seconds (JVM running for 3.262)
-2021-05-01 00:34:36.532 INFO  com.cq.wiki.config.WikiApplication                       :17   [32m                  [0;39m 启动成功！！
-2021-05-01 00:34:36.532 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:36.532 INFO  com.cq.wiki.config.WikiApplication                       :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:34:36.542 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:559  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8880 is already in use
-2021-05-01 00:34:36.544 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:34:36.547 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:36.547 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2021-05-01 00:34:36.553 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:36.554 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:34:36.561 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-05-01 00:34:36.568 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8880 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8880 or configure this application to listen on another port.
-
-2021-05-01 00:36:26.219 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 15748 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:36:26.222 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:36:26.860 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:36:26.866 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:36:26.867 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:36:26.867 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:36:26.868 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:36:26.869 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:36:26.869 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:36:26.869 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:36:27.800 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:36:27.851 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:36:27.851 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1592 ms
-2021-05-01 00:36:27.978 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:36:28.075 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:36:28.093 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:36:28.102 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.194 seconds (JVM running for 2.694)
-2021-05-01 00:36:28.104 INFO  com.cq.wiki.config.WikiApplication                :17   [32m                  [0;39m 启动成功！！
-2021-05-01 00:36:28.105 INFO  com.cq.wiki.config.WikiApplication                :18   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:36:31.077 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-01 00:36:31.077 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-05-01 00:36:31.082 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 5 ms
-2021-05-01 00:38:29.315 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 10908 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
-2021-05-01 00:38:29.318 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
-2021-05-01 00:38:29.978 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
-2021-05-01 00:38:29.984 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:38:29.984 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2021-05-01 00:38:29.984 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
-2021-05-01 00:38:29.985 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
-2021-05-01 00:38:29.986 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
-2021-05-01 00:38:29.986 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
-2021-05-01 00:38:29.986 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-2021-05-01 00:38:30.901 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
-2021-05-01 00:38:30.952 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2021-05-01 00:38:30.952 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1593 ms
-2021-05-01 00:38:31.071 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-01 00:38:31.169 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
-2021-05-01 00:38:31.187 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
-2021-05-01 00:38:31.196 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.199 seconds (JVM running for 2.694)
-2021-05-01 00:38:31.198 INFO  com.cq.wiki.config.WikiApplication                :19   [32m                  [0;39m 启动成功！！
-2021-05-01 00:38:31.198 INFO  com.cq.wiki.config.WikiApplication                :20   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
-2021-05-01 00:38:34.479 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-01 00:38:34.479 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2021-05-01 00:38:34.483 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 3 ms
+2021-05-02 21:48:28.596 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 14496 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-05-02 21:48:28.600 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-05-02 21:48:29.349 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-05-02 21:48:29.357 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-05-02 21:48:29.358 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-05-02 21:48:29.358 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-02 21:48:29.359 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-05-02 21:48:29.360 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-05-02 21:48:29.360 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-02 21:48:29.360 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-02 21:48:30.304 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-05-02 21:48:30.361 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-05-02 21:48:30.362 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1725 ms
+2021-05-02 21:48:30.496 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 21:48:30.616 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-05-02 21:48:30.634 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-05-02 21:48:30.643 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.423 seconds (JVM running for 2.942)
+2021-05-02 21:48:30.646 INFO  com.cq.wiki.config.WikiApplication                :20   [32m                  [0;39m 启动成功！！
+2021-05-02 21:48:30.647 INFO  com.cq.wiki.config.WikiApplication                :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-05-02 21:48:36.921 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 21:48:36.922 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-05-02 21:48:36.928 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
+2021-05-02 21:54:30.199 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 1808 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-05-02 21:54:30.202 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-05-02 21:54:30.822 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-05-02 21:54:30.829 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-05-02 21:54:30.829 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-05-02 21:54:30.829 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-02 21:54:30.831 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-05-02 21:54:30.831 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-05-02 21:54:30.831 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-02 21:54:30.831 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-02 21:54:31.758 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-05-02 21:54:31.810 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-05-02 21:54:31.810 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1575 ms
+2021-05-02 21:54:31.936 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 21:54:32.040 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-05-02 21:54:32.057 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-05-02 21:54:32.065 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.184 seconds (JVM running for 2.673)
+2021-05-02 21:54:32.066 INFO  com.cq.wiki.config.WikiApplication                :20   [32m                  [0;39m 启动成功！！
+2021-05-02 21:54:32.067 INFO  com.cq.wiki.config.WikiApplication                :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-05-02 21:54:43.140 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 21:54:43.140 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-05-02 21:54:43.147 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 6 ms
+2021-05-02 21:54:43.170 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :199  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-05-02 21:56:09.969 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 2784 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-05-02 21:56:09.972 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-05-02 21:56:10.640 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-05-02 21:56:10.646 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-05-02 21:56:10.646 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-05-02 21:56:10.647 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-05-02 21:56:10.648 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-05-02 21:56:10.648 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-05-02 21:56:10.648 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-05-02 21:56:10.648 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-05-02 21:56:11.584 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-05-02 21:56:11.634 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-05-02 21:56:11.635 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1627 ms
+2021-05-02 21:56:11.753 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 21:56:11.853 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-05-02 21:56:11.870 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-05-02 21:56:11.877 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 2.229 seconds (JVM running for 2.733)
+2021-05-02 21:56:11.879 INFO  com.cq.wiki.config.WikiApplication                :20   [32m                  [0;39m 启动成功！！
+2021-05-02 21:56:11.879 INFO  com.cq.wiki.config.WikiApplication                :21   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-05-02 21:56:18.244 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 21:56:18.244 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-05-02 21:56:18.248 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 4 ms
+2021-05-02 21:56:18.257 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :199  [32m                  [0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
