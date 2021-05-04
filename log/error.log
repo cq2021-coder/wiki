@@ -343,3 +343,78 @@ Caused by: com.mysql.cj.exceptions.CJException: Access denied for user 'wiki'@'1
 	at com.mysql.cj.NativeSession.connect(NativeSession.java:157)
 	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:847)
 	... 89 common frames omitted
+2021-05-04 20:42:02.856 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.cq.wiki.mapper.DemoMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.cq.wiki.mapper.DemoMapper' in your configuration.
+
+2021-05-04 20:44:47.570 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    java.lang.invoke.MethodHandleNatives.resolve(Native Method)
+
+The following method did not exist:
+
+    org.apache.ibatis.session.Configuration.setVfsImpl(Ljava/lang/Class;)V
+
+The method's class, org.apache.ibatis.session.Configuration, is available from the following locations:
+
+    jar:file:/D:/Java/maven_repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar!/org/apache/ibatis/session/Configuration.class
+    jar:file:/D:/Java/maven_repository/org/apache/ibatis/ibatis-core/3.0/ibatis-core-3.0.jar!/org/apache/ibatis/session/Configuration.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.apache.ibatis.session.Configuration: file:/D:/Java/maven_repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.apache.ibatis.session.Configuration
+
+2021-05-04 20:47:39.806 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    java.lang.invoke.MethodHandleNatives.resolve(Native Method)
+
+The following method did not exist:
+
+    org.apache.ibatis.session.Configuration.setVfsImpl(Ljava/lang/Class;)V
+
+The method's class, org.apache.ibatis.session.Configuration, is available from the following locations:
+
+    jar:file:/D:/Java/maven_repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar!/org/apache/ibatis/session/Configuration.class
+    jar:file:/D:/Java/maven_repository/org/apache/ibatis/ibatis-core/3.0/ibatis-core-3.0.jar!/org/apache/ibatis/session/Configuration.class
+
+The class hierarchy was loaded from the following locations:
+
+    org.apache.ibatis.session.Configuration: file:/D:/Java/maven_repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.apache.ibatis.session.Configuration
+
