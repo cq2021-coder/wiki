@@ -32,6 +32,7 @@
             <scope>test</scope>
         </dependency>
         <!-- 集成mybatis-->
+        <!--该处经常出问题，可以先换成1.1.1版本再换回来，索引更新一下就好了-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
