@@ -20,4 +20,13 @@ public class DemoController {
     public List<Demo> list(){
         return demoService.list();
     }
+    @GetMapping("/selectById")
+    public Demo selectById(){
+        return demoService.selectById();
+    }
+
+    @GetMapping("/insert")
+    public Integer insert(Demo record){
+        return demoService.insert(record);
+    }
 }

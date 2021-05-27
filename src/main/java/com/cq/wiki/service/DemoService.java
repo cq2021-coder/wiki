@@ -17,4 +17,14 @@ public class DemoService {
         return demoMapper.selectByExample(null);
     }
 
+    public Demo selectById(){
+        return demoMapper.selectByPrimaryKey(1L);
+    }
+
+    public Integer insert(Demo record){
+        record.setId(2L);
+        record.setName("程崎");
+        return demoMapper.insert(record);
+    }
+
 }

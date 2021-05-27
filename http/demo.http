@@ -1,2 +1,7 @@
 GET http://localhost:8880/demo/list
 
+###
+GET http://localhost:8880/demo/selectById
+
+###
+GET http://localhost:8880/demo/insert
