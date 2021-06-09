@@ -1,3 +1,4 @@
+/*
 package com.cq.wiki.config;
 
 
@@ -19,3 +20,4 @@ public class SpringMvcConfig implements WebMvcConfigurer {
                 .addPathPatterns("/**").excludePathPatterns("/login");
     }
 }
+*/

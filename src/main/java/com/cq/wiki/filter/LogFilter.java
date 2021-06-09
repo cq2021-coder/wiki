@@ -1,3 +1,4 @@
+/*
 package com.cq.wiki.filter;
 
  import org.slf4j.Logger;
@@ -31,3 +32,4 @@ package com.cq.wiki.filter;
          LOG.info("------------- LogFilter 结束 耗时：{} ms -------------", System.currentTimeMillis() - startTime);
      }
  }
+*/
