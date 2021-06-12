@@ -74,7 +74,7 @@ import axios from 'axios';
 
 const listData: any = [];
 
-for (let i = 0; i < 23; i++) {
+/*for (let i = 0; i < 23; i++) {
   listData.push({
     href: 'https://www.antdv.com/',
     title: `ant design vue part ${i}`,
@@ -84,7 +84,7 @@ for (let i = 0; i < 23; i++) {
     content:
         'We supply a series of design principles, practical patterns and high quality design resources (Sketch and Axure), to help people create their product prototypes beautifully and efficiently.',
   });
-}
+}*/
 
 export default defineComponent({
   name: 'Home',
@@ -92,11 +92,15 @@ export default defineComponent({
     const ebooks = ref();
     const ebooks1 = reactive({books:[]});
 
-    onMounted(()=>{
-      axios.get("/ebook/list").then((response) => {
+    onMounted(()=> {
+      axios.get("/ebook/all", {
+        params: {
+          page: 1,
+          size: 1000
+        }
+      }).then((response) => {
         const data = response.data;
-        ebooks.value = data.content;
-        ebooks1.books = data.content;
+        ebooks.value = data.content.list;
       });
     });
     return{

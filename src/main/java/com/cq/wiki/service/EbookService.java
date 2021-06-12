@@ -50,4 +50,14 @@ public class EbookService {
 
         return pageResp;
     }
+
+    public PageResp<EbookResp> allBook(){
+        EbookExample ebookExample = new EbookExample();
+        List<Ebook> ebookList = ebookMapper.selectByExample(ebookExample);
+
+        PageResp<EbookResp> pageResp = new PageResp<>();
+        pageResp.setList(CopyUtil.copyList(ebookList, EbookResp.class));
+
+        return pageResp;
+    }
 }

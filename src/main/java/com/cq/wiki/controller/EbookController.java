@@ -25,4 +25,11 @@ public class EbookController {
         resp.setContent(list);
         return resp;
     }
+    @GetMapping("/all")
+    public CommonResp allBook() {
+        CommonResp<PageResp<EbookResp>> resp = new CommonResp<>();
+        PageResp<EbookResp> allBook = ebookService.allBook();
+        resp.setContent(allBook);
+        return resp;
+    }
 }
