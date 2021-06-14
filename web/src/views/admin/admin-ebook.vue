@@ -42,7 +42,7 @@
                 文档管理
               </a-button>
             </router-link>-->
-            <a-button type="primary" @click="edit" >
+            <a-button type="primary" @click="edit(record)" >
               编辑
             </a-button>
 <!--            <a-popconfirm
@@ -70,25 +70,28 @@
       :confirm-loading="modalLoading"
       @ok="handleModalOk"
   >
-    <p>test</p>
-<!--    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
       <a-form-item label="封面">
         <a-input v-model:value="ebook.cover" />
       </a-form-item>
       <a-form-item label="名称">
         <a-input v-model:value="ebook.name" />
       </a-form-item>
-      <a-form-item label="分类">
-        <a-cascader
+      <a-form-item label="分类一">
+        <a-input v-model:value="ebook.category1" />
+<!--        <a-cascader
             v-model:value="categoryIds"
             :field-names="{ label: 'name', value: 'id', children: 'children' }"
             :options="level1"
-        />
+        />-->
+      </a-form-item>
+      <a-form-item label="分类一">
+        <a-input v-model:value="ebook.category1Id" />
       </a-form-item>
       <a-form-item label="描述">
         <a-input v-model:value="ebook.description" type="textarea" />
       </a-form-item>
-    </a-form>-->
+    </a-form>
   </a-modal>
 </template>
 
@@ -122,8 +125,12 @@ export default defineComponent({
         dataIndex: 'name'
       },
       {
-        title: '分类',
-        slots: { customRender: 'category' }
+        title: '分类一',
+        slots: { customRender: 'category1' }
+      },
+      {
+        title: '分类二',
+        slots: { customRender: 'category2' }
       },
       {
         title: '文档数',
@@ -192,8 +199,8 @@ export default defineComponent({
     /**
      * 数组，[100, 101]对应：前端开发 / Vue
      */
-    /*const categoryIds = ref();
-    const ebook = ref();*/
+    /*const categoryIds = ref();*/
+    const ebook = ref();
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleModalOk = () => {
@@ -224,8 +231,9 @@ export default defineComponent({
     /**
      * 编辑
      */
-    const edit = () => {
+    const edit = (record: any) => {
       modalVisible.value = true;
+      ebook.value = record
     }
     /*const edit = (record: any) => {
       modalVisible.value = true;
@@ -313,6 +321,7 @@ export default defineComponent({
       handleTableChange,
       // handleQuery,
       edit,
+      ebook,
       modalVisible,
       modalLoading,
       handleModalOk
