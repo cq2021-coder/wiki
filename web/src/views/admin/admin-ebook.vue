@@ -201,7 +201,7 @@ export default defineComponent({
       setTimeout(() => {
         modalVisible.value = false;
         modalLoading.value = false;
-      }, 2000);
+      }, 250);
       /*ebook.value.category1Id = categoryIds.value[0];
       ebook.value.category2Id = categoryIds.value[1];
       axios.post("/ebook/save", ebook.value).then((response) => {
