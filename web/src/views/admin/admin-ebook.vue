@@ -78,15 +78,15 @@
         <a-input v-model:value="ebook.name" />
       </a-form-item>
       <a-form-item label="分类一">
-        <a-input v-model:value="ebook.category1" />
+        <a-input v-model:value="ebook.category1Id" />
 <!--        <a-cascader
             v-model:value="categoryIds"
             :field-names="{ label: 'name', value: 'id', children: 'children' }"
             :options="level1"
         />-->
       </a-form-item>
-      <a-form-item label="分类一">
-        <a-input v-model:value="ebook.category1Id" />
+      <a-form-item label="分类二">
+        <a-input v-model:value="ebook.category2Id" />
       </a-form-item>
       <a-form-item label="描述">
         <a-input v-model:value="ebook.description" type="textarea" />
@@ -126,11 +126,14 @@ export default defineComponent({
       },
       {
         title: '分类一',
-        slots: { customRender: 'category1' }
+        key: 'category1Id',
+        dataIndex: 'category1Id',
+        // slots: { customRender: 'category1Id' }
       },
       {
         title: '分类二',
-        slots: { customRender: 'category2' }
+        dataIndex: 'category1Id',
+        // slots: { customRender: 'category2Id' }
       },
       {
         title: '文档数',
@@ -205,27 +208,23 @@ export default defineComponent({
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-      setTimeout(() => {
-        modalVisible.value = false;
-        modalLoading.value = false;
-      }, 250);
       /*ebook.value.category1Id = categoryIds.value[0];
-      ebook.value.category2Id = categoryIds.value[1];
+      ebook.value.category2Id = categoryIds.value[1];*/
       axios.post("/ebook/save", ebook.value).then((response) => {
-        modalLoading.value = false;
         const data = response.data; // data = commonResp
         if (data.success) {
           modalVisible.value = false;
+          modalLoading.value = false;
 
           // 重新加载列表
           handleQuery({
             page: pagination.value.current,
             size: pagination.value.pageSize,
           });
-        } else {
+        } /*else {
           message.error(data.message);
-        }
-      });*/
+        }*/
+      });
     };
 
     /**
@@ -324,19 +323,11 @@ export default defineComponent({
       ebook,
       modalVisible,
       modalLoading,
-      handleModalOk
-      /*getCategoryName,
-
-      edit,
-      add,
-
-      ebook,
-      modalVisible,
-      modalLoading,
       handleModalOk,
+      /*getCategoryName,
+      add,
       categoryIds,
       level1,
-
       handleDelete*/
     }
   }

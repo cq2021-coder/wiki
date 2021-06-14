@@ -1,6 +1,6 @@
-package com.cq.wiki.req;
+package com.cq.wiki.resp;
 
-public class EbookReq extends PageReq {
+public class EbookQueryResp {
     private Long id;
 
     private String name;
