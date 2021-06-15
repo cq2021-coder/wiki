@@ -109,8 +109,8 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 4,
-      total: 1
+      pageSize: 10,
+      total: 0
     });
     const loading = ref(false);
 
@@ -215,10 +215,10 @@ export default defineComponent({
       /*ebook.value.category1Id = categoryIds.value[0];
       ebook.value.category2Id = categoryIds.value[1];*/
       axios.post("/ebook/save", ebook.value).then((response) => {
+        modalLoading.value = false;
         const data = response.data; // data = commonResp
         if (data.success) {
           modalVisible.value = false;
-          modalLoading.value = false;
 
           // 重新加载列表
           handleQuery({
