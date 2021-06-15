@@ -48,7 +48,7 @@
             <a-button type="primary" @click="edit(record)" >
               编辑
             </a-button>
-<!--            <a-popconfirm
+            <a-popconfirm
                 title="删除后不可恢复，确认删除?"
                 ok-text="是"
                 cancel-text="否"
@@ -57,10 +57,7 @@
               <a-button type="danger">
                 删除
               </a-button>
-            </a-popconfirm>-->
-            <a-button type="danger">
-              删除
-            </a-button>
+            </a-popconfirm>
           </a-space>
         </template>
       </a-table>
@@ -251,7 +248,11 @@ export default defineComponent({
       ebook.value = {};
     };
 
-    /*const handleDelete = (id: number) => {
+
+    /**
+     *删除
+     */
+    const handleDelete = (id: number) => {
       axios.delete("/ebook/delete/" + id).then((response) => {
         const data = response.data; // data = commonResp
         if (data.success) {
@@ -260,13 +261,14 @@ export default defineComponent({
             page: pagination.value.current,
             size: pagination.value.pageSize,
           });
-        } else {
+        }/* else {
           message.error(data.message);
-        }
+        }*/
       });
     };
 
-    const level1 =  ref();
+
+    /*const level1 =  ref();
     let categorys: any;
     /!**
      * 查询所有分类
@@ -320,6 +322,7 @@ export default defineComponent({
       columns,
       loading,
       handleTableChange,
+      handleDelete,
       // handleQuery,
 
 
@@ -333,8 +336,7 @@ export default defineComponent({
       handleModalOk,
       /*getCategoryName,
       categoryIds,
-      level1,
-      handleDelete*/
+      level1*/
     }
   }
 });

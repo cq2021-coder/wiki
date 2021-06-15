@@ -1,3 +1,159 @@
+DELETE http://localhost:8880/ebook/delete/59966230890680320
+
+<> 2021-06-15T202319.200.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/6
+
+<> 2021-06-15T202257.200.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=6L
+
+<> 2021-06-15T201638.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=6
+
+<> 2021-06-15T201624.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{id}}
+Content-ID: 6
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{id}}
+Content-ID: 6
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{id}}?id=6
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=6L
+
+<> 2021-06-15T201358.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=6
+
+<> 2021-06-15T201233.404.json
+
+###
+
+GET http://localhost:8880/ebook/all
+
+<> 2021-06-15T201228.200.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=6
+
+<> 2021-06-15T201203.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{6}}
+
+###
+
+DELETE http://localhost:8880/ebook/delete/id=6
+
+<> 2021-06-15T201141.400.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/id=59966230890680320
+
+<> 2021-06-15T201055.400.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=59966230890680320
+
+<> 2021-06-15T201045.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{59966230890680320}}
+
+###
+
+DELETE http://localhost:8880/ebook/delete/id=59966230890680320L
+
+<> 2021-06-15T200940.400.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/id=59966230890680320
+
+<> 2021-06-15T200921.400.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/id=59966230890680320
+
+<> 2021-06-15T200908.400.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/id=59966230890680320
+
+<> 2021-06-15T200858.405.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=59966230890680320
+
+<> 2021-06-15T200813.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete?id=59966230890680320L
+
+<> 2021-06-15T200804.404.json
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{59966230890680320L}}
+
+###
+
+POST http://localhost:8880/ebook/delete/{{59966230890680320L}}
+
+###
+
+POST http://localhost:8880/ebook/delete/{{59966230890680320L}}
+
+###
+
+POST http://localhost:8880/ebook/delete/{{59966230890680320L}}
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{59966230890680320L}}
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{59966230890680320L}
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{59966230890680320L}}
+
+###
+
+DELETE http://localhost:8880/ebook/delete/{{59966230890680320}}
+
+###
+
 GET http://localhost:8880/ebook/all
 
 <> 2021-06-12T222243.200.json
@@ -115,178 +271,6 @@ GET http://localhost:8880/test/list
 GET http://localhost:8880/demo/insert
 
 <> 2021-05-26T113546.200.json
-
-###
-
-GET http://localhost:8880/demo/insert
-
-<> 2021-05-26T113432.200.json
-
-###
-
-GET http://localhost:8880/demo/insert
-
-<> 2021-05-26T113421.404.json
-
-###
-
-GET http://localhost:8880/demo/insert
-
-<> 2021-05-26T113341.404.json
-
-###
-
-GET http://localhost:8880/demo/insert
-
-<> 2021-05-26T113334.404.json
-
-###
-
-GET http://localhost:8880/demo/selectById
-
-<> 2021-05-26T113323.200.json
-
-###
-
-GET http://localhost:8880/demo/selectById?id=1
-
-<> 2021-05-26T113318.200.json
-
-###
-
-GET http://localhost:8880/demo/selectById?id=1
-
-<> 2021-05-26T112902.200.json
-
-###
-
-GET http://localhost:8880/demo/selectById?id=1
-
-<> 2021-05-26T112134.200.json
-
-###
-
-GET http://localhost:8880/demo/selectById?id=1
-
-###
-
-GET http://localhost:8880/demo/selectById?id=1
-
-###
-
-GET http://localhost:8880/demo/selectById
-
-###
-
-GET http://localhost:8880/test/add
-
-<> 2021-05-26T110321.500.json
-
-###
-
-GET http://localhost:8880/test/add
-
-<> 2021-05-26T110115.500.json
-
-###
-
-GET http://localhost:8880/test/add
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T231900.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T231843.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T230821.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T230817.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T230750.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T230721.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T211022.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?id=1
-
-<> 2021-05-16T210252.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?id=1
-
-<> 2021-05-16T210245.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?id=3
-
-<> 2021-05-16T210215.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T210139.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Sp
-
-<> 2021-05-16T205916.200.json
-
-###
-
-GET http://localhost:8880/ebook/list?name=Java
-
-<> 2021-05-16T205803.200.json
-
-###
-
-GET http://localhost:8880/ebook/list
-
-<> 2021-05-07T110931.200.json
-
-###
-
-GET http://localhost:8880/ebook/list
-
-<> 2021-05-07T110807.200.json
-
-###
-
-GET http://localhost:8880/ebook/list
-
-<> 2021-05-07T110618.200.json
 
 ###
 
