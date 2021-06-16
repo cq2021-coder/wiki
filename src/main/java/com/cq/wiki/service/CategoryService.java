@@ -32,6 +32,7 @@ public class CategoryService {
 
     public PageResp<CategoryQueryResp> list(CategoryQueryReq req) {
         CategoryExample categoryExample = new CategoryExample();
+        categoryExample.setOrderByClause("sort asc");
         CategoryExample.Criteria criteria = categoryExample.createCriteria();
         if (!ObjectUtils.isEmpty(req.getName())) {
             criteria.andNameLike("%" + req.getName() + "%");
@@ -43,12 +44,6 @@ public class CategoryService {
         LOG.info("总行数：{}",pageInfo.getTotal());
         LOG.info("总页数：{}",pageInfo.getPages());
 
-        /*List<CategoryResp> respList = new ArrayList<>();
-        for (Category category : categoryList) {
-            CategoryResp categoryResp = CopyUtil.copy(category,CategoryResp.class);
-            respList.add(categoryResp);
-        }*/
-
         PageResp<CategoryQueryResp> pageResp = new PageResp<>();
         pageResp.setTotal(pageInfo.getTotal());
         pageResp.setList(CopyUtil.copyList(categoryList, CategoryQueryResp.class));
@@ -56,14 +51,11 @@ public class CategoryService {
         return pageResp;
     }
 
-    public PageResp<CategoryQueryResp> allBook(){
+    public List<CategoryQueryResp> allBook(){
         CategoryExample categoryExample = new CategoryExample();
-        List<Category> categoryList = categoryMapper.selectByExample(categoryExample);
+        categoryExample.setOrderByClause("sort asc");
 
-        PageResp<CategoryQueryResp> pageResp = new PageResp<>();
-        pageResp.setList(CopyUtil.copyList(categoryList, CategoryQueryResp.class));
-
-        return pageResp;
+        return CopyUtil.copyList(categoryMapper.selectByExample(categoryExample),CategoryQueryResp.class);
     }
 
     /**
