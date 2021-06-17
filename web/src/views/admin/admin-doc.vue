@@ -49,30 +49,30 @@
   </a-layout>
 
   <a-modal
-      title="分类表单"
+      title="文档表单"
       v-model:visible="modalVisible"
       :confirm-loading="modalLoading"
       @ok="handleModalOk"
   >
-    <a-form :model="category" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+    <a-form :model="doc" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
       <a-form-item label="名称">
-        <a-input v-model:value="category.name" />
+        <a-input v-model:value="doc.name" />
       </a-form-item>
-      <a-form-item label="父分类">
+      <a-form-item label="父文档">
         <a-select
-            v-model:value="category.parent"
+            v-model:value="doc.parent"
             ref="select"
         >
           <a-select-option :value="0">
             无
           </a-select-option>
-          <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="category.id === c.id">
+          <a-select-option v-for="c in level1" :key="c.id" :value="c.id" :disabled="doc.id === c.id">
             {{c.name}}
           </a-select-option>
         </a-select>
       </a-form-item>
       <a-form-item label="顺序">
-        <a-input v-model:value="category.sort" />
+        <a-input v-model:value="doc.sort" />
       </a-form-item>
     </a-form>
   </a-modal>
@@ -85,11 +85,11 @@ import { message } from 'ant-design-vue';
 import {Tool} from "@/util/tool.ts";
 
 export default defineComponent({
-  name: 'AdminCategory',
+  name: 'AdminDoc',
   setup() {
     const param = ref();
     param.value = {};
-    const categorys = ref();
+    const docs = ref();
     const loading = ref(false);
 
     const columns = [
@@ -98,7 +98,7 @@ export default defineComponent({
         dataIndex: 'name'
       },
       {
-        title: '父分类Id',
+        title: '父文档Id',
         key: 'parent',
         dataIndex: 'parent'
       },
@@ -114,7 +114,7 @@ export default defineComponent({
     ];
 
     /**
-     * 一级分类树，children属性就是二级分类
+     * 一级文档树，children属性就是二级文档
      * [{
      *   id: "",
      *   name: "",
@@ -124,7 +124,7 @@ export default defineComponent({
      *   }]
      * }]
      */
-    const level1 = ref(); // 一级分类树，children属性就是二级分类
+    const level1 = ref(); // 一级文档树，children属性就是二级文档
     level1.value = [];
 
     /**
@@ -133,16 +133,16 @@ export default defineComponent({
     const handleQuery = () => {
       loading.value = true;
       // 如果不清空现有数据，则编辑保存重新加载数据后，再点编辑，则列表显示的还是编辑前的数据
-      categorys.value = [];
-      axios.get("/category/all").then((response) => {
+      docs.value = [];
+      axios.get("/doc/all").then((response) => {
         loading.value = false;
         const data = response.data;
         if (data.success){
-          categorys.value = data.content;
-          console.log("原始数组：", categorys.value);
+          docs.value = data.content;
+          console.log("原始数组：", docs.value);
 
           level1.value = [];
-          level1.value = Tool.array2Tree(categorys.value, 0);
+          level1.value = Tool.array2Tree(docs.value, 0);
           console.log("树形结构：", level1);
         }else {
           message.error(data.message);
@@ -154,15 +154,15 @@ export default defineComponent({
     /**
      * 数组，[100, 101]对应：前端开发 / Vue
      */
-    /*const categoryIds = ref();*/
-    const category = ref();
+    /*const docIds = ref();*/
+    const doc = ref();
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-      /*category.value.category1Id = categoryIds.value[0];
-      category.value.category2Id = categoryIds.value[1];*/
-      axios.post("/category/save", category.value).then((response) => {
+      /*doc.value.doc1Id = docIds.value[0];
+      doc.value.doc2Id = docIds.value[1];*/
+      axios.post("/doc/save", doc.value).then((response) => {
         modalLoading.value = false;
         const data = response.data; // data = commonResp
         if (data.success) {
@@ -181,7 +181,7 @@ export default defineComponent({
      */
     const edit = (record: any) => {
       modalVisible.value = true;
-      category.value = Tool.copy(record);
+      doc.value = Tool.copy(record);
     }
 
     /**
@@ -189,7 +189,7 @@ export default defineComponent({
      */
     const add = () => {
       modalVisible.value = true;
-      category.value = {};
+      doc.value = {};
     };
 
 
@@ -197,7 +197,7 @@ export default defineComponent({
      *删除
      */
     const handleDelete = (id: number) => {
-      axios.delete("/category/delete/" + id).then((response) => {
+      axios.delete("/doc/delete/" + id).then((response) => {
         const data = response.data; // data = commonResp
         if (data.success) {
           // 重新加载列表
@@ -214,7 +214,7 @@ export default defineComponent({
 
     return {
       param,
-      // categorys,
+      // docs,
       level1,
       columns,
       loading,
@@ -226,12 +226,12 @@ export default defineComponent({
       add,
 
 
-      category,
+      doc,
       modalVisible,
       modalLoading,
       handleModalOk,
-      /*getCategoryName,
-      categoryIds,
+      /*getDocName,
+      docIds,
       */
     }
   }

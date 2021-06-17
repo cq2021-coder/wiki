@@ -6,10 +6,6 @@
       <p>
         <a-form layout="inline" :model="param">
           <a-form-item>
-            <a-input v-model:value="param.name" placeholder="名称">
-            </a-input>
-          </a-form-item>
-          <a-form-item>
             <a-button type="primary" @click="handleQuery({page: 1, size: pagination.pageSize})">
               查询
             </a-button>
@@ -37,11 +33,11 @@
         </template>
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-<!--            <router-link :to="'/admin/doc?ebookId=' + record.id">
+            <router-link :to="'/admin/doc?ebookId=' + record.id">
               <a-button type="primary">
                 文档管理
               </a-button>
-            </router-link>-->
+            </router-link>
             <a-button type="primary" @click="edit(record)" >
               编辑
             </a-button>
