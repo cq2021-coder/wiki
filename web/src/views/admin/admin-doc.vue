@@ -275,7 +275,7 @@ export default defineComponent({
      */
     const handleDelete = (id: number) => {
       getDeleteIds(level1.value,id);
-      axios.delete("/doc/delete/"+ids.join(",")).then((response) => {
+      axios.delete("/doc/delete/" + ids.join(",")).then((response) => {
         const data = response.data; // data = commonResp
         if (data.success) {
           // 重新加载列表

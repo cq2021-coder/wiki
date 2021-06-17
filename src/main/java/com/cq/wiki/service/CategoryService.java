@@ -81,4 +81,11 @@ public class CategoryService {
         categoryMapper.deleteByPrimaryKey(id);
     }
 
+    public void delete(List<String> ids){
+        CategoryExample categoryExample = new CategoryExample();
+        CategoryExample.Criteria criteria = categoryExample.createCriteria();
+        criteria.andIdIn(ids);
+        categoryMapper.deleteByExample(categoryExample);
+    }
+
 }
