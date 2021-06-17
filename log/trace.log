@@ -1105,3 +1105,561 @@ Caused by: java.lang.ClassNotFoundException: com.cq.wiki.req.EbookQueryReq
 2021-06-17 11:03:11.270 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
 2021-06-17 11:03:11.270 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
 2021-06-17 11:03:11.270 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:04:11.068 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:04:11.069 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-17 11:04:11.069 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-17 11:04:11.069 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:04:11.069 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-17 11:04:11.070 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-17 11:04:11.070 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:04:11.071 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-17 11:04:11.072 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6033669369325, 6033665011024, test1, 12
+2021-06-17 11:04:11.072 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-17 11:04:11.072 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-17 11:04:11.072 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-17 11:04:11.072 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-17 11:04:11.072 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-17 11:04:11.073 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-17 11:04:11.074 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-17 11:04:11.074 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-17 11:04:11.074 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-17 11:04:11.074 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 17
+2021-06-17 11:04:11.075 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":6033669369325,"name":"test1","parent":6033665011024,"sort":12},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-17 11:04:11.075 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-17 11:04:11.098 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:04:11.098 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:04:11.098 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:04:11.098 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:04:11.098 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-17 11:04:11.099 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-06-17 11:04:11.099 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:04:11.101 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:04:11.101 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-06-17 11:04:11.101 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:04:11.101 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-06-17 11:04:11.102 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-17 11:04:11.103 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:04:11.103 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:04:11.103 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:04:11.104 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门Python开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:04:11.104 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, MySQL 入门教程, 400, 401, 零基础入门MySQL开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:04:11.104 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 402, 零基础入门Oracle开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:04:11.104 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-06-17 11:04:11.105 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：5
+2021-06-17 11:04:11.105 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:04:11.106 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":17,"id":1,"name":"Spring Boot 入门教程","viewCount":800,"voteCount":790},{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790},{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":17,"id":3,"name":"Python 入门教程","viewCount":800,"voteCount":790},{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":17,"id":4,"name":"MySQL 入门教程","viewCount":800,"voteCount":790},{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":17,"id":5,"name":"Oracle 入门教程","viewCount":800,"voteCount":790}],"total":5},"success":true}
+2021-06-17 11:04:11.106 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:04:12.121 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:04:12.121 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-17 11:04:12.121 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-17 11:04:12.121 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:04:12.121 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-17 11:04:12.123 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-17 11:04:12.123 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:04:12.124 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-17 11:04:12.124 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6033669369325, 6033665011024, test1, 12
+2021-06-17 11:04:12.124 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-17 11:04:12.125 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-17 11:04:12.126 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-17 11:04:12.126 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-17 11:04:12.126 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-17 11:04:12.126 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-17 11:04:12.126 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-17 11:04:12.126 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-17 11:04:12.127 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-17 11:04:12.127 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 17
+2021-06-17 11:04:12.127 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":6033669369325,"name":"test1","parent":6033665011024,"sort":12},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-17 11:04:12.127 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-17 11:04:14.160 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:04:14.160 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-17 11:04:14.161 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-17 11:04:14.161 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:04:14.161 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-17 11:04:14.161 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-17 11:04:14.162 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:04:14.163 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-17 11:04:14.163 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6033669369325, 6033665011024, test1, 12
+2021-06-17 11:04:14.163 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-17 11:04:14.163 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-17 11:04:14.164 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-17 11:04:14.164 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-17 11:04:14.164 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-17 11:04:14.164 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-17 11:04:14.164 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-17 11:04:14.165 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-17 11:04:14.165 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-17 11:04:14.165 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-17 11:04:14.165 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-17 11:04:14.166 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-17 11:04:14.166 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-17 11:04:14.166 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-17 11:04:14.166 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-17 11:04:14.167 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-17 11:04:14.167 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 17
+2021-06-17 11:04:14.168 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":6033669369325,"name":"test1","parent":6033665011024,"sort":12},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-17 11:04:14.168 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:04:14.184 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:04:14.184 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:04:14.184 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:04:14.184 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:04:14.184 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-17 11:04:14.184 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-06-17 11:04:14.184 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:04:14.189 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:04:14.189 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 5
+2021-06-17 11:04:14.189 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:04:14.190 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-06-17 11:04:14.190 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-17 11:04:14.191 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:04:14.192 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:04:14.192 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:04:14.192 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门Python开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:04:14.192 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, MySQL 入门教程, 400, 401, 零基础入门MySQL开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:04:14.192 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 402, 零基础入门Oracle开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:04:14.192 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 5
+2021-06-17 11:04:14.193 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：5
+2021-06-17 11:04:14.193 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:04:14.193 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":17,"id":1,"name":"Spring Boot 入门教程","viewCount":800,"voteCount":790},{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790},{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":17,"id":3,"name":"Python 入门教程","viewCount":800,"voteCount":790},{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":17,"id":4,"name":"MySQL 入门教程","viewCount":800,"voteCount":790},{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":17,"id":5,"name":"Oracle 入门教程","viewCount":800,"voteCount":790}],"total":5},"success":true}
+2021-06-17 11:04:14.193 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-17 11:04:59.739 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:04:59.740 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-17 11:04:59.740 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-17 11:04:59.740 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:04:59.740 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-17 11:04:59.741 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-17 11:04:59.742 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:04:59.743 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-17 11:04:59.743 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6033669369325, 6033665011024, test1, 12
+2021-06-17 11:04:59.744 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-17 11:04:59.744 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-17 11:04:59.744 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-17 11:04:59.744 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-17 11:04:59.744 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-17 11:04:59.744 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-17 11:04:59.745 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-17 11:04:59.745 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-17 11:04:59.745 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-17 11:04:59.745 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-17 11:04:59.745 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-17 11:04:59.745 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-17 11:04:59.746 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-17 11:04:59.746 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-17 11:04:59.746 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-17 11:04:59.746 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-17 11:04:59.746 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 17
+2021-06-17 11:04:59.747 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":6033669369325,"name":"test1","parent":6033665011024,"sort":12},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-17 11:04:59.747 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:05:01.215 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:01.216 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:01.216 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:01.216 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:01.216 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":101,"page":1,"size":1000}]
+2021-06-17 11:05:01.217 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:01.218 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 101(Long)
+2021-06-17 11:05:01.219 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:01.219 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:01.220 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:01.220 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:01.222 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 101(Long), 1000(Integer)
+2021-06-17 11:05:01.223 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:01.224 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:05:01.224 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:01.224 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:01.225 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:01.225 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:01.225 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-17 11:05:02.046 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:02.046 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:02.046 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:02.046 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:02.046 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":102,"page":1,"size":1000}]
+2021-06-17 11:05:02.048 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:02.048 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 102(Long)
+2021-06-17 11:05:02.049 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:02.049 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:05:02.049 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:02.050 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:05:02.050 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:05:02.050 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:05:02.050 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:05:04.378 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:04.378 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-17 11:05:04.378 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-17 11:05:04.378 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:04.378 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-17 11:05:04.379 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-17 11:05:04.379 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:05:04.380 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-17 11:05:04.380 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6033669369325, 6033665011024, test1, 12
+2021-06-17 11:05:04.381 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-17 11:05:04.381 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-17 11:05:04.381 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-17 11:05:04.381 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-17 11:05:04.381 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-17 11:05:04.381 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-17 11:05:04.382 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-17 11:05:04.383 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-17 11:05:04.383 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-17 11:05:04.383 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-17 11:05:04.383 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 17
+2021-06-17 11:05:04.384 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":6033669369325,"name":"test1","parent":6033665011024,"sort":12},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-17 11:05:04.384 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-17 11:05:06.264 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:06.265 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:06.265 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:06.265 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:06.265 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":101,"page":1,"size":1000}]
+2021-06-17 11:05:06.267 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:06.267 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 101(Long)
+2021-06-17 11:05:06.268 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:06.268 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:06.268 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:06.269 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:06.269 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 101(Long), 1000(Integer)
+2021-06-17 11:05:06.270 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:06.270 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:05:06.270 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:06.271 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:06.271 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:06.271 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:06.271 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-17 11:05:07.024 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:07.024 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:07.024 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:07.024 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:07.024 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":102,"page":1,"size":1000}]
+2021-06-17 11:05:07.026 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:07.026 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 102(Long)
+2021-06-17 11:05:07.027 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:07.027 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:05:07.027 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:07.028 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:05:07.028 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:05:07.028 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:05:07.028 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-17 11:05:36.893 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:36.893 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-17 11:05:36.893 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-17 11:05:36.893 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:36.893 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-17 11:05:36.908 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-17 11:05:36.908 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 6033669369325, 6033665011024, test1, 12
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-17 11:05:36.908 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-17 11:05:36.908 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 17
+2021-06-17 11:05:36.908 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":6033669369325,"name":"test1","parent":6033665011024,"sort":12},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-17 11:05:36.908 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-06-17 11:05:39.590 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:39.591 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:39.591 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:39.591 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:39.591 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":101,"page":1,"size":1000}]
+2021-06-17 11:05:39.592 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:39.593 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 101(Long)
+2021-06-17 11:05:39.594 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:39.594 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:39.594 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:39.594 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:39.594 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 101(Long), 1000(Integer)
+2021-06-17 11:05:39.595 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:39.595 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:05:39.596 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:39.596 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:39.596 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:39.597 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:39.597 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-17 11:05:40.439 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:40.439 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:40.439 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:40.439 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:40.439 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":102,"page":1,"size":1000}]
+2021-06-17 11:05:40.441 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:40.441 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 102(Long)
+2021-06-17 11:05:40.442 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:40.442 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:05:40.442 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:40.443 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:05:40.443 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:05:40.443 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:05:40.443 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:05:42.847 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:42.848 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:42.848 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:42.848 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:42.848 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":201,"page":1,"size":1000}]
+2021-06-17 11:05:42.849 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:42.850 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 201(Long)
+2021-06-17 11:05:42.850 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:42.851 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:05:42.851 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:42.851 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:05:42.851 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:05:42.851 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:05:42.852 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-17 11:05:43.905 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:43.905 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:43.905 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:43.905 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:43.906 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":202,"page":1,"size":1000}]
+2021-06-17 11:05:43.908 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:43.908 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 202(Long)
+2021-06-17 11:05:43.909 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:43.910 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:43.910 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:43.910 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:43.911 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 202(Long), 1000(Integer)
+2021-06-17 11:05:43.911 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:43.912 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:05:43.912 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:43.912 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:43.912 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:43.913 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":17,"id":1,"name":"Spring Boot 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:43.913 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:05:44.678 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:44.678 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:44.679 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:44.679 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:44.679 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":201,"page":1,"size":1000}]
+2021-06-17 11:05:44.680 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:44.681 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 201(Long)
+2021-06-17 11:05:44.681 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:44.682 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:05:44.682 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:44.682 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:05:44.682 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:05:44.682 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:05:44.682 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:05:45.262 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:45.262 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:45.262 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:45.262 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:45.262 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":202,"page":1,"size":1000}]
+2021-06-17 11:05:45.263 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:45.264 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 202(Long)
+2021-06-17 11:05:45.264 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:45.265 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:45.265 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:45.265 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:45.266 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 202(Long), 1000(Integer)
+2021-06-17 11:05:45.266 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:45.267 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:05:45.268 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:45.268 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:45.268 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:45.270 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":17,"id":1,"name":"Spring Boot 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:45.271 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-17 11:05:52.206 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:52.207 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:52.207 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:52.207 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:52.207 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":301,"page":1,"size":1000}]
+2021-06-17 11:05:52.208 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:52.209 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 301(Long)
+2021-06-17 11:05:52.210 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:52.211 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:52.211 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:52.211 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:52.212 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 301(Long), 1000(Integer)
+2021-06-17 11:05:52.212 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:52.213 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门Python开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:05:52.213 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:52.213 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:52.213 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:52.214 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":17,"id":3,"name":"Python 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:52.214 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:05:53.172 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:53.173 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:53.173 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:53.173 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:53.173 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":302,"page":1,"size":1000}]
+2021-06-17 11:05:53.175 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:53.175 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 302(Long)
+2021-06-17 11:05:53.176 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:53.176 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:05:53.176 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:53.177 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:05:53.177 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:05:53.177 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:05:53.177 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-17 11:05:55.433 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:55.434 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:55.434 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:55.434 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:55.434 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":401,"page":1,"size":1000}]
+2021-06-17 11:05:55.435 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:55.436 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 401(Long)
+2021-06-17 11:05:55.437 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:55.438 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:55.438 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:55.438 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:55.439 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 401(Long), 1000(Integer)
+2021-06-17 11:05:55.440 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:55.440 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, MySQL 入门教程, 400, 401, 零基础入门MySQL开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:05:55.440 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:55.441 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:55.441 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:55.441 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":17,"id":4,"name":"MySQL 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:55.441 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:05:56.885 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:05:56.885 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:05:56.885 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:05:56.886 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:05:56.886 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":402,"page":1,"size":1000}]
+2021-06-17 11:05:56.888 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:05:56.889 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 402(Long)
+2021-06-17 11:05:56.890 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:05:56.890 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:05:56.890 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:56.891 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:05:56.891 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 402(Long), 1000(Integer)
+2021-06-17 11:05:56.892 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:05:56.892 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 402, 零基础入门Oracle开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:05:56.892 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:05:56.893 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:05:56.893 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:05:56.893 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":17,"id":5,"name":"Oracle 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:05:56.893 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:06:00.344 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:00.345 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:00.345 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:00.345 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:00.345 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":501,"page":1,"size":1000}]
+2021-06-17 11:06:00.346 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:00.347 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 501(Long)
+2021-06-17 11:06:00.348 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:00.349 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:06:00.349 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:00.349 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:06:00.349 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:06:00.349 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:06:00.349 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-17 11:06:01.312 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:01.312 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:01.313 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:01.313 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:01.313 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":502,"page":1,"size":1000}]
+2021-06-17 11:06:01.314 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:01.314 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 502(Long)
+2021-06-17 11:06:01.315 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:01.315 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:06:01.316 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:01.316 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:06:01.316 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:06:01.316 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:06:01.316 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:06:01.945 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:01.945 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:01.945 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:01.945 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:01.945 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":503,"page":1,"size":1000}]
+2021-06-17 11:06:01.946 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:01.947 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 503(Long)
+2021-06-17 11:06:01.948 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:01.948 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:06:01.948 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:01.949 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:06:01.949 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:06:01.949 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:06:01.949 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:06:05.201 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:05.201 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:05.201 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:05.201 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:05.202 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":202,"page":1,"size":1000}]
+2021-06-17 11:06:05.203 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:05.204 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 202(Long)
+2021-06-17 11:06:05.205 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:05.205 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:06:05.205 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:05.205 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:06:05.206 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 202(Long), 1000(Integer)
+2021-06-17 11:06:05.206 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:06:05.207 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 17, 800, 790
+2021-06-17 11:06:05.207 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:05.207 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:06:05.207 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:06:05.207 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":17,"id":1,"name":"Spring Boot 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:06:05.207 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-17 11:06:05.916 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:05.916 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:05.916 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:05.916 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:05.917 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":201,"page":1,"size":1000}]
+2021-06-17 11:06:05.919 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:05.920 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 201(Long)
+2021-06-17 11:06:05.921 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:05.922 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:06:05.922 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:05.923 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:06:05.924 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:06:05.924 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:06:05.924 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-17 11:06:07.255 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:07.255 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:07.255 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:07.255 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:07.256 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":102,"page":1,"size":1000}]
+2021-06-17 11:06:07.257 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:07.257 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 102(Long)
+2021-06-17 11:06:07.258 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:07.259 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 0
+2021-06-17 11:06:07.259 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:07.259 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：0
+2021-06-17 11:06:07.259 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：0
+2021-06-17 11:06:07.259 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-17 11:06:07.259 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-17 11:06:07.949 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-17 11:06:07.950 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-17 11:06:07.950 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-17 11:06:07.950 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-17 11:06:07.950 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"categoryId2":101,"page":1,"size":1000}]
+2021-06-17 11:06:07.951 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook WHERE (category2_id = ?)
+2021-06-17 11:06:07.952 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 101(Long)
+2021-06-17 11:06:07.953 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-17 11:06:07.953 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 1
+2021-06-17 11:06:07.953 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:07.953 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook WHERE ( category2_id = ? ) LIMIT ?
+2021-06-17 11:06:07.954 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 101(Long), 1000(Integer)
+2021-06-17 11:06:07.954 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-17 11:06:07.955 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 17, 800, 790
+2021-06-17 11:06:07.955 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 1
+2021-06-17 11:06:07.955 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：1
+2021-06-17 11:06:07.955 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-17 11:06:07.956 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790}],"total":1},"success":true}
+2021-06-17 11:06:07.956 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
