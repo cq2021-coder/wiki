@@ -1,7 +1,9 @@
 package com.cq.wiki.service;
 
+import com.cq.wiki.domain.Content;
 import com.cq.wiki.domain.Doc;
 import com.cq.wiki.domain.DocExample;
+import com.cq.wiki.mapper.ContentMapper;
 import com.cq.wiki.mapper.DocMapper;
 import com.cq.wiki.req.DocQueryReq;
 import com.cq.wiki.req.DocSaveReq;
@@ -29,6 +31,9 @@ public class DocService {
 
     @Resource
     private SnowFlake snowFlake;
+
+    @Resource
+    private ContentMapper contentMapper;
 
     public PageResp<DocQueryResp> list(DocQueryReq req) {
         DocExample docExample = new DocExample();
@@ -63,14 +68,22 @@ public class DocService {
      */
     public void save(DocSaveReq req){
         Doc doc = CopyUtil.copy(req,Doc.class);
+        Content content = CopyUtil.copy(req, Content.class);
         if (ObjectUtils.isEmpty(req.getId())){
             //新增
             doc.setId(snowFlake.nextId()/10000);
             docMapper.insert(doc);
+
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         }
         else {
             //更新
             docMapper.updateByPrimaryKey(doc);
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if (count == 0){
+                contentMapper.insert(content);
+            }
         }
     }
 
