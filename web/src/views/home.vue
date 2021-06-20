@@ -8,10 +8,12 @@
           @click="handleClick"
       >
         <a-menu-item key="welcome">
+          <router-link :to="'/'">
             <MailOutlined />
             <span>欢迎</span>
-
+          </router-link>
         </a-menu-item>
+
           <a-sub-menu v-for="item in level1" :key="item.id">
             <template v-slot:title>
               <span><user-outlined />{{item.name}}</span>
@@ -40,7 +42,9 @@
             </template>
             <a-list-item-meta :description="item.description">
               <template #title>
-                <a :href="item.href">{{ item.name }}</a>
+                <router-link :to="'/doc?ebookId=' + item.id">
+                  {{ item.name }}
+                </router-link>
               </template>
               <template #avatar><a-avatar :src="item.cover" /></template>
             </a-list-item-meta>
