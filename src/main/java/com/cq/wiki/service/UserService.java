@@ -6,9 +6,10 @@ import com.cq.wiki.exception.BusinessException;
 import com.cq.wiki.exception.BusinessExceptionCode;
 import com.cq.wiki.mapper.UserMapper;
 import com.cq.wiki.req.UserQueryReq;
+import com.cq.wiki.req.UserResetPasswordReq;
 import com.cq.wiki.req.UserSaveReq;
-import com.cq.wiki.resp.UserQueryResp;
 import com.cq.wiki.resp.PageResp;
+import com.cq.wiki.resp.UserQueryResp;
 import com.cq.wiki.util.CopyUtil;
 import com.cq.wiki.util.SnowFlake;
 import com.github.pagehelper.PageHelper;
@@ -83,7 +84,21 @@ public class UserService {
         else {
             //更新
             user.setLoginName(null);
+            user.setPassword(null);
             userMapper.updateByPrimaryKeySelective(user);
+        }
+    }
+
+    /**
+     * 修改密码
+     */
+    public void resetPassword(UserResetPasswordReq req){
+        User user = CopyUtil.copy(req,User.class);
+        if (req.getId()!=null) {
+            userMapper.updateByPrimaryKeySelective(user);
+        }
+        else {
+            throw new BusinessException(BusinessExceptionCode.RESET_USER_ERROR);
         }
     }
 

@@ -2515,3 +2515,216 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 2021-06-21 19:51:17.560 INFO  com.cq.wiki.service.UserService                   :48   [32m                  [0;39m 总页数：1
 2021-06-21 19:51:17.566 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"}],"total":3},"success":true}
 2021-06-21 19:51:17.566 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：21 ms -------------
+2021-06-21 20:10:42.904 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:10:42.904 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2021-06-21 20:10:42.904 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2021-06-21 20:10:43.060 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 9576 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-21 20:10:43.060 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-21 20:10:43.263 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-21 20:10:43.263 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-21 20:10:43.263 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-21 20:10:43.281 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-21 20:10:43.281 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 221 ms
+2021-06-21 20:10:43.469 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:10:43.594 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-21 20:10:43.594 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:10:43.610 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-21 20:10:43.610 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.573 seconds (JVM running for 5070.547)
+2021-06-21 20:10:43.610 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-21 20:10:43.610 INFO  com.cq.wiki.config.WikiApplication                :22   [32m                  [0;39m 启动成功！！
+2021-06-21 20:10:43.610 INFO  com.cq.wiki.config.WikiApplication                :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-21 20:12:56.453 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:12:56.547 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 9576 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-21 20:12:56.547 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-21 20:12:56.750 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-21 20:12:56.750 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-21 20:12:56.750 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-21 20:12:56.770 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-21 20:12:56.770 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 223 ms
+2021-06-21 20:12:56.958 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:12:57.068 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-21 20:12:57.084 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:12:57.084 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-21 20:12:57.084 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.565 seconds (JVM running for 5204.027)
+2021-06-21 20:12:57.084 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-21 20:12:57.084 INFO  com.cq.wiki.config.WikiApplication                :22   [32m                  [0;39m 启动成功！！
+2021-06-21 20:12:57.084 INFO  com.cq.wiki.config.WikiApplication                :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-21 20:14:16.105 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:14:16.230 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 9576 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-21 20:14:16.230 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-21 20:14:16.449 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-21 20:14:16.449 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-21 20:14:16.449 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-21 20:14:16.468 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-21 20:14:16.468 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 222 ms
+2021-06-21 20:14:16.672 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:14:16.807 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-21 20:14:16.822 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:14:16.822 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-21 20:14:16.822 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.616 seconds (JVM running for 5283.767)
+2021-06-21 20:14:16.822 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-21 20:14:16.822 INFO  com.cq.wiki.config.WikiApplication                :22   [32m                  [0;39m 启动成功！！
+2021-06-21 20:14:16.822 INFO  com.cq.wiki.config.WikiApplication                :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-21 20:17:25.444 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:17:25.538 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 9576 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-21 20:17:25.538 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-21 20:17:25.726 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-21 20:17:25.726 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-21 20:17:25.726 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-21 20:17:25.751 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-21 20:17:25.751 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 213 ms
+2021-06-21 20:17:25.938 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 20:17:26.049 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-21 20:17:26.065 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-21 20:17:26.065 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-21 20:17:26.065 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.561 seconds (JVM running for 5473.01)
+2021-06-21 20:17:26.081 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-21 20:17:26.081 INFO  com.cq.wiki.config.WikiApplication                :22   [32m                  [0;39m 启动成功！！
+2021-06-21 20:17:26.081 INFO  com.cq.wiki.config.WikiApplication                :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-21 20:18:19.126 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 20:18:19.127 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-06-21 20:18:19.136 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 9 ms
+2021-06-21 20:18:19.153 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:18:19.154 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 20:18:19.154 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 20:18:19.154 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:18:19.155 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 20:18:19.159 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-4 - Starting...
+2021-06-21 20:18:19.176 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-4 - Start completed.
+2021-06-21 20:18:19.176 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 20:18:19.177 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 20:18:19.179 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 20:18:19.180 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-21 20:18:19.180 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 20:18:19.181 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 20:18:19.181 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 20:18:19.182 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 20:18:19.183 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 20:18:19.183 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3285b14539148ed099505d5811869bd0
+2021-06-21 20:18:19.183 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-21 20:18:19.183 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-21 20:18:19.184 INFO  com.cq.wiki.service.UserService                   :48   [32m                  [0;39m 总行数：3
+2021-06-21 20:18:19.184 INFO  com.cq.wiki.service.UserService                   :49   [32m                  [0;39m 总页数：1
+2021-06-21 20:18:19.189 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"}],"total":3},"success":true}
+2021-06-21 20:18:19.190 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：37 ms -------------
+2021-06-21 20:18:31.072 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:18:31.072 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/reset-password POST
+2021-06-21 20:18:31.072 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.resetPassword
+2021-06-21 20:18:31.073 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:18:31.073 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"id":1}]
+2021-06-21 20:18:31.077 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2021-06-21 20:18:31.078 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==> Parameters: 2effee9430af925d0466239ada7a986c(String), 1(Long)
+2021-06-21 20:18:31.090 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-21 20:18:31.091 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-21 20:18:31.091 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2021-06-21 20:18:31.116 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:18:31.117 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 20:18:31.117 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 20:18:31.117 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:18:31.117 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 20:18:31.118 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 20:18:31.119 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 20:18:31.121 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 20:18:31.121 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-21 20:18:31.121 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 20:18:31.122 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 20:18:31.123 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 20:18:31.123 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 20:18:31.124 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, 2effee9430af925d0466239ada7a986c
+2021-06-21 20:18:31.124 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3285b14539148ed099505d5811869bd0
+2021-06-21 20:18:31.126 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-21 20:18:31.126 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-21 20:18:31.126 INFO  com.cq.wiki.service.UserService                   :48   [32m                  [0;39m 总行数：3
+2021-06-21 20:18:31.126 INFO  com.cq.wiki.service.UserService                   :49   [32m                  [0;39m 总页数：1
+2021-06-21 20:18:31.127 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"}],"total":3},"success":true}
+2021-06-21 20:18:31.127 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-21 20:22:42.902 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:22:42.902 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/save POST
+2021-06-21 20:22:42.902 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.save
+2021-06-21 20:22:42.903 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:22:42.904 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"123","name":"123"}]
+2021-06-21 20:22:42.910 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-21 20:22:42.910 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 123(String)
+2021-06-21 20:22:42.911 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 0
+2021-06-21 20:22:42.912 DEBUG com.cq.wiki.mapper.UserMapper.insert              :137  [32m                  [0;39m ==>  Preparing: insert into user (id, login_name, `name`, `password`) values (?, ?, ?, ?)
+2021-06-21 20:22:42.912 DEBUG com.cq.wiki.mapper.UserMapper.insert              :137  [32m                  [0;39m ==> Parameters: 6215523541359(Long), 123(String), 123(String), 75d7c7b7b1472eefe7b280c703359c63(String)
+2021-06-21 20:22:42.925 DEBUG com.cq.wiki.mapper.UserMapper.insert              :137  [32m                  [0;39m <==    Updates: 1
+2021-06-21 20:22:42.926 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-21 20:22:42.926 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：24 ms -------------
+2021-06-21 20:22:42.954 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:22:42.955 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 20:22:42.955 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 20:22:42.955 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:22:42.955 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 20:22:42.957 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 20:22:42.958 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 20:22:42.960 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 20:22:42.960 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 4
+2021-06-21 20:22:42.960 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 20:22:42.961 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 20:22:42.962 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 20:22:42.963 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 20:22:42.963 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, 2effee9430af925d0466239ada7a986c
+2021-06-21 20:22:42.964 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3285b14539148ed099505d5811869bd0
+2021-06-21 20:22:42.964 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-21 20:22:42.965 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6215523541359, 123, 123, 75d7c7b7b1472eefe7b280c703359c63
+2021-06-21 20:22:42.966 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 4
+2021-06-21 20:22:42.967 INFO  com.cq.wiki.service.UserService                   :48   [32m                  [0;39m 总行数：4
+2021-06-21 20:22:42.967 INFO  com.cq.wiki.service.UserService                   :49   [32m                  [0;39m 总页数：1
+2021-06-21 20:22:42.967 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6215523541359,"loginName":"123","name":"123"}],"total":4},"success":true}
+2021-06-21 20:22:42.968 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2021-06-21 20:22:46.542 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:22:46.542 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/delete/6215523541359 DELETE
+2021-06-21 20:22:46.543 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.delete
+2021-06-21 20:22:46.543 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:22:46.543 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [6215523541359]
+2021-06-21 20:22:46.544 DEBUG com.cq.wiki.mapper.UserMapper.deleteByPrimaryKey  :137  [32m                  [0;39m ==>  Preparing: delete from user where id = ?
+2021-06-21 20:22:46.545 DEBUG com.cq.wiki.mapper.UserMapper.deleteByPrimaryKey  :137  [32m                  [0;39m ==> Parameters: 6215523541359(Long)
+2021-06-21 20:22:46.548 DEBUG com.cq.wiki.mapper.UserMapper.deleteByPrimaryKey  :137  [32m                  [0;39m <==    Updates: 1
+2021-06-21 20:22:46.548 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-21 20:22:46.548 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-21 20:22:46.564 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 20:22:46.564 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 20:22:46.565 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 20:22:46.565 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 20:22:46.565 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 20:22:46.566 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 20:22:46.566 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 20:22:46.568 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 20:22:46.568 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-21 20:22:46.568 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 20:22:46.569 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 20:22:46.569 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 20:22:46.570 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 20:22:46.570 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, 2effee9430af925d0466239ada7a986c
+2021-06-21 20:22:46.571 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3285b14539148ed099505d5811869bd0
+2021-06-21 20:22:46.571 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-21 20:22:46.571 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-21 20:22:46.571 INFO  com.cq.wiki.service.UserService                   :48   [32m                  [0;39m 总行数：3
+2021-06-21 20:22:46.571 INFO  com.cq.wiki.service.UserService                   :49   [32m                  [0;39m 总页数：1
+2021-06-21 20:22:46.572 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"},{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"}],"total":3},"success":true}
+2021-06-21 20:22:46.572 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------

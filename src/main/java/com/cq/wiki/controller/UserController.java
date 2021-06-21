@@ -1,6 +1,7 @@
 package com.cq.wiki.controller;
 
 import com.cq.wiki.req.UserQueryReq;
+import com.cq.wiki.req.UserResetPasswordReq;
 import com.cq.wiki.req.UserSaveReq;
 import com.cq.wiki.resp.CommonResp;
 import com.cq.wiki.resp.UserQueryResp;
@@ -33,6 +34,13 @@ public class UserController {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp resp = new CommonResp<>();
         userService.save(req);
+        return resp;
+    }
+
+    @PostMapping("/reset-password")
+    public CommonResp resetPassword(@Valid @RequestBody UserResetPasswordReq req) {
+        CommonResp resp = new CommonResp<>();
+        userService.resetPassword(req);
         return resp;
     }
 
