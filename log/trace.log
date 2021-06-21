@@ -1404,3 +1404,270 @@ org.springframework.web.bind.MethodArgumentNotValidException: Validation failed 
 2021-06-21 00:27:27.366 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
 2021-06-21 00:27:27.366 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":17,"id":1,"name":"Spring Boot 入门教程","viewCount":800,"voteCount":790},{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":17,"id":2,"name":"Vue 入门教程","viewCount":800,"voteCount":790},{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":17,"id":3,"name":"Python 入门教程","viewCount":800,"voteCount":790},{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":17,"id":4,"name":"MySQL 入门教程","viewCount":800,"voteCount":790},{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":17,"id":5,"name":"Oracle 入门教程","viewCount":800,"voteCount":790},{"category1Id":100,"category2Id":102,"cover":"/image/cover2.png","description":"CSS从开发到入土","id":6065395476948,"name":"CSS入门教程"},{"category1Id":500,"category2Id":501,"cover":"/image/cover1.png","description":"阿里云","id":6074678257713,"name":"阿里云服务器"}],"total":7},"success":true}
 2021-06-21 00:27:27.366 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-21 14:09:30.422 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2021-06-21 14:09:30.438 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 1884 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-21 14:09:30.438 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-21 14:09:30.485 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-21 14:09:30.485 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-21 14:09:31.594 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-21 14:09:31.610 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-21 14:09:31.610 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-21 14:09:31.610 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-21 14:09:31.610 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-21 14:09:31.610 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-21 14:09:31.610 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-21 14:09:31.610 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-21 14:09:32.669 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-21 14:09:32.731 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-21 14:09:32.731 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2246 ms
+2021-06-21 14:09:33.453 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-21 14:09:33.719 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-21 14:09:33.734 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-21 14:09:33.765 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-21 14:09:33.781 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 3.73 seconds (JVM running for 4.387)
+2021-06-21 14:09:33.781 INFO  com.cq.wiki.config.WikiApplication                :22   [32m                  [0;39m 启动成功！！
+2021-06-21 14:09:33.781 INFO  com.cq.wiki.config.WikiApplication                :23   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-21 14:10:01.743 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-21 14:10:01.744 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-06-21 14:10:01.751 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 7 ms
+2021-06-21 14:10:01.784 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:01.785 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-21 14:10:01.785 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-21 14:10:01.785 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:01.822 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-21 14:10:01.855 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-1 - Starting...
+2021-06-21 14:10:02.239 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-1 - Start completed.
+2021-06-21 14:10:02.244 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-21 14:10:02.261 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 14:10:02.280 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-21 14:10:02.280 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-21 14:10:02.281 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-21 14:10:02.282 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-21 14:10:02.282 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-21 14:10:02.282 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-21 14:10:02.283 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-21 14:10:02.283 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-21 14:10:02.283 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-21 14:10:02.284 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-21 14:10:02.284 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-21 14:10:02.285 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-21 14:10:02.285 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-21 14:10:02.285 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-21 14:10:02.286 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-21 14:10:02.286 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-21 14:10:02.287 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-21 14:10:02.288 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-21 14:10:02.316 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-21 14:10:02.316 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：533 ms -------------
+2021-06-21 14:10:03.523 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:03.524 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:03.524 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:03.524 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:03.526 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 14:10:03.555 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 14:10:03.556 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 14:10:03.558 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:03.558 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 1
+2021-06-21 14:10:03.559 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:03.562 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 14:10:03.562 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 14:10:03.564 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 14:10:03.564 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 14:10:03.564 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:03.566 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：1
+2021-06-21 14:10:03.566 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：1
+2021-06-21 14:10:03.572 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-06-21 14:10:03.572 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：49 ms -------------
+2021-06-21 14:10:22.677 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:22.677 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:22.677 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:22.677 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:22.678 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"t","page":1,"size":10}]
+2021-06-21 14:10:22.685 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:10:22.686 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: t(String)
+2021-06-21 14:10:22.687 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:22.687 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:10:22.688 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:22.688 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:10:22.688 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:10:22.688 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:10:22.688 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-21 14:10:29.692 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:29.692 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:29.692 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:29.693 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:29.693 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"测","page":1,"size":10}]
+2021-06-21 14:10:29.696 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:10:29.696 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 测(String)
+2021-06-21 14:10:29.697 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:29.697 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:10:29.698 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:29.698 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:10:29.698 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:10:29.698 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:10:29.699 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-21 14:10:30.230 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:30.231 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:30.231 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:30.231 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:30.231 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"测","page":1,"size":10}]
+2021-06-21 14:10:30.233 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:10:30.234 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 测(String)
+2021-06-21 14:10:30.234 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:30.235 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:10:30.235 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:30.235 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:10:30.236 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:10:30.236 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:10:30.236 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-21 14:10:30.408 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:30.409 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:30.409 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:30.409 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:30.409 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"测","page":1,"size":10}]
+2021-06-21 14:10:30.410 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:10:30.411 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 测(String)
+2021-06-21 14:10:30.412 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:30.412 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:10:30.412 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:30.413 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:10:30.413 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:10:30.413 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:10:30.413 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-21 14:10:32.787 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:32.788 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:32.788 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:32.788 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:32.788 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"","page":1,"size":10}]
+2021-06-21 14:10:32.790 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 14:10:32.790 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 14:10:32.792 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:32.792 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 1
+2021-06-21 14:10:32.793 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:32.793 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 14:10:32.794 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 14:10:32.794 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 14:10:32.795 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 14:10:32.795 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:32.795 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：1
+2021-06-21 14:10:32.796 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：1
+2021-06-21 14:10:32.796 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-06-21 14:10:32.796 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-21 14:10:48.721 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:48.722 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:48.722 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:48.722 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:48.722 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"测试","page":1,"size":10}]
+2021-06-21 14:10:48.724 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:10:48.724 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 测试(String)
+2021-06-21 14:10:48.725 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:48.726 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:10:48.726 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:48.727 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:10:48.727 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:10:48.727 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:10:48.728 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-21 14:10:55.685 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:10:55.686 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:10:55.686 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:10:55.686 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:10:55.686 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"测试","page":1,"size":10}]
+2021-06-21 14:10:55.688 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:10:55.689 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 测试(String)
+2021-06-21 14:10:55.691 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:10:55.691 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:10:55.691 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:10:55.692 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:10:55.692 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:10:55.692 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:10:55.692 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-21 14:11:03.608 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:11:03.609 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:11:03.609 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:11:03.609 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:11:03.609 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"测试","page":1,"size":10}]
+2021-06-21 14:11:03.613 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:11:03.614 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 测试(String)
+2021-06-21 14:11:03.615 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:11:03.615 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 0
+2021-06-21 14:11:03.615 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:11:03.616 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：0
+2021-06-21 14:11:03.616 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：0
+2021-06-21 14:11:03.616 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[],"total":0},"success":true}
+2021-06-21 14:11:03.616 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-21 14:11:17.440 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:11:17.440 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:11:17.441 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:11:17.441 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:11:17.441 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"test","page":1,"size":10}]
+2021-06-21 14:11:17.443 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user WHERE (login_name = ?)
+2021-06-21 14:11:17.445 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-06-21 14:11:17.446 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:11:17.447 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 1
+2021-06-21 14:11:17.447 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:11:17.448 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) LIMIT ?
+2021-06-21 14:11:17.448 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: test(String), 10(Integer)
+2021-06-21 14:11:17.450 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 14:11:17.450 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 14:11:17.450 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:11:17.451 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：1
+2021-06-21 14:11:17.451 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：1
+2021-06-21 14:11:17.451 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-06-21 14:11:17.451 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-21 14:12:51.406 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:12:51.407 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:12:51.407 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:12:51.407 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:12:51.407 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 14:12:51.409 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 14:12:51.410 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 14:12:51.411 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:12:51.412 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 1
+2021-06-21 14:12:51.412 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:12:51.412 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 14:12:51.413 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 14:12:51.415 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 14:12:51.415 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 14:12:51.416 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:12:51.417 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：1
+2021-06-21 14:12:51.417 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：1
+2021-06-21 14:12:51.417 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-06-21 14:12:51.417 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-21 14:14:33.935 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:14:33.936 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:14:33.936 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:14:33.936 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:14:33.936 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 14:14:33.939 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 14:14:33.940 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 14:14:33.941 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:14:33.942 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 1
+2021-06-21 14:14:33.943 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:14:33.944 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 14:14:33.944 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 14:14:33.945 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 14:14:33.946 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 14:14:33.946 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:14:33.947 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：1
+2021-06-21 14:14:33.947 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：1
+2021-06-21 14:14:33.947 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-06-21 14:14:33.947 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2021-06-21 14:15:53.516 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-21 14:15:53.516 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-21 14:15:53.516 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-21 14:15:53.517 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-21 14:15:53.517 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-21 14:15:53.518 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-21 14:15:53.520 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-21 14:15:53.522 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-21 14:15:53.523 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 1
+2021-06-21 14:15:53.523 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:15:53.524 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-21 14:15:53.524 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-21 14:15:53.525 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-21 14:15:53.526 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 1, test, 测试, test123
+2021-06-21 14:15:53.526 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-21 14:15:53.527 INFO  com.cq.wiki.service.UserService                   :44   [32m                  [0;39m 总行数：1
+2021-06-21 14:15:53.527 INFO  com.cq.wiki.service.UserService                   :45   [32m                  [0;39m 总页数：1
+2021-06-21 14:15:53.527 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"test","name":"测试"}],"total":1},"success":true}
+2021-06-21 14:15:53.527 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------

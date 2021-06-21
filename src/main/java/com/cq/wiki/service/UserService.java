@@ -2,6 +2,8 @@ package com.cq.wiki.service;
 
 import com.cq.wiki.domain.User;
 import com.cq.wiki.domain.UserExample;
+import com.cq.wiki.exception.BusinessException;
+import com.cq.wiki.exception.BusinessExceptionCode;
 import com.cq.wiki.mapper.UserMapper;
 import com.cq.wiki.req.UserQueryReq;
 import com.cq.wiki.req.UserSaveReq;
@@ -14,6 +16,7 @@ import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
@@ -67,9 +70,15 @@ public class UserService {
     public void save(UserSaveReq req){
         User user = CopyUtil.copy(req,User.class);
         if (ObjectUtils.isEmpty(req.getId())){
-            //新增
-            user.setId(snowFlake.nextId()/10000);
-            userMapper.insert(user);
+            if (ObjectUtils.isEmpty(selectByLoginName(req.getLoginName()))) {
+                //新增
+                user.setId(snowFlake.nextId()/10000);
+                userMapper.insert(user);
+            }
+            else {
+                // 用户名已存在
+                throw new BusinessException(BusinessExceptionCode.USER_LOGIN_NAME_EXIST);
+            }
         }
         else {
             //更新
@@ -82,6 +91,22 @@ public class UserService {
      */
     public void delete(Long id){
         userMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 查询登录名
+     */
+    public User selectByLoginName (String loginName){
+        UserExample userExample = new UserExample();
+        UserExample.Criteria criteria = userExample.createCriteria();
+        criteria.andLoginNameEqualTo(loginName);
+        List<User> userList = userMapper.selectByExample(userExample);
+        if (CollectionUtils.isEmpty(userList)){
+            return null;
+        }
+        else {
+            return userList.get(0);
+        }
     }
 
 }
