@@ -5,10 +5,12 @@ import com.cq.wiki.domain.UserExample;
 import com.cq.wiki.exception.BusinessException;
 import com.cq.wiki.exception.BusinessExceptionCode;
 import com.cq.wiki.mapper.UserMapper;
+import com.cq.wiki.req.UserLoginReq;
 import com.cq.wiki.req.UserQueryReq;
 import com.cq.wiki.req.UserResetPasswordReq;
 import com.cq.wiki.req.UserSaveReq;
 import com.cq.wiki.resp.PageResp;
+import com.cq.wiki.resp.UserLoginResp;
 import com.cq.wiki.resp.UserQueryResp;
 import com.cq.wiki.util.CopyUtil;
 import com.cq.wiki.util.SnowFlake;
@@ -33,6 +35,25 @@ public class UserService {
 
     @Resource
     private SnowFlake snowFlake;
+
+    public UserLoginResp login(UserLoginReq req){
+        User userDb = selectByLoginName(req.getLoginName());
+        if (ObjectUtils.isEmpty(userDb)){
+            //用户名不存在
+            LOG.info("用户名不存在,{}",req.getLoginName());
+            throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+        }else {
+            if (userDb.getPassword().equals(req.getPassword())){
+                //登录成功
+                return CopyUtil.copy(userDb,UserLoginResp.class);
+            }
+            else {
+                //密码错误
+                LOG.info("密码错误，输入密码：{},数据库密码：{}",req.getPassword(),userDb.getPassword());
+                throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+            }
+        }
+    }
 
     public PageResp<UserQueryResp> list(UserQueryReq req) {
         UserExample userExample = new UserExample();
@@ -61,7 +82,7 @@ public class UserService {
         return pageResp;
     }
 
-    public List<UserQueryResp> allBook(){
+    public List<UserQueryResp> all(){
         return CopyUtil.copyList(userMapper.selectByExample(new UserExample()), UserQueryResp.class);
     }
 

@@ -1,9 +1,11 @@
 package com.cq.wiki.controller;
 
+import com.cq.wiki.req.UserLoginReq;
 import com.cq.wiki.req.UserQueryReq;
 import com.cq.wiki.req.UserResetPasswordReq;
 import com.cq.wiki.req.UserSaveReq;
 import com.cq.wiki.resp.CommonResp;
+import com.cq.wiki.resp.UserLoginResp;
 import com.cq.wiki.resp.UserQueryResp;
 import com.cq.wiki.resp.PageResp;
 import com.cq.wiki.service.UserService;
@@ -44,6 +46,15 @@ public class UserController {
         return resp;
     }
 
+    @PostMapping("/login")
+    public CommonResp login(@Valid @RequestBody UserLoginReq req) {
+        req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
+        CommonResp<UserLoginResp> resp = new CommonResp<>();
+        UserLoginResp userLoginResp = userService.login(req);
+        resp.setContent(userLoginResp);
+        return resp;
+    }
+
     @DeleteMapping("/delete/{id}")
     public CommonResp delete(@PathVariable Long id){
         CommonResp resp = new CommonResp<>();
@@ -52,9 +63,9 @@ public class UserController {
     }
 
     @GetMapping("/all")
-    public CommonResp allBook() {
+    public CommonResp all() {
         CommonResp<List<UserQueryResp>> resp = new CommonResp<>();
-        List<UserQueryResp> allBook = userService.allBook();
+        List<UserQueryResp> allBook = userService.all();
         resp.setContent(allBook);
         return resp;
     }
