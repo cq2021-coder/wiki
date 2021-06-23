@@ -110,7 +110,7 @@ export default defineComponent({
 
     const columns = [
       {
-        title: '登陆名',
+        title: '登录名',
         dataIndex: 'loginName'
       },
       {
