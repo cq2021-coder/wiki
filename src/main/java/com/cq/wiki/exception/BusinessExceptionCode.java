@@ -7,6 +7,8 @@ public enum BusinessExceptionCode {
     RESET_USER_ERROR("用户名不存在"),
     VOTE_REPEAT("您已点赞过"),
     TOKEN_ERROR("token"),
+    TOKEN_NULL("无令牌，请重新登录"),
+    TOKEN_VERIFY_ERROR("令牌验证错误！"),
     ;
 
     private String desc;

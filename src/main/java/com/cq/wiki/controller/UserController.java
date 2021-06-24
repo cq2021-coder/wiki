@@ -1,5 +1,6 @@
 package com.cq.wiki.controller;
 
+import com.cq.wiki.annotation.PassToken;
 import com.cq.wiki.req.UserLoginReq;
 import com.cq.wiki.req.UserQueryReq;
 import com.cq.wiki.req.UserResetPasswordReq;
@@ -55,6 +56,7 @@ public class UserController {
         return resp;
     }
 
+    @PassToken
     @PostMapping("/login")
     public CommonResp login(@Valid @RequestBody UserLoginReq req) {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));

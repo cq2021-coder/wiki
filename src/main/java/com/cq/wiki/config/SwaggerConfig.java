@@ -3,14 +3,16 @@ package com.cq.wiki.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
+import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
-import springfox.documentation.service.ApiInfo;
-import springfox.documentation.service.Contact;
+import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spi.service.contexts.SecurityContext;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Configuration
 @EnableSwagger2//开启swagger2
@@ -24,7 +26,9 @@ public class SwaggerConfig {
                 .groupName("程崎")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.cq.wiki.controller"))
-                .build();
+                .build()
+                .securitySchemes(securitySchemes())
+                .securityContexts(securityContexts());
     }
 
     //配置Swagger信息=apiInfo
@@ -41,5 +45,26 @@ public class SwaggerConfig {
                 "仓库地址",
                 "https://gitee.com/cq2021/wiki.git",
                 new ArrayList());
+    }
+
+    private List<SecurityScheme> securitySchemes(){
+        List<SecurityScheme> securitySchemes = new ArrayList<>();
+        securitySchemes.add(new ApiKey("token","token","header"));
+        return securitySchemes;
+    }
+
+    private List<SecurityContext> securityContexts(){
+        List<SecurityContext> securityContexts = new ArrayList<>();
+        securityContexts.add(SecurityContext.builder().securityReferences(defaultAuth()).forPaths(PathSelectors.regex("^(?!auth).*$")).build());
+        return securityContexts;
+    }
+
+    private List<SecurityReference> defaultAuth(){
+        AuthorizationScope authorizationScope = new AuthorizationScope("global","accessEverything");
+        AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
+        authorizationScopes[0] = authorizationScope;
+        List<SecurityReference> securityReferences = new ArrayList<>();
+        securityReferences.add(new SecurityReference("token",authorizationScopes));
+        return securityReferences;
     }
 }
