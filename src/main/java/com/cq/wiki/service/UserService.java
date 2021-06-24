@@ -14,6 +14,7 @@ import com.cq.wiki.resp.UserLoginResp;
 import com.cq.wiki.resp.UserQueryResp;
 import com.cq.wiki.util.CopyUtil;
 import com.cq.wiki.util.SnowFlake;
+import com.cq.wiki.util.TokenUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
@@ -45,7 +46,10 @@ public class UserService {
         }else {
             if (userDb.getPassword().equals(req.getPassword())){
                 //登录成功
-                return CopyUtil.copy(userDb,UserLoginResp.class);
+                UserLoginResp userLoginResp = CopyUtil.copy(userDb,UserLoginResp.class);
+                userLoginResp.setToken(TokenUtil.signToken(userDb));
+                LOG.info("token为：{}",userLoginResp.getToken());
+                return userLoginResp;
             }
             else {
                 //密码错误

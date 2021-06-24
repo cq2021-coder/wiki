@@ -72,10 +72,12 @@
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
 
-        <!--整合redis-->
+        <!--JWT相关-->
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
         </dependency>
 
         <dependency>

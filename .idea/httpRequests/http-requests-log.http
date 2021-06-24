@@ -1,3 +1,29 @@
+GET http://localhost:8880/test/redis/set/123/test
+Accept: application/json
+
+<> 2021-06-23T231821.404.json
+
+###
+
+GET http://localhost:8880/redis/get/15271595887169536
+Accept: application/json
+
+###
+
+GET http://localhost:8880/test/redis/set/123/test
+Accept: application/json
+
+<> 2021-06-23T231746.404.json
+
+###
+
+GET http://localhost:8880/test/redis/set/123/test
+Accept: application/json
+
+<> 2021-06-23T231726.404.json
+
+###
+
 GET http://localhost:8880/ebook/all
 
 <> 2021-06-16T192409.200.json
@@ -245,30 +271,6 @@ GET http://localhost:8880/ebook/list
 GET http://localhost:8880/ebook/list
 
 <> 2021-06-12T000416.200.json
-
-###
-
-GET http://localhost:8880/ebook/list
-
-<> 2021-06-12T000359.200.json
-
-###
-
-GET http://localhost:8880/test/list
-
-<> 2021-06-12T000354.200.json
-
-###
-
-GET http://localhost:8880/ebook/list
-
-<> 2021-06-11T234736.200.json
-
-###
-
-GET http://localhost:8880/ebook/list
-
-<> 2021-06-11T234335.200.json
 
 ###
 
