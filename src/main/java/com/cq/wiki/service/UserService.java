@@ -1,9 +1,12 @@
 package com.cq.wiki.service;
 
+import com.cq.wiki.domain.Token;
+import com.cq.wiki.domain.TokenExample;
 import com.cq.wiki.domain.User;
 import com.cq.wiki.domain.UserExample;
 import com.cq.wiki.exception.BusinessException;
 import com.cq.wiki.exception.BusinessExceptionCode;
+import com.cq.wiki.mapper.TokenMapper;
 import com.cq.wiki.mapper.UserMapper;
 import com.cq.wiki.req.UserLoginReq;
 import com.cq.wiki.req.UserQueryReq;
@@ -35,8 +38,16 @@ public class UserService {
     private UserMapper userMapper;
 
     @Resource
+    private TokenMapper tokenMapper;
+
+    @Resource
     private SnowFlake snowFlake;
 
+    /**
+     * 登录
+     * @param req
+     * @return
+     */
     public UserLoginResp login(UserLoginReq req){
         User userDb = selectByLoginName(req.getLoginName());
         if (ObjectUtils.isEmpty(userDb)){
@@ -48,6 +59,10 @@ public class UserService {
                 //登录成功
                 UserLoginResp userLoginResp = CopyUtil.copy(userDb,UserLoginResp.class);
                 userLoginResp.setToken(TokenUtil.signToken(userDb));
+                Token token = new Token();
+                token.setId(snowFlake.nextId());
+                token.setToken(userLoginResp.getToken());
+                tokenMapper.insert(token);
                 LOG.info("token为：{}",userLoginResp.getToken());
                 return userLoginResp;
             }
@@ -132,6 +147,21 @@ public class UserService {
      */
     public void delete(Long id){
         userMapper.deleteByPrimaryKey(id);
+    }
+
+    /**
+     * 退出登录
+     */
+    public void logout(String token){
+        if (TokenUtil.verifyToken(token)){
+            TokenExample tokenExample = new TokenExample();
+            TokenExample.Criteria criteria = tokenExample.createCriteria();
+            criteria.andTokenEqualTo(token);
+            tokenMapper.deleteByExample(tokenExample);
+        }
+        else {
+            throw new BusinessException(BusinessExceptionCode.TOKEN_ERROR);
+        }
     }
 
     /**

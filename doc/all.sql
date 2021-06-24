@@ -100,3 +100,9 @@ create table `user` (
 )engine=innodb default charset=utf8mb4 comment='用户';
 
 insert into user (id, login_name, name, password) values (1,'test','测试','test123');
+
+drop table if exists `token`;
+create table `token`(
+    `id` bigint not null primary key comment 'ID',
+    `token` varchar(1000) not null comment '令牌'
+)

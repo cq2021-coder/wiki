@@ -47,6 +47,7 @@
         <!--<table tableName="doc"/>-->
         <!--<table tableName="content"/>-->
         <table schema="wiki" tableName="user" domainObjectName="User" />
+        <!--<table schema="wiki" tableName="token" domainObjectName="Token" />-->
         <!--<table tableName="ebook_snapshot"/>-->
     </context>
 </generatorConfiguration>

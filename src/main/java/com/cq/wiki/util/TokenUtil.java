@@ -23,7 +23,7 @@ public class TokenUtil {
         long now = System.currentTimeMillis();
         LOG.info("当前时间的时间戳{}",now);
         //设置一天后过期
-        long expirationTime = now + 24*3600;
+        long expirationTime = now + 24*3600*1000;
         LOG.info("过期时间戳为：{}",expirationTime);
 
         return String.valueOf(Jwts.builder()

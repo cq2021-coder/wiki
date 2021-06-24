@@ -78,4 +78,12 @@ public class UserController {
         resp.setContent(allBook);
         return resp;
     }
+
+    @GetMapping("/logout/{token}")
+    public CommonResp logout(@PathVariable String token){
+        CommonResp resp = new CommonResp<>();
+        userService.logout(token);
+        LOG.info("从数据库里删除token: {}",token);
+        return resp;
+    }
 }
