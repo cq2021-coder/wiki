@@ -159,3 +159,495 @@
 2021-06-24 22:47:45.298 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
 2021-06-24 22:47:45.299 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
 2021-06-24 22:47:45.299 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-24 22:51:20.963 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:51:20.964 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:51:20.964 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:51:20.964 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:51:20.964 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:51:20.965 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:51:20.965 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:51:20.967 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:51:20.967 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:51:20.968 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:51:20.968 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:51:20.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:51:20.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:51:20.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:51:20.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:51:20.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:51:20.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:51:20.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:51:20.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:51:20.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:51:20.971 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:51:20.971 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:51:20.971 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:51:20.972 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:51:20.972 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:51:20.973 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:51:20.974 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-24 22:51:44.744 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:51:44.745 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:51:44.745 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:51:44.745 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:51:44.745 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:51:44.746 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:51:44.747 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:51:44.749 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:51:44.749 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:51:44.750 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:51:44.750 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:51:44.751 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:51:44.751 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:51:44.752 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:51:44.752 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:51:44.752 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:51:44.752 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:51:44.752 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:51:44.753 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:51:44.753 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:51:44.753 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:51:44.753 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:51:44.754 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:51:44.754 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:51:44.755 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:51:44.757 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:51:44.758 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2021-06-24 22:51:56.317 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:51:56.318 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:51:56.318 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:51:56.318 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:51:56.319 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:51:56.320 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:51:56.320 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:51:56.322 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:51:56.323 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:51:56.324 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:51:56.324 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:51:56.325 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:51:56.325 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:51:56.325 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:51:56.325 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:51:56.326 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:51:56.326 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:51:56.326 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:51:56.326 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:51:56.326 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:51:56.327 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:51:56.327 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:51:56.327 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:51:56.327 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:51:56.327 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:51:56.328 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:51:56.329 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：12 ms -------------
+2021-06-24 22:53:26.011 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:53:26.011 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:53:26.011 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:53:26.011 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:53:26.011 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:53:26.012 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:53:26.013 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:53:26.014 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:53:26.015 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:53:26.015 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:53:26.016 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:53:26.016 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:53:26.016 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:53:26.016 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:53:26.017 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:53:26.017 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:53:26.017 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:53:26.017 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:53:26.018 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:53:26.018 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:53:26.018 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:53:26.019 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:53:26.019 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:53:26.019 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:53:26.019 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:53:26.020 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:53:26.020 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-24 22:53:59.550 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:53:59.551 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:53:59.551 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:53:59.551 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:53:59.551 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:53:59.552 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:53:59.553 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:53:59.555 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:53:59.555 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:53:59.556 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:53:59.556 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:53:59.556 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:53:59.557 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:53:59.557 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:53:59.557 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:53:59.557 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:53:59.557 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:53:59.558 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:53:59.558 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:53:59.558 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:53:59.558 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:53:59.558 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:53:59.559 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:53:59.559 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:53:59.559 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:53:59.560 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:53:59.560 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-24 22:54:11.940 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:54:11.941 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:54:11.941 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:54:11.941 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:54:11.941 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:54:11.942 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:54:11.942 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:54:11.944 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:54:11.944 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:54:11.945 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:54:11.945 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:54:11.946 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:54:11.946 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:54:11.947 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:54:11.948 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:54:11.948 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:54:11.948 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:54:11.949 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:54:11.949 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:54:11.950 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:54:11.950 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:54:11.951 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:54:11.952 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:54:11.952 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:54:11.952 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:54:11.954 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:54:11.954 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：14 ms -------------
+2021-06-24 22:57:45.937 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:57:45.937 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:57:45.937 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:57:45.937 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:57:45.937 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:57:45.938 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:57:45.940 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:57:45.941 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:57:45.941 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:57:45.942 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:57:45.942 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:57:45.942 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:57:45.942 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:57:45.943 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:57:45.943 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:57:45.943 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:57:45.943 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:57:45.943 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:57:45.943 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:57:45.944 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:57:45.944 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:57:45.944 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:57:45.944 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:57:45.945 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:57:45.945 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:57:45.946 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:57:45.946 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-24 22:57:47.947 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:57:47.947 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-24 22:57:47.947 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-24 22:57:47.947 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:57:47.947 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-06-24 22:57:47.949 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-24 22:57:47.949 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-06-24 22:57:47.950 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-24 22:57:47.950 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-24 22:57:47.951 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-24 22:57:47.951 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624546667951
+2021-06-24 22:57:47.951 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624546754351
+2021-06-24 22:57:47.952 INFO  com.cq.wiki.service.UserService                   :51   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDY3NTQsImlhdCI6MTYyNDU0NjY2N30.42D0nX3_8DOTMR7QhmVUwzNlSAbLA7ZiscMr5YUqqDc
+2021-06-24 22:57:47.952 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"id":6290961574199,"loginName":"test","name":"测试","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDY3NTQsImlhdCI6MTYyNDU0NjY2N30.42D0nX3_8DOTMR7QhmVUwzNlSAbLA7ZiscMr5YUqqDc"},"success":true}
+2021-06-24 22:57:47.952 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-24 22:57:50.209 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:57:50.209 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:57:50.209 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:57:50.209 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:57:50.210 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:57:50.211 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:57:50.211 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:57:50.213 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:57:50.213 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:57:50.214 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:57:50.214 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:57:50.214 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:57:50.214 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:57:50.215 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:57:50.215 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:57:50.215 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:57:50.215 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:57:50.215 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:57:50.216 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:57:50.216 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:57:50.217 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:57:50.217 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:57:50.217 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:57:50.217 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:57:50.218 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:57:50.219 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:57:50.219 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-24 22:57:50.848 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:57:50.849 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:57:50.849 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:57:50.849 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:57:50.849 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:57:50.850 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:57:50.851 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:57:50.853 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:57:50.853 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:57:50.853 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:57:50.853 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:57:50.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:57:50.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:57:50.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:57:50.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:57:50.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:57:50.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:57:50.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:57:50.856 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:57:50.856 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:57:50.857 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-24 22:57:51.403 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:57:51.404 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 22:57:51.404 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 22:57:51.404 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:57:51.404 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 22:57:51.405 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 22:57:51.406 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 22:57:51.408 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 22:57:51.408 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 22:57:51.409 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 22:57:51.409 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 22:57:51.409 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 22:57:51.409 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 22:57:51.409 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 22:57:51.409 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 22:57:51.410 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 22:57:51.410 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 22:57:51.410 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 22:57:51.410 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 22:57:51.410 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 22:57:51.410 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 22:57:51.411 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 22:57:51.411 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 22:57:51.411 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 22:57:51.411 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 22:57:51.413 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 22:57:51.413 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-24 22:57:53.684 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 22:57:53.684 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-24 22:57:53.684 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-24 22:57:53.684 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 22:57:53.684 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-06-24 22:57:53.686 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-24 22:57:53.686 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-06-24 22:57:53.687 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-24 22:57:53.687 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-24 22:57:53.688 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-24 22:57:53.688 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624546673688
+2021-06-24 22:57:53.688 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624546760088
+2021-06-24 22:57:53.688 INFO  com.cq.wiki.service.UserService                   :51   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDY3NjAsImlhdCI6MTYyNDU0NjY3M30.oBOyZwbDpozE1TB4kDyOUGDcc4vMK964PThN_sT3jac
+2021-06-24 22:57:53.689 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"id":6290961574199,"loginName":"test","name":"测试","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDY3NjAsImlhdCI6MTYyNDU0NjY3M30.oBOyZwbDpozE1TB4kDyOUGDcc4vMK964PThN_sT3jac"},"success":true}
+2021-06-24 22:57:53.689 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-24 23:01:13.108 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:01:13.108 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 23:01:13.108 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 23:01:13.108 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:01:13.108 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 23:01:13.109 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 23:01:13.110 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 23:01:13.111 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 23:01:13.112 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 23:01:13.112 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 23:01:13.112 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 23:01:13.112 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 23:01:13.112 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 23:01:13.113 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 23:01:13.114 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 23:01:13.114 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 23:01:13.115 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 23:01:13.115 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 23:01:13.115 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 23:01:13.116 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 23:01:13.116 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-24 23:01:17.006 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:01:17.006 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 23:01:17.006 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 23:01:17.006 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:01:17.006 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 23:01:17.007 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 23:01:17.007 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 23:01:17.008 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 23:01:17.009 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 23:01:17.009 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 23:01:17.009 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 23:01:17.009 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 23:01:17.009 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 23:01:17.010 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 23:01:17.010 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 23:01:17.010 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 23:01:17.010 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 23:01:17.010 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 23:01:17.011 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 23:01:17.011 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 23:01:17.011 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 23:01:17.011 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 23:01:17.011 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 23:01:17.011 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 23:01:17.012 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 23:01:17.012 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 23:01:17.012 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-24 23:02:08.963 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:02:08.964 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 23:02:08.964 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 23:02:08.964 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:02:08.964 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 23:02:08.966 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 23:02:08.967 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 23:02:08.968 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 23:02:08.968 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 23:02:08.968 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 23:02:08.968 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 23:02:08.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 23:02:08.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 23:02:08.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 23:02:08.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 23:02:08.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 23:02:08.969 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 23:02:08.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 23:02:08.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 23:02:08.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 23:02:08.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 23:02:08.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 23:02:08.970 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 23:02:08.971 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 23:02:08.971 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 23:02:08.972 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 23:02:08.972 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-24 23:04:09.617 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:04:09.617 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 23:04:09.617 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 23:04:09.617 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:04:09.617 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 23:04:09.619 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 23:04:09.619 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 23:04:09.620 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 23:04:09.620 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 23:04:09.621 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 23:04:09.622 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 23:04:09.623 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 23:04:09.623 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 23:04:09.623 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 23:04:09.624 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-24 23:05:12.167 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:05:12.168 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 23:05:12.168 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 23:05:12.168 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:05:12.168 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 23:05:12.170 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 23:05:12.170 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 23:05:12.172 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 23:05:12.173 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 23:05:12.173 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 23:05:12.174 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 23:05:12.174 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 23:05:12.174 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 23:05:12.175 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 23:05:12.176 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 23:05:12.176 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 23:05:12.176 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 23:05:12.176 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 23:05:12.176 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 23:05:12.177 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 23:05:12.177 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-24 23:05:16.621 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:05:16.621 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-24 23:05:16.621 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-24 23:05:16.621 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:05:16.621 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-06-24 23:05:16.622 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-24 23:05:16.623 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-06-24 23:05:16.624 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-24 23:05:16.624 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-24 23:05:16.625 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-24 23:05:16.625 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624547116625
+2021-06-24 23:05:16.625 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624547203025
+2021-06-24 23:05:16.625 INFO  com.cq.wiki.service.UserService                   :51   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDcyMDMsImlhdCI6MTYyNDU0NzExNn0.ku_iFXUpu4sXJbZ3uXEFQMnOdufLT5iJnMEYVkd6kTE
+2021-06-24 23:05:16.626 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"id":6290961574199,"loginName":"test","name":"测试","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDcyMDMsImlhdCI6MTYyNDU0NzExNn0.ku_iFXUpu4sXJbZ3uXEFQMnOdufLT5iJnMEYVkd6kTE"},"success":true}
+2021-06-24 23:05:16.626 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：5 ms -------------
+2021-06-24 23:05:47.956 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:05:47.956 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-24 23:05:47.957 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-24 23:05:47.957 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:05:47.957 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: []
+2021-06-24 23:05:47.958 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-24 23:05:47.958 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-24 23:05:47.959 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-24 23:05:47.960 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-24 23:05:47.960 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-24 23:05:47.960 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-24 23:05:47.960 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-24 23:05:47.960 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-24 23:05:47.961 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-24 23:05:47.961 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-24 23:05:47.961 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-24 23:05:47.961 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-24 23:05:47.962 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-24 23:05:47.962 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-24 23:05:47.962 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-24 23:05:47.962 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-24 23:05:47.962 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-24 23:05:47.963 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-24 23:05:47.963 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-24 23:05:47.963 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-24 23:05:47.964 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-24 23:05:47.964 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-24 23:07:04.527 INFO  com.cq.wiki.aspect.LogAspect                      :44   [32m                  [0;39m ------------- 开始 -------------
+2021-06-24 23:07:04.527 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-24 23:07:04.527 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-24 23:07:04.528 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-24 23:07:04.528 INFO  com.cq.wiki.aspect.LogAspect                      :67   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-06-24 23:07:04.529 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-24 23:07:04.529 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-06-24 23:07:04.530 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-24 23:07:04.530 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-24 23:07:04.530 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-24 23:07:04.531 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624547224531
+2021-06-24 23:07:04.531 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624547310931
+2021-06-24 23:07:04.531 INFO  com.cq.wiki.service.UserService                   :51   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDczMTAsImlhdCI6MTYyNDU0NzIyNH0.5SJDXRn9Xsx-ZCPs5ESsL7aJeFM7zweNcDufnH8dHtI
+2021-06-24 23:07:04.531 INFO  com.cq.wiki.aspect.LogAspect                      :79   [32m                  [0;39m 返回结果: {"content":{"id":6290961574199,"loginName":"test","name":"测试","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ1NDczMTAsImlhdCI6MTYyNDU0NzIyNH0.5SJDXRn9Xsx-ZCPs5ESsL7aJeFM7zweNcDufnH8dHtI"},"success":true}
+2021-06-24 23:07:04.531 INFO  com.cq.wiki.aspect.LogAspect                      :80   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------

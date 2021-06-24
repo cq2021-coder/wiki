@@ -1,6 +1,6 @@
 <template>
   <a-layout-footer style="text-align: center">
-    程崎 设计 ©2021 欢迎：{{user.name}}
+    程崎 设计 ©2021<span v-show="user.id">，欢迎：{{user.name}}</span>
   </a-layout-footer>
 </template>
 
