@@ -118,4 +118,12 @@ public class DocService {
         }
     }
 
+    /**
+     * 点赞
+     * @param id
+     */
+    public void vote(Long id){
+        docMapperCust.increaseVoteCount(id);
+    }
+
 }
