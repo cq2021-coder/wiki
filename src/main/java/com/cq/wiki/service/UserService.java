@@ -160,7 +160,7 @@ public class UserService {
             tokenMapper.deleteByExample(tokenExample);
         }
         else {
-            throw new BusinessException(BusinessExceptionCode.TOKEN_ERROR);
+            throw new BusinessException(BusinessExceptionCode.TOKEN_NULL);
         }
     }
 

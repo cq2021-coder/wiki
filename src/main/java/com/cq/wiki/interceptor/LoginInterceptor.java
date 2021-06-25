@@ -4,7 +4,6 @@ package com.cq.wiki.interceptor;
 import com.cq.wiki.annotation.PassToken;
 import com.cq.wiki.exception.BusinessException;
 import com.cq.wiki.exception.BusinessExceptionCode;
-import com.cq.wiki.exception.TokenVerifyTokenException;
 import com.cq.wiki.util.TokenUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,11 +56,14 @@ public class LoginInterceptor implements HandlerInterceptor {
         }
 
         try {
-            TokenUtil.verifyToken(token);
-        } catch (TokenVerifyTokenException e) {
-            throw new BusinessException(BusinessExceptionCode.TOKEN_VERIFY_ERROR);
+            if (TokenUtil.verifyToken(token)){
+                LOG.info("token：{}验证通过",token);
+            }
+            else {
+                throw new BusinessException(BusinessExceptionCode.TOKEN_VERIFY_ERROR);
+            }
         }catch (Exception e){
-            throw new RuntimeException("登录异常！");
+            throw new BusinessException(BusinessExceptionCode.TOKEN_VERIFY_ERROR);
         }
         return true;
     }
