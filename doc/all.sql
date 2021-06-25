@@ -105,4 +105,6 @@ drop table if exists `token`;
 create table `token`(
     `id` bigint not null primary key comment 'ID',
     `token` varchar(1000) not null comment '令牌'
-)
+);
+
+update doc set view_count = view_count + 1 where id = 1;

@@ -5,6 +5,7 @@ import com.cq.wiki.domain.Doc;
 import com.cq.wiki.domain.DocExample;
 import com.cq.wiki.mapper.ContentMapper;
 import com.cq.wiki.mapper.DocMapper;
+import com.cq.wiki.mapper.DocMapperCust;
 import com.cq.wiki.req.DocQueryReq;
 import com.cq.wiki.req.DocSaveReq;
 import com.cq.wiki.resp.DocQueryResp;
@@ -28,6 +29,9 @@ public class DocService {
 
     @Resource
     private DocMapper docMapper;
+
+    @Resource
+    private DocMapperCust docMapperCust;
 
     @Resource
     private SnowFlake snowFlake;
@@ -73,6 +77,8 @@ public class DocService {
         if (ObjectUtils.isEmpty(req.getId())){
             //新增
             doc.setId(snowFlake.nextId()/10000);
+            doc.setViewCount(0);
+            doc.setVoteCount(0);
             docMapper.insert(doc);
 
             content.setId(doc.getId());
@@ -100,8 +106,11 @@ public class DocService {
         criteria.andIdIn(ids);
         docMapper.deleteByExample(docExample);
     }
+
     public String findContent(Long id){
         Content content = contentMapper.selectByPrimaryKey(id);
+        //文档阅读数加一
+        docMapperCust.increaseViewCount(id);
         if (ObjectUtils.isEmpty(content)){
             return "";
         }else {
