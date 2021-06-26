@@ -126,4 +126,11 @@ public class DocService {
         docMapperCust.increaseVoteCount(id);
     }
 
+    /**
+     * 定时更新电子书下的文档数据
+     */
+    public void updateEbookInfo(){
+        docMapperCust.updateEbookInfo();
+    }
+
 }

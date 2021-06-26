@@ -2442,3 +2442,725 @@ java.lang.InterruptedException: sleep interrupted
 2021-06-26 18:32:35.526 INFO  com.cq.wiki.job.TestJob                           :24   [32m                  [0;39m 每隔5秒钟执行一次： 32:33
 2021-06-26 18:32:37.032 INFO  com.cq.wiki.job.TestJob                           :36   [32m                  [0;39m 每隔1秒钟执行一次： 32:35 526
 2021-06-26 18:32:39.526 INFO  com.cq.wiki.job.TestJob                           :24   [32m                  [0;39m 每隔5秒钟执行一次： 32:37
+2021-06-26 20:51:20.334 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 6.1.5.Final
+2021-06-26 20:51:20.365 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 4224 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-26 20:51:20.365 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-26 20:51:20.428 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-26 20:51:20.428 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-26 20:51:22.163 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-26 20:51:22.163 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-26 20:51:22.163 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-26 20:51:22.163 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-26 20:51:22.163 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-26 20:51:22.163 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-26 20:51:22.163 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-26 20:51:22.163 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-26 20:51:23.210 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-26 20:51:23.257 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-26 20:51:23.257 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 2829 ms
+2021-06-26 20:51:24.162 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-26 20:51:24.209 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-26 20:51:24.365 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-06-26 20:51:24.429 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-26 20:51:24.444 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-26 20:51:24.705 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 4.887 seconds (JVM running for 5.676)
+2021-06-26 20:51:24.705 INFO  com.cq.wiki.config.WikiApplication                :24   [32m                  [0;39m 启动成功！！
+2021-06-26 20:51:24.705 INFO  com.cq.wiki.config.WikiApplication                :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-26 20:51:35.026 INFO  com.cq.wiki.job.DocJob                            :31   [32m63974439758467072 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:51:35.042 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m63974439758467072 [0;39m HikariPool-1 - Starting...
+2021-06-26 20:51:35.428 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m63974439758467072 [0;39m HikariPool-1 - Start completed.
+2021-06-26 20:51:35.444 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974439758467072 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:51:35.460 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974439758467072 [0;39m ==> Parameters: 
+2021-06-26 20:51:35.475 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974439758467072 [0;39m <==    Updates: 7
+2021-06-26 20:51:35.475 INFO  com.cq.wiki.job.DocJob                            :34   [32m63974439758467072 [0;39m 更新电子书下的文档数据结束，耗时：449毫秒
+2021-06-26 20:52:05.005 INFO  com.cq.wiki.job.DocJob                            :31   [32m63974565499506688 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:52:05.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974565499506688 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:52:05.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974565499506688 [0;39m ==> Parameters: 
+2021-06-26 20:52:05.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974565499506688 [0;39m <==    Updates: 7
+2021-06-26 20:52:05.005 INFO  com.cq.wiki.job.DocJob                            :34   [32m63974565499506688 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:52:35.017 INFO  com.cq.wiki.job.DocJob                            :31   [32m63974691378958336 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:52:35.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974691378958336 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:52:35.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974691378958336 [0;39m ==> Parameters: 
+2021-06-26 20:52:35.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974691378958336 [0;39m <==    Updates: 7
+2021-06-26 20:52:35.017 INFO  com.cq.wiki.job.DocJob                            :34   [32m63974691378958336 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:52:42.423 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-06-26 20:52:42.423 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-26 20:52:42.423 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2021-06-26 20:52:42.439 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
+2021-06-26 20:52:42.581 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 4224 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-26 20:52:42.581 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-26 20:52:42.958 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-26 20:52:42.958 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-26 20:52:42.958 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-26 20:52:42.958 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-26 20:52:42.958 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-26 20:52:42.958 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-26 20:52:42.958 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-26 20:52:42.958 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-26 20:52:42.973 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-26 20:52:42.973 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-26 20:52:42.973 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 392 ms
+2021-06-26 20:52:43.399 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-26 20:52:43.430 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-26 20:52:43.525 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-06-26 20:52:43.572 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-26 20:52:43.572 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-26 20:52:43.650 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.102 seconds (JVM running for 84.629)
+2021-06-26 20:52:43.650 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-26 20:52:43.650 INFO  com.cq.wiki.config.WikiApplication                :24   [32m                  [0;39m 启动成功！！
+2021-06-26 20:52:43.650 INFO  com.cq.wiki.config.WikiApplication                :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-26 20:53:05.015 INFO  com.cq.wiki.job.DocJob                            :31   [32m63974817199689728 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:53:05.015 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m63974817199689728 [0;39m HikariPool-2 - Starting...
+2021-06-26 20:53:05.031 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m63974817199689728 [0;39m HikariPool-2 - Start completed.
+2021-06-26 20:53:05.031 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974817199689728 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:53:05.031 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974817199689728 [0;39m ==> Parameters: 
+2021-06-26 20:53:05.031 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974817199689728 [0;39m <==    Updates: 7
+2021-06-26 20:53:05.031 INFO  com.cq.wiki.job.DocJob                            :34   [32m63974817199689728 [0;39m 更新电子书下的文档数据结束，耗时：16毫秒
+2021-06-26 20:53:35.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m63974943020421120 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:53:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974943020421120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:53:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974943020421120 [0;39m ==> Parameters: 
+2021-06-26 20:53:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63974943020421120 [0;39m <==    Updates: 7
+2021-06-26 20:53:35.013 INFO  com.cq.wiki.job.DocJob                            :34   [32m63974943020421120 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:54:05.019 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975068874706944 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:54:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975068874706944 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:54:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975068874706944 [0;39m ==> Parameters: 
+2021-06-26 20:54:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975068874706944 [0;39m <==    Updates: 7
+2021-06-26 20:54:05.019 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975068874706944 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:54:35.017 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975194695438336 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:54:35.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975194695438336 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:54:35.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975194695438336 [0;39m ==> Parameters: 
+2021-06-26 20:54:35.021 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975194695438336 [0;39m <==    Updates: 7
+2021-06-26 20:54:35.022 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975194695438336 [0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-06-26 20:55:05.009 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975320491003904 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:55:05.010 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975320491003904 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:55:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975320491003904 [0;39m ==> Parameters: 
+2021-06-26 20:55:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975320491003904 [0;39m <==    Updates: 7
+2021-06-26 20:55:05.013 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975320491003904 [0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-06-26 20:55:35.025 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975446387232768 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:55:35.025 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975446387232768 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:55:35.025 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975446387232768 [0;39m ==> Parameters: 
+2021-06-26 20:55:35.025 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975446387232768 [0;39m <==    Updates: 7
+2021-06-26 20:55:35.025 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975446387232768 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:56:05.019 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975572191186944 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:56:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975572191186944 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:56:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975572191186944 [0;39m ==> Parameters: 
+2021-06-26 20:56:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975572191186944 [0;39m <==    Updates: 7
+2021-06-26 20:56:05.019 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975572191186944 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:56:35.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975697995141120 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:56:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975697995141120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:56:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975697995141120 [0;39m ==> Parameters: 
+2021-06-26 20:56:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975697995141120 [0;39m <==    Updates: 7
+2021-06-26 20:56:35.013 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975697995141120 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:56:50.502 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-06-26 20:56:50.502 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-26 20:56:50.502 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-06-26 20:56:50.517 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-06-26 20:56:50.642 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 4224 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-26 20:56:50.642 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-26 20:56:50.955 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-26 20:56:50.955 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-26 20:56:50.955 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-26 20:56:50.971 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-26 20:56:50.971 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-26 20:56:50.971 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-26 20:56:50.971 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-26 20:56:50.971 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-26 20:56:50.971 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-26 20:56:50.971 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-26 20:56:50.971 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 329 ms
+2021-06-26 20:56:51.340 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-26 20:56:51.356 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-26 20:56:51.465 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-06-26 20:56:51.512 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-26 20:56:51.512 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-26 20:56:51.590 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 0.967 seconds (JVM running for 332.563)
+2021-06-26 20:56:51.590 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-26 20:56:51.590 INFO  com.cq.wiki.config.WikiApplication                :24   [32m                  [0;39m 启动成功！！
+2021-06-26 20:56:51.590 INFO  com.cq.wiki.config.WikiApplication                :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-26 20:57:02.968 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-26 20:57:02.969 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2021-06-26 20:57:02.978 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 9 ms
+2021-06-26 20:57:02.987 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:02.988 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-26 20:57:02.988 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-26 20:57:02.994 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：6 ms -------------
+2021-06-26 20:57:03.006 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:03.006 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:03.039 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:03.102 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:03.103 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:57:03.104 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:57:03.104 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:03.153 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:03.175 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m                  [0;39m HikariPool-3 - Starting...
+2021-06-26 20:57:03.191 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m                  [0;39m HikariPool-3 - Start completed.
+2021-06-26 20:57:03.213 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:57:03.213 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:03.236 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:03.236 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:57:03.237 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:03.239 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:57:03.240 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:03.241 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:03.242 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3f6251d37dbf9262f2bef00a579f340d
+2021-06-26 20:57:03.243 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:57:03.243 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:03.243 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:57:03.245 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:57:03.245 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:03.256 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:57:03.256 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：155 ms -------------
+2021-06-26 20:57:03.285 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：279 ms -------------
+2021-06-26 20:57:03.845 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:03.845 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-26 20:57:03.846 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-26 20:57:03.846 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:03.846 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: []
+2021-06-26 20:57:03.852 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-26 20:57:03.852 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:03.854 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-26 20:57:03.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-26 20:57:03.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-26 20:57:03.855 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-26 20:57:03.856 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-26 20:57:03.856 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-26 20:57:03.856 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-26 20:57:03.857 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-26 20:57:03.857 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-26 20:57:03.857 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-26 20:57:03.858 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-26 20:57:03.858 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-26 20:57:03.858 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-26 20:57:03.858 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-26 20:57:03.858 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-26 20:57:03.859 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-26 20:57:03.859 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-26 20:57:03.860 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-26 20:57:03.868 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-26 20:57:03.868 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：23 ms -------------
+2021-06-26 20:57:03.881 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:03.882 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-26 20:57:03.882 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-26 20:57:03.882 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-26 20:57:03.887 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:03.887 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:03.887 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:03.892 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:03.892 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-26 20:57:03.893 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-26 20:57:03.893 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:03.894 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:03.899 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-06-26 20:57:03.900 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:03.902 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:03.902 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 7
+2021-06-26 20:57:03.902 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:03.903 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-06-26 20:57:03.904 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:03.905 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-26 20:57:03.905 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 8, 93, 7
+2021-06-26 20:57:03.905 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 1, 0, 0
+2021-06-26 20:57:03.906 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门Python开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 6, 0
+2021-06-26 20:57:03.906 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, MySQL 入门教程, 400, 401, 零基础入门MySQL开发，企业级应用开发最佳首选框架, /image/cover2.png, 1, 0, 0
+2021-06-26 20:57:03.906 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 402, 零基础入门Oracle开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 0, 0
+2021-06-26 20:57:03.906 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6065395476948, CSS入门教程, 100, 102, CSS从开发到入土, /image/cover2.png, 1, 0, 0
+2021-06-26 20:57:03.907 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6074678257713, 阿里云服务器, 500, 501, 阿里云, /image/cover1.png, 1, 0, 0
+2021-06-26 20:57:03.907 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 7
+2021-06-26 20:57:03.908 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：7
+2021-06-26 20:57:03.908 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:03.914 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":8,"id":1,"name":"Spring Boot 入门教程","viewCount":93,"voteCount":7},{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":1,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":1,"id":3,"name":"Python 入门教程","viewCount":6,"voteCount":0},{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":1,"id":4,"name":"MySQL 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":1,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":100,"category2Id":102,"cover":"/image/cover2.png","description":"CSS从开发到入土","docCount":1,"id":6065395476948,"name":"CSS入门教程","viewCount":0,"voteCount":0},{"category1Id":500,"category2Id":501,"cover":"/image/cover1.png","description":"阿里云","docCount":1,"id":6074678257713,"name":"阿里云服务器","viewCount":0,"voteCount":0}],"total":7},"success":true}
+2021-06-26 20:57:03.914 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：22 ms -------------
+2021-06-26 20:57:03.916 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：29 ms -------------
+2021-06-26 20:57:04.573 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:04.574 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-26 20:57:04.574 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-26 20:57:04.574 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:04.574 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: []
+2021-06-26 20:57:04.575 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-26 20:57:04.576 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:04.577 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-26 20:57:04.577 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-26 20:57:04.578 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-26 20:57:04.578 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-26 20:57:04.578 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-26 20:57:04.578 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-26 20:57:04.578 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-26 20:57:04.579 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-26 20:57:04.579 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-26 20:57:04.579 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-26 20:57:04.579 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-26 20:57:04.580 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-26 20:57:04.580 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-26 20:57:04.580 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-26 20:57:04.580 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-26 20:57:04.581 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-26 20:57:04.581 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-26 20:57:04.581 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-26 20:57:04.582 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-26 20:57:04.583 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-26 20:57:05.010 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975823811678208 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:57:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975823811678208 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:57:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975823811678208 [0;39m ==> Parameters: 
+2021-06-26 20:57:05.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975823811678208 [0;39m <==    Updates: 7
+2021-06-26 20:57:05.014 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975823811678208 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-26 20:57:05.175 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:05.176 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:05.176 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:05.177 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:05.177 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:57:05.177 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:57:05.177 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:05.178 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:05.179 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:57:05.180 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:05.181 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:05.182 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:57:05.182 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:05.182 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:57:05.182 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:05.184 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:05.184 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3f6251d37dbf9262f2bef00a579f340d
+2021-06-26 20:57:05.184 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:57:05.184 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:05.185 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:57:05.185 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:57:05.185 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:05.185 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:57:05.185 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-26 20:57:05.186 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-26 20:57:06.262 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:06.262 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:06.263 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:06.264 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:06.264 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:57:06.264 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:57:06.264 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:06.264 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:06.266 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:57:06.266 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:06.268 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:06.268 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:57:06.268 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:06.269 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:57:06.269 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:06.270 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:06.271 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3f6251d37dbf9262f2bef00a579f340d
+2021-06-26 20:57:06.271 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:57:06.271 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:06.271 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:57:06.272 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:57:06.272 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:06.272 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:57:06.272 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-26 20:57:06.273 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：11 ms -------------
+2021-06-26 20:57:18.035 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:18.035 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-26 20:57:18.036 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-26 20:57:18.036 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：1 ms -------------
+2021-06-26 20:57:18.040 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:18.040 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:18.041 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:18.058 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:18.058 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/reset-password POST
+2021-06-26 20:57:18.058 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.resetPassword
+2021-06-26 20:57:18.058 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:18.059 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"id":6290961574199}]
+2021-06-26 20:57:18.063 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2021-06-26 20:57:18.064 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==> Parameters: e70e2222a9d67c4f2eae107533359aa4(String), 6290961574199(Long)
+2021-06-26 20:57:18.065 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:57:18.065 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-26 20:57:18.066 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-26 20:57:18.067 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：27 ms -------------
+2021-06-26 20:57:18.081 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:18.081 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:18.082 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:18.082 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:18.082 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:57:18.082 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:57:18.083 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:18.083 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:18.084 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:57:18.084 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:18.086 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:18.086 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:57:18.086 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:18.087 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:57:18.087 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:18.088 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:18.089 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3f6251d37dbf9262f2bef00a579f340d
+2021-06-26 20:57:18.089 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:57:18.089 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:18.090 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:57:18.090 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:57:18.090 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:18.090 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:57:18.090 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-26 20:57:18.091 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-26 20:57:35.001 INFO  com.cq.wiki.job.DocJob                            :31   [32m63975949603049472 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:57:35.001 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975949603049472 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:57:35.001 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975949603049472 [0;39m ==> Parameters: 
+2021-06-26 20:57:35.001 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63975949603049472 [0;39m <==    Updates: 7
+2021-06-26 20:57:35.001 INFO  com.cq.wiki.job.DocJob                            :34   [32m63975949603049472 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:57:36.754 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:36.754 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:36.755 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:36.756 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:36.757 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/reset-password POST
+2021-06-26 20:57:36.757 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.resetPassword
+2021-06-26 20:57:36.757 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:36.757 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"id":6214732732183}]
+2021-06-26 20:57:36.758 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2021-06-26 20:57:36.759 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==> Parameters: 79e63af7f217d11b7469265980f20156(String), 6214732732183(Long)
+2021-06-26 20:57:36.760 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:57:36.760 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-26 20:57:36.760 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：4 ms -------------
+2021-06-26 20:57:36.761 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：7 ms -------------
+2021-06-26 20:57:36.778 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:36.778 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:36.779 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:36.779 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:36.780 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:57:36.780 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:57:36.780 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:36.780 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:36.781 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:57:36.782 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:36.784 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:36.785 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:57:36.785 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:36.786 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:57:36.786 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:36.788 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:36.788 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 3f6251d37dbf9262f2bef00a579f340d
+2021-06-26 20:57:36.788 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:57:36.789 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:36.789 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:57:36.789 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:57:36.789 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:36.790 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:57:36.790 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-26 20:57:36.791 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：13 ms -------------
+2021-06-26 20:57:46.969 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:46.970 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:46.971 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:46.971 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:46.972 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/reset-password POST
+2021-06-26 20:57:46.972 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.resetPassword
+2021-06-26 20:57:46.972 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:46.972 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"id":6214409874794}]
+2021-06-26 20:57:46.974 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==>  Preparing: update user SET `password` = ? where id = ?
+2021-06-26 20:57:46.974 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m ==> Parameters: 2f32b1a48b8bca0794a27782ce5eca6c(String), 6214409874794(Long)
+2021-06-26 20:57:46.986 DEBUG c.c.w.m.UserMapper.updateByPrimaryKeySelective    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:57:46.987 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-26 20:57:46.987 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：16 ms -------------
+2021-06-26 20:57:46.988 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：18 ms -------------
+2021-06-26 20:57:47.003 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:47.003 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:47.004 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:47.005 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:47.005 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:57:47.005 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:57:47.005 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:47.005 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:57:47.006 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:57:47.006 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:57:47.008 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:57:47.008 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:57:47.009 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:47.009 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:57:47.009 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:57:47.011 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:47.011 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 2f32b1a48b8bca0794a27782ce5eca6c
+2021-06-26 20:57:47.012 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:57:47.012 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:47.013 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:57:47.013 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:57:47.013 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:57:47.014 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:57:47.015 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-26 20:57:47.016 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：13 ms -------------
+2021-06-26 20:57:49.674 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:49.675 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-26 20:57:49.675 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-26 20:57:49.675 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-26 20:57:49.679 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:49.679 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:49.680 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA验证通过
+2021-06-26 20:57:49.681 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:49.681 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/logout/eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA GET
+2021-06-26 20:57:49.681 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.logout
+2021-06-26 20:57:49.681 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:49.681 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: ["eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA"]
+2021-06-26 20:57:49.685 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m ==>  Preparing: delete from token WHERE ( token = ? )
+2021-06-26 20:57:49.686 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m ==> Parameters: eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA(String)
+2021-06-26 20:57:49.698 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:57:49.699 INFO  com.cq.wiki.controller.UserController             :88   [32m                  [0;39m 从数据库里删除token: eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3ODkwODIsImlhdCI6MTYyNDcwMjY4Mn0.kpI-Uk2731bAjOG1BFthm2qrpzPkNPCnsG_BKnN-NSA
+2021-06-26 20:57:49.699 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-26 20:57:49.699 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：18 ms -------------
+2021-06-26 20:57:49.707 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：28 ms -------------
+2021-06-26 20:57:54.565 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:54.565 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-26 20:57:54.565 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-26 20:57:54.566 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:54.567 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"loginName":"test"}]
+2021-06-26 20:57:54.569 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-26 20:57:54.569 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: test(String)
+2021-06-26 20:57:54.570 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:57:54.571 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:57:54.571 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:57:54.573 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624712274573
+2021-06-26 20:57:54.574 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624798674573
+2021-06-26 20:57:54.580 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m ==>  Preparing: insert into token (id, token) values (?, ?)
+2021-06-26 20:57:54.581 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m ==> Parameters: 63976031723327488(Long), eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI(String)
+2021-06-26 20:57:54.594 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:57:54.594 INFO  com.cq.wiki.service.UserService                   :66   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI
+2021-06-26 20:57:54.596 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"id":6290961574199,"loginName":"test","name":"测试","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI"},"success":true}
+2021-06-26 20:57:54.596 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：31 ms -------------
+2021-06-26 20:57:57.912 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:57.912 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-26 20:57:57.912 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-26 20:57:57.912 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-26 20:57:57.918 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:57:57.918 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI
+2021-06-26 20:57:57.919 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI验证通过
+2021-06-26 20:57:57.919 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:57:57.919 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/logout/eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI GET
+2021-06-26 20:57:57.919 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.logout
+2021-06-26 20:57:57.920 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:57:57.920 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: ["eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI"]
+2021-06-26 20:57:57.921 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m ==>  Preparing: delete from token WHERE ( token = ? )
+2021-06-26 20:57:57.922 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m ==> Parameters: eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI(String)
+2021-06-26 20:57:57.933 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:57:57.933 INFO  com.cq.wiki.controller.UserController             :88   [32m                  [0;39m 从数据库里删除token: eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ3OTg2NzQsImlhdCI6MTYyNDcxMjI3NH0.TEGJ3rMyAZRaxOgmQLYqczSghA0zvZZELpLpw0oYLwI
+2021-06-26 20:57:57.934 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-26 20:57:57.934 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-06-26 20:57:57.934 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：16 ms -------------
+2021-06-26 20:58:05.006 INFO  com.cq.wiki.job.DocJob                            :31   [32m63976075453140992 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:58:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63976075453140992 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:58:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63976075453140992 [0;39m ==> Parameters: 
+2021-06-26 20:58:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63976075453140992 [0;39m <==    Updates: 7
+2021-06-26 20:58:05.006 INFO  com.cq.wiki.job.DocJob                            :34   [32m63976075453140992 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 20:58:11.480 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:11.481 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-26 20:58:11.481 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-26 20:58:11.481 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:11.481 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"loginName":"chengqi0418"}]
+2021-06-26 20:58:11.482 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-26 20:58:11.482 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: chengqi0418(String)
+2021-06-26 20:58:11.483 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:58:11.483 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 2f32b1a48b8bca0794a27782ce5eca6c
+2021-06-26 20:58:11.483 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:58:11.484 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624712291484
+2021-06-26 20:58:11.484 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624798691484
+2021-06-26 20:58:11.485 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m ==>  Preparing: insert into token (id, token) values (?, ?)
+2021-06-26 20:58:11.485 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m ==> Parameters: 63976102628036608(Long), eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4(String)
+2021-06-26 20:58:11.499 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:58:11.499 INFO  com.cq.wiki.service.UserService                   :66   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4
+2021-06-26 20:58:11.500 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"id":6214409874794,"loginName":"chengqi0418","name":"程崎","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4"},"success":true}
+2021-06-26 20:58:11.500 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：20 ms -------------
+2021-06-26 20:58:13.795 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:13.795 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-26 20:58:13.796 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-26 20:58:13.796 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:13.796 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: []
+2021-06-26 20:58:13.796 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-26 20:58:13.797 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:58:13.797 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-26 20:58:13.798 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-26 20:58:13.798 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-26 20:58:13.798 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-26 20:58:13.798 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-26 20:58:13.798 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-26 20:58:13.799 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-26 20:58:13.799 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-26 20:58:13.799 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-26 20:58:13.799 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-26 20:58:13.799 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-26 20:58:13.800 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-26 20:58:13.800 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-26 20:58:13.800 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-26 20:58:13.800 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-26 20:58:13.800 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-26 20:58:13.800 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-26 20:58:13.801 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-26 20:58:13.801 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-26 20:58:13.801 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：6 ms -------------
+2021-06-26 20:58:13.812 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:58:13.812 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4
+2021-06-26 20:58:13.813 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4验证通过
+2021-06-26 20:58:13.814 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:13.814 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-26 20:58:13.814 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-26 20:58:13.814 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:13.814 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:58:13.815 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-06-26 20:58:13.815 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:58:13.817 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:58:13.817 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 7
+2021-06-26 20:58:13.817 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:58:13.818 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-06-26 20:58:13.819 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:58:13.820 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-26 20:58:13.820 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 8, 93, 7
+2021-06-26 20:58:13.820 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 1, 0, 0
+2021-06-26 20:58:13.820 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门Python开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 6, 0
+2021-06-26 20:58:13.821 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, MySQL 入门教程, 400, 401, 零基础入门MySQL开发，企业级应用开发最佳首选框架, /image/cover2.png, 1, 0, 0
+2021-06-26 20:58:13.821 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 402, 零基础入门Oracle开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 0, 0
+2021-06-26 20:58:13.821 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6065395476948, CSS入门教程, 100, 102, CSS从开发到入土, /image/cover2.png, 1, 0, 0
+2021-06-26 20:58:13.821 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6074678257713, 阿里云服务器, 500, 501, 阿里云, /image/cover1.png, 1, 0, 0
+2021-06-26 20:58:13.821 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 7
+2021-06-26 20:58:13.822 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：7
+2021-06-26 20:58:13.822 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-26 20:58:13.822 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":8,"id":1,"name":"Spring Boot 入门教程","viewCount":93,"voteCount":7},{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":1,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":1,"id":3,"name":"Python 入门教程","viewCount":6,"voteCount":0},{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":1,"id":4,"name":"MySQL 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":1,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":100,"category2Id":102,"cover":"/image/cover2.png","description":"CSS从开发到入土","docCount":1,"id":6065395476948,"name":"CSS入门教程","viewCount":0,"voteCount":0},{"category1Id":500,"category2Id":501,"cover":"/image/cover1.png","description":"阿里云","docCount":1,"id":6074678257713,"name":"阿里云服务器","viewCount":0,"voteCount":0}],"total":7},"success":true}
+2021-06-26 20:58:13.822 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-26 20:58:13.823 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：11 ms -------------
+2021-06-26 20:58:14.448 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:58:14.449 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4
+2021-06-26 20:58:14.449 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4验证通过
+2021-06-26 20:58:14.450 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:14.450 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2021-06-26 20:58:14.450 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.list
+2021-06-26 20:58:14.450 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:14.450 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:58:14.451 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM user
+2021-06-26 20:58:14.452 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:58:14.453 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:58:14.454 TRACE c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :143  [32m                  [0;39m <==        Row: 3
+2021-06-26 20:58:14.454 DEBUG c.cq.wiki.mapper.UserMapper.selectByExample_COUNT :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:58:14.455 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2021-06-26 20:58:14.455 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:58:14.456 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:58:14.456 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214409874794, chengqi0418, 程崎, 2f32b1a48b8bca0794a27782ce5eca6c
+2021-06-26 20:58:14.456 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:58:14.457 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6290961574199, test, 测试, e70e2222a9d67c4f2eae107533359aa4
+2021-06-26 20:58:14.457 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 3
+2021-06-26 20:58:14.457 INFO  com.cq.wiki.service.UserService                   :88   [32m                  [0;39m 总行数：3
+2021-06-26 20:58:14.457 INFO  com.cq.wiki.service.UserService                   :89   [32m                  [0;39m 总页数：1
+2021-06-26 20:58:14.457 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"id":6214409874794,"loginName":"chengqi0418","name":"程崎"},{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧"},{"id":6290961574199,"loginName":"test","name":"测试"}],"total":3},"success":true}
+2021-06-26 20:58:14.457 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
+2021-06-26 20:58:14.458 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：9 ms -------------
+2021-06-26 20:58:19.841 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:58:19.841 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-26 20:58:19.841 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-26 20:58:19.841 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-26 20:58:19.845 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:58:19.846 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4
+2021-06-26 20:58:19.846 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4验证通过
+2021-06-26 20:58:19.847 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:19.847 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/logout/eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4 GET
+2021-06-26 20:58:19.847 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.logout
+2021-06-26 20:58:19.847 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:19.847 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: ["eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4"]
+2021-06-26 20:58:19.849 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m ==>  Preparing: delete from token WHERE ( token = ? )
+2021-06-26 20:58:19.849 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m ==> Parameters: eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4(String)
+2021-06-26 20:58:19.862 DEBUG com.cq.wiki.mapper.TokenMapper.deleteByExample    :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:58:19.862 INFO  com.cq.wiki.controller.UserController             :88   [32m                  [0;39m 从数据库里删除token: eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJjaGVuZ3FpMDQxOCIsIm5hbWUiOiLnqIvltI4iLCJpZCI6NjIxNDQwOTg3NDc5NCwiZXhwIjoxNjI0Nzk4NjkxLCJpYXQiOjE2MjQ3MTIyOTF9.PcMcnw0ffaIgMrV3ZRm6J9RHqttzVDA3ttq-j7Bh4U4
+2021-06-26 20:58:19.862 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"success":true}
+2021-06-26 20:58:19.862 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：15 ms -------------
+2021-06-26 20:58:19.863 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：17 ms -------------
+2021-06-26 20:58:31.670 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:31.670 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2021-06-26 20:58:31.671 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.UserController.login
+2021-06-26 20:58:31.671 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:31.671 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"loginName":"hwh0717"}]
+2021-06-26 20:58:31.672 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2021-06-26 20:58:31.673 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m ==> Parameters: hwh0717(String)
+2021-06-26 20:58:31.674 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==    Columns: id, login_name, name, password
+2021-06-26 20:58:31.674 TRACE com.cq.wiki.mapper.UserMapper.selectByExample     :143  [32m                  [0;39m <==        Row: 6214732732183, hwh0717, 霍文慧, 79e63af7f217d11b7469265980f20156
+2021-06-26 20:58:31.674 DEBUG com.cq.wiki.mapper.UserMapper.selectByExample     :137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:58:31.674 INFO  com.cq.wiki.util.TokenUtil                        :24   [32m                  [0;39m 当前时间的时间戳1624712311674
+2021-06-26 20:58:31.674 INFO  com.cq.wiki.util.TokenUtil                        :27   [32m                  [0;39m 过期时间戳为：1624798711674
+2021-06-26 20:58:31.675 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m ==>  Preparing: insert into token (id, token) values (?, ?)
+2021-06-26 20:58:31.675 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m ==> Parameters: 63976187311034368(Long), eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJod2gwNzE3IiwibmFtZSI6IumcjeaWh-aFpyIsImlkIjo2MjE0NzMyNzMyMTgzLCJleHAiOjE2MjQ3OTg3MTEsImlhdCI6MTYyNDcxMjMxMX0.SiiF92gTx4AaweuQb_sJXdocvLK2pEs6U-_pm1cFhBI(String)
+2021-06-26 20:58:31.689 DEBUG com.cq.wiki.mapper.TokenMapper.insert             :137  [32m                  [0;39m <==    Updates: 1
+2021-06-26 20:58:31.689 INFO  com.cq.wiki.service.UserService                   :66   [32m                  [0;39m token为：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJod2gwNzE3IiwibmFtZSI6IumcjeaWh-aFpyIsImlkIjo2MjE0NzMyNzMyMTgzLCJleHAiOjE2MjQ3OTg3MTEsImlhdCI6MTYyNDcxMjMxMX0.SiiF92gTx4AaweuQb_sJXdocvLK2pEs6U-_pm1cFhBI
+2021-06-26 20:58:31.689 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"id":6214732732183,"loginName":"hwh0717","name":"霍文慧","token":"eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJod2gwNzE3IiwibmFtZSI6IumcjeaWh-aFpyIsImlkIjo2MjE0NzMyNzMyMTgzLCJleHAiOjE2MjQ3OTg3MTEsImlhdCI6MTYyNDcxMjMxMX0.SiiF92gTx4AaweuQb_sJXdocvLK2pEs6U-_pm1cFhBI"},"success":true}
+2021-06-26 20:58:31.689 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：19 ms -------------
+2021-06-26 20:58:35.019 INFO  com.cq.wiki.job.DocJob                            :31   [32m63976201336786944 [0;39m 更新电子书下的文档数据开始
+2021-06-26 20:58:35.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63976201336786944 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 20:58:35.020 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63976201336786944 [0;39m ==> Parameters: 
+2021-06-26 20:58:35.021 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m63976201336786944 [0;39m <==    Updates: 7
+2021-06-26 20:58:35.021 INFO  com.cq.wiki.job.DocJob                            :34   [32m63976201336786944 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-06-26 20:58:39.626 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:39.627 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-26 20:58:39.627 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-26 20:58:39.627 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:39.627 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: []
+2021-06-26 20:58:39.628 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-26 20:58:39.628 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:58:39.629 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-26 20:58:39.629 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-26 20:58:39.630 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-26 20:58:39.630 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-26 20:58:39.630 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-26 20:58:39.630 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-26 20:58:39.631 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-26 20:58:39.631 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-26 20:58:39.631 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-26 20:58:39.632 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-26 20:58:39.633 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-26 20:58:39.633 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-26 20:58:39.634 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-26 20:58:39.634 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-26 20:58:39.634 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-26 20:58:39.634 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-26 20:58:39.634 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-26 20:58:39.635 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-26 20:58:39.636 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-26 20:58:39.636 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-26 20:58:39.649 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-26 20:58:39.650 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJod2gwNzE3IiwibmFtZSI6IumcjeaWh-aFpyIsImlkIjo2MjE0NzMyNzMyMTgzLCJleHAiOjE2MjQ3OTg3MTEsImlhdCI6MTYyNDcxMjMxMX0.SiiF92gTx4AaweuQb_sJXdocvLK2pEs6U-_pm1cFhBI
+2021-06-26 20:58:39.651 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJod2gwNzE3IiwibmFtZSI6IumcjeaWh-aFpyIsImlkIjo2MjE0NzMyNzMyMTgzLCJleHAiOjE2MjQ3OTg3MTEsImlhdCI6MTYyNDcxMjMxMX0.SiiF92gTx4AaweuQb_sJXdocvLK2pEs6U-_pm1cFhBI验证通过
+2021-06-26 20:58:39.652 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:39.653 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2021-06-26 20:58:39.653 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.EbookController.list
+2021-06-26 20:58:39.653 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:39.653 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: [{"page":1,"size":10}]
+2021-06-26 20:58:39.654 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2021-06-26 20:58:39.655 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:58:39.657 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==    Columns: count(0)
+2021-06-26 20:58:39.657 TRACE c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:143  [32m                  [0;39m <==        Row: 7
+2021-06-26 20:58:39.657 DEBUG c.cq.wiki.mapper.EbookMapper.selectByExample_COUNT:137  [32m                  [0;39m <==      Total: 1
+2021-06-26 20:58:39.658 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2021-06-26 20:58:39.658 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m ==> Parameters: 10(Integer)
+2021-06-26 20:58:39.659 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2021-06-26 20:58:39.660 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 1, Spring Boot 入门教程, 200, 202, 零基础入门Java开发，企业级应用开发最佳首选框架, /image/cover1.png, 8, 93, 7
+2021-06-26 20:58:39.660 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 2, Vue 入门教程, 100, 101, 零基础入门Vue开发，企业级应用开发最佳首选框架, /image/cover2.png, 1, 0, 0
+2021-06-26 20:58:39.661 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 3, Python 入门教程, 300, 301, 零基础入门Python开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 6, 0
+2021-06-26 20:58:39.661 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 4, MySQL 入门教程, 400, 401, 零基础入门MySQL开发，企业级应用开发最佳首选框架, /image/cover2.png, 1, 0, 0
+2021-06-26 20:58:39.662 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 5, Oracle 入门教程, 400, 402, 零基础入门Oracle开发，企业级应用开发最佳首选框架, /image/cover1.png, 1, 0, 0
+2021-06-26 20:58:39.662 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6065395476948, CSS入门教程, 100, 102, CSS从开发到入土, /image/cover2.png, 1, 0, 0
+2021-06-26 20:58:39.662 TRACE com.cq.wiki.mapper.EbookMapper.selectByExample    :143  [32m                  [0;39m <==        Row: 6074678257713, 阿里云服务器, 500, 501, 阿里云, /image/cover1.png, 1, 0, 0
+2021-06-26 20:58:39.662 DEBUG com.cq.wiki.mapper.EbookMapper.selectByExample    :137  [32m                  [0;39m <==      Total: 7
+2021-06-26 20:58:39.662 INFO  com.cq.wiki.service.EbookService                  :46   [32m                  [0;39m 总行数：7
+2021-06-26 20:58:39.663 INFO  com.cq.wiki.service.EbookService                  :47   [32m                  [0;39m 总页数：1
+2021-06-26 20:58:39.665 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":{"list":[{"category1Id":200,"category2Id":202,"cover":"/image/cover1.png","description":"零基础入门Java开发，企业级应用开发最佳首选框架","docCount":8,"id":1,"name":"Spring Boot 入门教程","viewCount":93,"voteCount":7},{"category1Id":100,"category2Id":101,"cover":"/image/cover2.png","description":"零基础入门Vue开发，企业级应用开发最佳首选框架","docCount":1,"id":2,"name":"Vue 入门教程","viewCount":0,"voteCount":0},{"category1Id":300,"category2Id":301,"cover":"/image/cover1.png","description":"零基础入门Python开发，企业级应用开发最佳首选框架","docCount":1,"id":3,"name":"Python 入门教程","viewCount":6,"voteCount":0},{"category1Id":400,"category2Id":401,"cover":"/image/cover2.png","description":"零基础入门MySQL开发，企业级应用开发最佳首选框架","docCount":1,"id":4,"name":"MySQL 入门教程","viewCount":0,"voteCount":0},{"category1Id":400,"category2Id":402,"cover":"/image/cover1.png","description":"零基础入门Oracle开发，企业级应用开发最佳首选框架","docCount":1,"id":5,"name":"Oracle 入门教程","viewCount":0,"voteCount":0},{"category1Id":100,"category2Id":102,"cover":"/image/cover2.png","description":"CSS从开发到入土","docCount":1,"id":6065395476948,"name":"CSS入门教程","viewCount":0,"voteCount":0},{"category1Id":500,"category2Id":501,"cover":"/image/cover1.png","description":"阿里云","docCount":1,"id":6074678257713,"name":"阿里云服务器","viewCount":0,"voteCount":0}],"total":7},"success":true}
+2021-06-26 20:58:39.665 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：13 ms -------------
+2021-06-26 20:58:39.667 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：17 ms -------------
+2021-06-26 20:58:40.823 INFO  com.cq.wiki.aspect.LogAspect                      :45   [32m                  [0;39m ------------- 开始 -------------
+2021-06-26 20:58:40.823 INFO  com.cq.wiki.aspect.LogAspect                      :46   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2021-06-26 20:58:40.824 INFO  com.cq.wiki.aspect.LogAspect                      :47   [32m                  [0;39m 类名方法: com.cq.wiki.controller.CategoryController.allBook
+2021-06-26 20:58:40.824 INFO  com.cq.wiki.aspect.LogAspect                      :48   [32m                  [0;39m 远程地址: 127.0.0.1
+2021-06-26 20:58:40.824 INFO  com.cq.wiki.aspect.LogAspect                      :70   [32m                  [0;39m 请求参数: []
+2021-06-26 20:58:40.825 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2021-06-26 20:58:40.825 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m ==> Parameters: 
+2021-06-26 20:58:40.826 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==    Columns: id, parent, name, sort
+2021-06-26 20:58:40.826 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 100, 0, 前端开发, 100
+2021-06-26 20:58:40.826 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 101, 100, Vue, 101
+2021-06-26 20:58:40.827 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 102, 100, HTML & CSS, 102
+2021-06-26 20:58:40.827 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 200, 0, Java, 200
+2021-06-26 20:58:40.827 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 201, 200, 基础应用, 201
+2021-06-26 20:58:40.828 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 202, 200, 框架开发, 202
+2021-06-26 20:58:40.828 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 300, 0, Python, 300
+2021-06-26 20:58:40.828 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 301, 300, 基础应用, 301
+2021-06-26 20:58:40.828 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 302, 300, 进阶方向应用, 302
+2021-06-26 20:58:40.828 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 400, 0, 数据库, 400
+2021-06-26 20:58:40.828 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 401, 400, MySQL, 401
+2021-06-26 20:58:40.829 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 402, 400, Oracle, 402
+2021-06-26 20:58:40.829 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 500, 0, 其他, 500
+2021-06-26 20:58:40.829 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 501, 500, 服务器, 501
+2021-06-26 20:58:40.829 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 502, 500, 开发工具, 502
+2021-06-26 20:58:40.829 TRACE com.cq.wiki.mapper.CategoryMapper.selectByExample :143  [32m                  [0;39m <==        Row: 503, 500, 热门服务端语言, 503
+2021-06-26 20:58:40.829 DEBUG com.cq.wiki.mapper.CategoryMapper.selectByExample :137  [32m                  [0;39m <==      Total: 16
+2021-06-26 20:58:40.830 INFO  com.cq.wiki.aspect.LogAspect                      :82   [32m                  [0;39m 返回结果: {"content":[{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"Vue","parent":100,"sort":101},{"id":102,"name":"HTML & CSS","parent":100,"sort":102},{"id":200,"name":"Java","parent":0,"sort":200},{"id":201,"name":"基础应用","parent":200,"sort":201},{"id":202,"name":"框架开发","parent":200,"sort":202},{"id":300,"name":"Python","parent":0,"sort":300},{"id":301,"name":"基础应用","parent":300,"sort":301},{"id":302,"name":"进阶方向应用","parent":300,"sort":302},{"id":400,"name":"数据库","parent":0,"sort":400},{"id":401,"name":"MySQL","parent":400,"sort":401},{"id":402,"name":"Oracle","parent":400,"sort":402},{"id":500,"name":"其他","parent":0,"sort":500},{"id":501,"name":"服务器","parent":500,"sort":501},{"id":502,"name":"开发工具","parent":500,"sort":502},{"id":503,"name":"热门服务端语言","parent":500,"sort":503}],"success":true}
+2021-06-26 20:58:40.830 INFO  com.cq.wiki.aspect.LogAspect                      :83   [32m                  [0;39m ------------- 结束 耗时：7 ms -------------
