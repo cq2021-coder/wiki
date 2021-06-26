@@ -35,9 +35,17 @@
         <template #renderItem="{ item }">
           <a-list-item key="item.name">
             <template #actions>
-              <span v-for="{ type, text } in actions" :key="type">
-                <component v-bind:is="type" style="margin-right: 8px" />
-                {{ text }}
+              <span>
+                <component v-bind:is="'FileOutlined'" style="margin-right: 8px" />
+                {{ item.docCount }}
+              </span>
+              <span>
+                <component v-bind:is="'UserOutlined'" style="margin-right: 8px" />
+                {{ item.viewCount }}
+              </span>
+              <span>
+                <component v-bind:is="'LikeOutlined'" style="margin-right: 8px" />
+                {{ item.voteCount }}
               </span>
             </template>
             <a-list-item-meta :description="item.description">
@@ -55,12 +63,12 @@
   </a-layout>
 </template>
 <script lang="ts">
-import {defineComponent , onMounted , ref , reactive , toRef} from "vue";
+import {defineComponent , onMounted , ref } from "vue";
 import axios from 'axios';
 import { message } from 'ant-design-vue';
 import {Tool} from "@/util/tool";
 
-const listData: any = [];
+// const listData: any = [];
 
 /*for (let i = 0; i < 23; i++) {
   listData.push({
