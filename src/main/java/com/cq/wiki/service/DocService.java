@@ -12,7 +12,6 @@ import com.cq.wiki.resp.DocQueryResp;
 import com.cq.wiki.resp.PageResp;
 import com.cq.wiki.util.CopyUtil;
 import com.cq.wiki.util.SnowFlake;
-import com.cq.wiki.websocket.WebSocketServer;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
@@ -41,7 +40,7 @@ public class DocService {
     private ContentMapper contentMapper;
 
     @Resource
-    private WebSocketServer webSocketServer;
+    public WsService wsService;
 
     public PageResp<DocQueryResp> list(DocQueryReq req) {
         DocExample docExample = new DocExample();
@@ -131,7 +130,7 @@ public class DocService {
 
         //推送消息
         Doc docDb = docMapper.selectByPrimaryKey(id);
-        webSocketServer.sendInfo("【"+docDb.getName() + "】被点赞！");
+        wsService.sentInfo("【"+docDb.getName() + "】被点赞！");
     }
 
     /**
