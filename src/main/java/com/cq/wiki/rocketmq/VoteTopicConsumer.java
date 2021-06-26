@@ -1,3 +1,4 @@
+/*
 package com.cq.wiki.rocketmq;
 
 import com.cq.wiki.websocket.WebSocketServer;
@@ -26,3 +27,4 @@ import javax.annotation.Resource;
          webSocketServer.sendInfo(new String(body));
      }
  }
+*/

@@ -483,3 +483,524 @@ Caused by: java.lang.ClassNotFoundException: org.apache.rocketmq.spring.core.Roc
 2021-06-27 00:14:40.942 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025551156940800 [0;39m ------------- 结束 耗时：9 ms -------------
 2021-06-27 00:14:40.944 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025551156940800 [0;39m ------------- LoginInterceptor 结束 耗时：12 ms -------------
 2021-06-27 00:14:40.946 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【test】被点赞！
+2021-06-27 00:15:05.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m64025652155781120 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:15:05.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025652155781120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:15:05.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025652155781120 [0;39m ==> Parameters: 
+2021-06-27 00:15:05.027 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025652155781120 [0;39m <==    Updates: 7
+2021-06-27 00:15:05.027 INFO  com.cq.wiki.job.DocJob                            :34   [32m64025652155781120 [0;39m 更新电子书下的文档数据结束，耗时：14毫秒
+2021-06-27 00:15:35.015 INFO  com.cq.wiki.job.DocJob                            :31   [32m64025777993289728 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:15:35.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025777993289728 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:15:35.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025777993289728 [0;39m ==> Parameters: 
+2021-06-27 00:15:35.018 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025777993289728 [0;39m <==    Updates: 7
+2021-06-27 00:15:35.018 INFO  com.cq.wiki.job.DocJob                            :34   [32m64025777993289728 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-27 00:15:40.417 INFO  com.cq.wiki.websocket.WebSocketServer             :32   [32m                  [0;39m 有新连接：token：XB6QbHWK5H，session id：0，当前连接数：1
+2021-06-27 00:15:40.485 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:40.485 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-27 00:15:40.486 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-27 00:15:40.486 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：1 ms -------------
+2021-06-27 00:15:40.491 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:40.491 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:40.492 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:40.493 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025800969687040 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:40.493 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025800969687040 [0;39m 请求地址: http://127.0.0.1:8880/doc/all/1 GET
+2021-06-27 00:15:40.493 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025800969687040 [0;39m 类名方法: com.cq.wiki.controller.DocController.allBook
+2021-06-27 00:15:40.493 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025800969687040 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:40.494 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025800969687040 [0;39m 请求参数: [1]
+2021-06-27 00:15:40.519 DEBUG com.cq.wiki.mapper.DocMapper.selectByExample      :137  [32m64025800969687040 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc WHERE ( ebook_id = ? ) order by sort asc
+2021-06-27 00:15:40.520 DEBUG com.cq.wiki.mapper.DocMapper.selectByExample      :137  [32m64025800969687040 [0;39m ==> Parameters: 1(Long)
+2021-06-27 00:15:40.521 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:40.521 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 1, 1, 6174723242839, 文档1, 1, 18, 3
+2021-06-27 00:15:40.522 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 10, 1
+2021-06-27 00:15:40.522 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 4, 1, 3, 文档2.1, 1, 4, 0
+2021-06-27 00:15:40.523 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 6, 1, 5, 文档2.2.1, 1, 7, 0
+2021-06-27 00:15:40.523 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 6174723242839, 1, 0, Java的IO流笔记, 1, 43, 11
+2021-06-27 00:15:40.523 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 6356642320050, 1, 2, test, 1, 9, 6
+2021-06-27 00:15:40.524 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 3, 1, 0, 文档2, 2, 5, 0
+2021-06-27 00:15:40.524 TRACE com.cq.wiki.mapper.DocMapper.selectByExample      :143  [32m64025800969687040 [0;39m <==        Row: 5, 1, 3, 文档2.2, 2, 9, 0
+2021-06-27 00:15:40.524 DEBUG com.cq.wiki.mapper.DocMapper.selectByExample      :137  [32m64025800969687040 [0;39m <==      Total: 8
+2021-06-27 00:15:40.532 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025800969687040 [0;39m 返回结果: {"content":[{"ebookId":1,"id":1,"name":"文档1","parent":6174723242839,"sort":1,"viewCount":18,"voteCount":3},{"ebookId":1,"id":2,"name":"文档1.1","parent":1,"sort":1,"viewCount":10,"voteCount":1},{"ebookId":1,"id":4,"name":"文档2.1","parent":3,"sort":1,"viewCount":4,"voteCount":0},{"ebookId":1,"id":6,"name":"文档2.2.1","parent":5,"sort":1,"viewCount":7,"voteCount":0},{"ebookId":1,"id":6174723242839,"name":"Java的IO流笔记","parent":0,"sort":1,"viewCount":43,"voteCount":11},{"ebookId":1,"id":6356642320050,"name":"test","parent":2,"sort":1,"viewCount":9,"voteCount":6},{"ebookId":1,"id":3,"name":"文档2","parent":0,"sort":2,"viewCount":5,"voteCount":0},{"ebookId":1,"id":5,"name":"文档2.2","parent":3,"sort":2,"viewCount":9,"voteCount":0}],"success":true}
+2021-06-27 00:15:40.533 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025800969687040 [0;39m ------------- 结束 耗时：40 ms -------------
+2021-06-27 00:15:40.538 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025800969687040 [0;39m ------------- LoginInterceptor 结束 耗时：47 ms -------------
+2021-06-27 00:15:40.563 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:40.564 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-27 00:15:40.564 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-27 00:15:40.564 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-27 00:15:40.568 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:40.568 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:40.569 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:40.569 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025801288454144 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:40.569 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025801288454144 [0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/6174723242839 GET
+2021-06-27 00:15:40.570 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025801288454144 [0;39m 类名方法: com.cq.wiki.controller.DocController.findContent
+2021-06-27 00:15:40.570 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025801288454144 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:40.570 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025801288454144 [0;39m 请求参数: [6174723242839]
+2021-06-27 00:15:40.570 DEBUG c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :137  [32m64025801288454144 [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-06-27 00:15:40.571 DEBUG c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :137  [32m64025801288454144 [0;39m ==> Parameters: 6174723242839(Long)
+2021-06-27 00:15:40.574 TRACE c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :143  [32m64025801288454144 [0;39m <==    Columns: id, content
+2021-06-27 00:15:40.575 TRACE c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :143  [32m64025801288454144 [0;39m <==        Row: 6174723242839, <<BLOB>>
+2021-06-27 00:15:40.576 DEBUG c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :137  [32m64025801288454144 [0;39m <==      Total: 1
+2021-06-27 00:15:40.576 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseViewCount:137  [32m64025801288454144 [0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?;
+2021-06-27 00:15:40.577 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseViewCount:137  [32m64025801288454144 [0;39m ==> Parameters: 6174723242839(Long)
+2021-06-27 00:15:40.589 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseViewCount:137  [32m64025801288454144 [0;39m <==    Updates: 1
+2021-06-27 00:15:40.591 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025801288454144 [0;39m 返回结果: {"content":"<h1 id=\"k0ccg\"></h1><blockquote><h1 id=\"j1wqg\">常用依赖</h1></blockquote><p><br></p><br><p>&lt;dependencies&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;org.springframework&lt;/groupId&gt;<br>            &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;<br>            &lt;version&gt;5.2.11.RELEASE&lt;/version&gt;<br>        &lt;/dependency&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/junit/junit --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;junit&lt;/groupId&gt;<br>            &lt;artifactId&gt;junit&lt;/artifactId&gt;<br>            &lt;version&gt;4.12&lt;/version&gt;<br>            &lt;scope&gt;test&lt;/scope&gt;<br>        &lt;/dependency&gt;<br>    &lt;/dependencies&gt;</p><br><h2 id=\"hhmad\">context约束</h2><br><p>使用注解需要导入context约束，增加注解的支持</p><br><p>&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;<br>&lt;beans xmlns=\"http://www.springframework.org/schema/beans\"<br>       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"<br>       xmlns:context=\"http://www.springframework.org/schema/context\"<br>       xsi:schemaLocation=\"http://www.springframework.org/schema/beans<br>        https://www.springframework.org/schema/beans/spring-beans.xsd<br>        http://www.springframework.org/schema/context<br>        https://www.springframework.org/schema/context/spring-context.xsd\"&gt;<br>    &lt;context:annotation-config/&gt;<br>&lt;/beans&gt;</p><br><h2 id=\"0e3le\">注解说明</h2><br><p>- @Autowired : 自动装配通过类型，名字<br>  - 如果Autowired不能唯一自动装配上属性，则需要通过@Qualifier(Value=\"xxx\")<br>- @Nullable : 字段标记了这个注解，说明这个字段可以为null<br>- @Resource : 自动装配通过名字，类型<br>- @Component : 组件，放在类上，说明这个类被Spring管理了，就是bean！<br>  - @Component有几个衍生注解，我们在web开发中，会按照mvc三层架构分层！<br>    - dao【@Repository】<br>    - service【@Service】<br>    - controller【@Controller】<br>    这四个注解功能都是一样的，都是代表将某个类注册到Spring中，装配Bean。</p><br><h2 id=\"6he6z\">mybatis-spring需要导入的依赖</h2><p><br>    &lt;dependencies&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/junit/junit --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;junit&lt;/groupId&gt;<br>            &lt;artifactId&gt;junit&lt;/artifactId&gt;<br>            &lt;version&gt;4.12&lt;/version&gt;<br>            &lt;scope&gt;test&lt;/scope&gt;<br>        &lt;/dependency&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;mysql&lt;/groupId&gt;<br>            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;<br>            &lt;version&gt;5.1.47&lt;/version&gt;<br>        &lt;/dependency&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;org.mybatis&lt;/groupId&gt;<br>            &lt;artifactId&gt;mybatis&lt;/artifactId&gt;<br>            &lt;version&gt;3.5.6&lt;/version&gt;<br>        &lt;/dependency&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;org.springframework&lt;/groupId&gt;<br>            &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;<br>            &lt;version&gt;5.2.11.RELEASE&lt;/version&gt;<br>        &lt;/dependency&gt;<br>        &lt;!--Spring操作数据库的话，还需要一个spring-jdbc--&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;org.springframework&lt;/groupId&gt;<br>            &lt;artifactId&gt;spring-jdbc&lt;/artifactId&gt;<br>            &lt;version&gt;5.2.9.RELEASE&lt;/version&gt;<br>        &lt;/dependency&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;org.aspectj&lt;/groupId&gt;<br>            &lt;artifactId&gt;aspectjweaver&lt;/artifactId&gt;<br>            &lt;version&gt;1.9.6&lt;/version&gt;<br>        &lt;/dependency&gt;<br>        &lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring --&gt;<br>        &lt;dependency&gt;<br>            &lt;groupId&gt;org.mybatis&lt;/groupId&gt;<br>            &lt;artifactId&gt;mybatis-spring&lt;/artifactId&gt;<br>            &lt;version&gt;2.0.5&lt;/version&gt;<br>        &lt;/dependency&gt;<br>    &lt;/dependencies&gt;</p><br><h2 id=\"0xpdq\">mybatis的工具类</h2><p><br>package com.kuang.utils;<br>import org.apache.ibatis.io.Resources;<br>import org.apache.ibatis.session.SqlSession;<br>import org.apache.ibatis.session.SqlSessionFactory;<br>import org.apache.ibatis.session.SqlSessionFactoryBuilder;<br>import java.io.IOException;<br>import java.io.InputStream;<br>//sqlSessionFactory --&gt; sqlSession<br>public class MybatisUtils {<br>    private static SqlSessionFactory sqlSessionFactory;<br>    static {<br>        try {<br>            //使用mybatis第一步：获取SQLSessionFactory对象<br>            String resource = \"mybatis-config.xml\";<br>            InputStream inputStream = Resources.getResourceAsStream(resource);<br>            sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);<br>        } catch (IOException e) {<br>            e.printStackTrace();<br>        }<br>    }<br>    public static SqlSession getSqlSession(){<br>        return sqlSessionFactory.openSession(true);<br>    }<br>}</p><br><h2 id=\"e4lja\">mybatis-config.xml</h2><p><br>&lt;?xml version=\"1.0\" encoding=\"UTF-8\" ?&gt;<br>&lt;!DOCTYPE configuration<br>        PUBLIC \"-//mybatis.org//DTD Config 3.0//EN\"<br>        \"http://mybatis.org/dtd/mybatis-3-config.dtd\"&gt;<br>&lt;configuration&gt;<br>    &lt;!--configuration核心配置文件--&gt;<br>    &lt;environments default=\"development\"&gt;<br>        &lt;environment id=\"development\"&gt;<br>            &lt;transactionManager type=\"JDBC\"/&gt;<br>            &lt;dataSource type=\"POOLED\"&gt;<br>                &lt;property name=\"driver\" value=\"com.mysql.jdbc.Driver\"/&gt;<br>                &lt;property name=\"url\" value=\"jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false\"/&gt;<br>                &lt;property name=\"username\" value=\"root\"/&gt;<br>                &lt;property name=\"password\" value=\"root\"/&gt;<br>            &lt;/dataSource&gt;<br>        &lt;/environment&gt;<br>    &lt;/environments&gt;<br>    &lt;!--每个Mapper.XML都需要在Mybatis核心配置文件中注册--&gt;<br>    &lt;mappers&gt;<br>        &lt;mapper resource=\"*/*/*/*.xml\"/&gt;<br>    &lt;/mappers&gt;<br>&lt;/configuration&gt;</p>","success":true}
+2021-06-27 00:15:40.591 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025801288454144 [0;39m ------------- 结束 耗时：22 ms -------------
+2021-06-27 00:15:40.593 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025801288454144 [0;39m ------------- LoginInterceptor 结束 耗时：25 ms -------------
+2021-06-27 00:15:42.847 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:42.848 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-27 00:15:42.848 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-27 00:15:42.848 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-27 00:15:42.854 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:42.854 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:42.854 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:42.855 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025810876633088 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:42.855 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025810876633088 [0;39m 请求地址: http://127.0.0.1:8880/doc/find-content/2 GET
+2021-06-27 00:15:42.855 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025810876633088 [0;39m 类名方法: com.cq.wiki.controller.DocController.findContent
+2021-06-27 00:15:42.855 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025810876633088 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:42.855 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025810876633088 [0;39m 请求参数: [2]
+2021-06-27 00:15:42.856 DEBUG c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :137  [32m64025810876633088 [0;39m ==>  Preparing: select id , content from content where id = ?
+2021-06-27 00:15:42.856 DEBUG c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :137  [32m64025810876633088 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:42.857 TRACE c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :143  [32m64025810876633088 [0;39m <==    Columns: id, content
+2021-06-27 00:15:42.857 TRACE c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :143  [32m64025810876633088 [0;39m <==        Row: 2, <<BLOB>>
+2021-06-27 00:15:42.858 DEBUG c.cq.wiki.mapper.ContentMapper.selectByPrimaryKey :137  [32m64025810876633088 [0;39m <==      Total: 1
+2021-06-27 00:15:42.858 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseViewCount:137  [32m64025810876633088 [0;39m ==>  Preparing: update doc set view_count = view_count + 1 where id = ?;
+2021-06-27 00:15:42.858 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseViewCount:137  [32m64025810876633088 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:42.871 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseViewCount:137  [32m64025810876633088 [0;39m <==    Updates: 1
+2021-06-27 00:15:42.872 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025810876633088 [0;39m 返回结果: {"content":"<p><font color=\"#f9963b\" face=\"微软雅黑\" size=\"7\"><b><i>霍文慧~程崎</i></b></font></p>","success":true}
+2021-06-27 00:15:42.872 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025810876633088 [0;39m ------------- 结束 耗时：17 ms -------------
+2021-06-27 00:15:42.873 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025810876633088 [0;39m ------------- LoginInterceptor 结束 耗时：19 ms -------------
+2021-06-27 00:15:43.813 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:43.814 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：null
+2021-06-27 00:15:43.814 INFO  com.cq.wiki.interceptor.LoginInterceptor          :41   [32m                  [0;39m 未映射到方法，跳过token验证
+2021-06-27 00:15:43.814 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m                  [0;39m ------------- LoginInterceptor 结束 耗时：0 ms -------------
+2021-06-27 00:15:43.818 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025547440787456 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:43.818 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025547440787456 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:43.819 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025547440787456 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:43.819 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025814919942144 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:43.819 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025814919942144 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:43.819 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025814919942144 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:43.819 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025814919942144 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:43.820 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025814919942144 [0;39m 请求参数: [2]
+2021-06-27 00:15:43.820 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025814919942144 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:43.821 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025814919942144 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:43.824 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025814919942144 [0;39m <==    Updates: 1
+2021-06-27 00:15:43.824 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025814919942144 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:43.825 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025814919942144 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:43.826 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025814919942144 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:43.826 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025814919942144 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 2
+2021-06-27 00:15:43.826 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025814919942144 [0;39m <==      Total: 1
+2021-06-27 00:15:43.829 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025814919942144 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:43.829 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025814919942144 [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-27 00:15:43.830 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025814919942144 [0;39m ------------- LoginInterceptor 结束 耗时：12 ms -------------
+2021-06-27 00:15:43.830 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:43.834 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:54.674 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025551156940800 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:54.674 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025551156940800 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:54.675 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025551156940800 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:54.676 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025860457500672 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:54.676 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025860457500672 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:54.676 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025860457500672 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:54.676 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025860457500672 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:54.676 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025860457500672 [0;39m 请求参数: [2]
+2021-06-27 00:15:54.677 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025860457500672 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:54.677 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025860457500672 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:54.691 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025860457500672 [0;39m <==    Updates: 1
+2021-06-27 00:15:54.691 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025860457500672 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:54.692 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025860457500672 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:54.693 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025860457500672 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:54.693 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025860457500672 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 3
+2021-06-27 00:15:54.693 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025860457500672 [0;39m <==      Total: 1
+2021-06-27 00:15:54.695 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025860457500672 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:54.696 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025860457500672 [0;39m ------------- 结束 耗时：20 ms -------------
+2021-06-27 00:15:54.696 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:54.697 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:54.697 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025860457500672 [0;39m ------------- LoginInterceptor 结束 耗时：23 ms -------------
+2021-06-27 00:15:55.468 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:55.468 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:55.469 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:55.469 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025863783583744 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:55.469 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025863783583744 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:55.469 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025863783583744 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:55.469 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025863783583744 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:55.470 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025863783583744 [0;39m 请求参数: [2]
+2021-06-27 00:15:55.470 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025863783583744 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:55.471 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025863783583744 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:55.484 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025863783583744 [0;39m <==    Updates: 1
+2021-06-27 00:15:55.484 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025863783583744 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:55.485 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025863783583744 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:55.485 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025863783583744 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:55.486 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025863783583744 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 4
+2021-06-27 00:15:55.486 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025863783583744 [0;39m <==      Total: 1
+2021-06-27 00:15:55.488 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025863783583744 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:55.488 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025863783583744 [0;39m ------------- 结束 耗时：19 ms -------------
+2021-06-27 00:15:55.490 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025863783583744 [0;39m ------------- LoginInterceptor 结束 耗时：22 ms -------------
+2021-06-27 00:15:55.491 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:55.491 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:55.652 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:55.652 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:55.652 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:55.653 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025864555335680 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:55.653 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025864555335680 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:55.653 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025864555335680 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:55.653 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025864555335680 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:55.653 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025864555335680 [0;39m 请求参数: [2]
+2021-06-27 00:15:55.654 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025864555335680 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:55.654 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025864555335680 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:55.657 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025864555335680 [0;39m <==    Updates: 1
+2021-06-27 00:15:55.658 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025864555335680 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:55.658 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025864555335680 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:55.659 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025864555335680 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:55.659 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025864555335680 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 5
+2021-06-27 00:15:55.660 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025864555335680 [0;39m <==      Total: 1
+2021-06-27 00:15:55.662 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025864555335680 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:55.663 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025864555335680 [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-27 00:15:55.663 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:55.663 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:55.663 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025864555335680 [0;39m ------------- LoginInterceptor 结束 耗时：11 ms -------------
+2021-06-27 00:15:55.828 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025800969687040 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:55.828 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025800969687040 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:55.829 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025800969687040 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:55.829 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025865293533184 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:55.829 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025865293533184 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:55.829 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025865293533184 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:55.829 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025865293533184 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:55.829 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025865293533184 [0;39m 请求参数: [2]
+2021-06-27 00:15:55.830 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025865293533184 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:55.830 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025865293533184 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:55.832 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025865293533184 [0;39m <==    Updates: 1
+2021-06-27 00:15:55.833 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025865293533184 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:55.833 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025865293533184 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:55.834 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025865293533184 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:55.834 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025865293533184 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 6
+2021-06-27 00:15:55.834 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025865293533184 [0;39m <==      Total: 1
+2021-06-27 00:15:55.837 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025865293533184 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:55.837 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025865293533184 [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-27 00:15:55.838 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025865293533184 [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-27 00:15:55.839 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:55.840 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:56.003 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:56.003 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:56.004 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:56.004 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025866027536384 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:56.004 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025866027536384 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:56.004 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025866027536384 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:56.005 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025866027536384 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:56.005 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025866027536384 [0;39m 请求参数: [2]
+2021-06-27 00:15:56.005 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025866027536384 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:56.005 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025866027536384 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.008 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025866027536384 [0;39m <==    Updates: 1
+2021-06-27 00:15:56.009 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025866027536384 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:56.009 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025866027536384 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.010 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025866027536384 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:56.011 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025866027536384 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 7
+2021-06-27 00:15:56.012 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025866027536384 [0;39m <==      Total: 1
+2021-06-27 00:15:56.014 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025866027536384 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:56.015 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025866027536384 [0;39m ------------- 结束 耗时：11 ms -------------
+2021-06-27 00:15:56.015 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:56.016 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:56.016 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025866027536384 [0;39m ------------- LoginInterceptor 结束 耗时：13 ms -------------
+2021-06-27 00:15:56.339 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025801288454144 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:56.339 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025801288454144 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:56.339 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025801288454144 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:56.340 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025867436822528 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:56.340 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025867436822528 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:56.340 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025867436822528 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:56.340 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025867436822528 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:56.340 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025867436822528 [0;39m 请求参数: [2]
+2021-06-27 00:15:56.341 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025867436822528 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:56.341 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025867436822528 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.354 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025867436822528 [0;39m <==    Updates: 1
+2021-06-27 00:15:56.355 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025867436822528 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:56.356 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025867436822528 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.357 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025867436822528 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:56.357 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025867436822528 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 8
+2021-06-27 00:15:56.358 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025867436822528 [0;39m <==      Total: 1
+2021-06-27 00:15:56.360 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025867436822528 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:56.361 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025867436822528 [0;39m ------------- 结束 耗时：21 ms -------------
+2021-06-27 00:15:56.361 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025867436822528 [0;39m ------------- LoginInterceptor 结束 耗时：22 ms -------------
+2021-06-27 00:15:56.362 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:56.363 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:56.501 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:56.501 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:56.502 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:56.502 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025868116299776 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:56.502 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025868116299776 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:56.502 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025868116299776 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:56.502 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025868116299776 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:56.502 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025868116299776 [0;39m 请求参数: [2]
+2021-06-27 00:15:56.503 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025868116299776 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:56.503 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025868116299776 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.505 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025868116299776 [0;39m <==    Updates: 1
+2021-06-27 00:15:56.506 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025868116299776 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:56.506 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025868116299776 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.508 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025868116299776 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:56.508 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025868116299776 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 9
+2021-06-27 00:15:56.508 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025868116299776 [0;39m <==      Total: 1
+2021-06-27 00:15:56.511 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025868116299776 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:56.512 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025868116299776 [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-27 00:15:56.512 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:56.513 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:56.513 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025868116299776 [0;39m ------------- LoginInterceptor 结束 耗时：12 ms -------------
+2021-06-27 00:15:56.662 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025810876633088 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:56.662 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025810876633088 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:56.662 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025810876633088 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:56.663 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025868791582720 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:56.663 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025868791582720 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:56.663 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025868791582720 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:56.663 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025868791582720 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:56.663 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025868791582720 [0;39m 请求参数: [2]
+2021-06-27 00:15:56.663 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025868791582720 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:56.664 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025868791582720 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.666 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025868791582720 [0;39m <==    Updates: 1
+2021-06-27 00:15:56.667 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025868791582720 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:56.667 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025868791582720 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.668 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025868791582720 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:56.669 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025868791582720 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 10
+2021-06-27 00:15:56.669 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025868791582720 [0;39m <==      Total: 1
+2021-06-27 00:15:56.671 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025868791582720 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:56.671 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025868791582720 [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-27 00:15:56.672 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025868791582720 [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-27 00:15:56.672 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:56.673 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:56.845 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:56.845 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m                  [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:56.846 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m                  [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:56.846 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025869559140352 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:56.846 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025869559140352 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:56.846 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025869559140352 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:56.846 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025869559140352 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:56.847 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025869559140352 [0;39m 请求参数: [2]
+2021-06-27 00:15:56.847 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025869559140352 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:56.847 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025869559140352 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.850 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025869559140352 [0;39m <==    Updates: 1
+2021-06-27 00:15:56.850 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025869559140352 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:56.850 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025869559140352 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:56.851 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025869559140352 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:56.852 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025869559140352 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 11
+2021-06-27 00:15:56.852 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025869559140352 [0;39m <==      Total: 1
+2021-06-27 00:15:56.854 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025869559140352 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:56.855 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025869559140352 [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-27 00:15:56.856 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025869559140352 [0;39m ------------- LoginInterceptor 结束 耗时：11 ms -------------
+2021-06-27 00:15:56.858 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:56.858 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:57.019 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025814919942144 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:57.019 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025814919942144 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:57.020 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025814919942144 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:57.020 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025870288949248 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:57.021 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025870288949248 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:57.021 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025870288949248 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:57.021 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025870288949248 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:57.021 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025870288949248 [0;39m 请求参数: [2]
+2021-06-27 00:15:57.021 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025870288949248 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:57.021 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025870288949248 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.024 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025870288949248 [0;39m <==    Updates: 1
+2021-06-27 00:15:57.025 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025870288949248 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:57.025 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025870288949248 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.026 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025870288949248 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:57.027 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025870288949248 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 12
+2021-06-27 00:15:57.027 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025870288949248 [0;39m <==      Total: 1
+2021-06-27 00:15:57.029 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025870288949248 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:57.030 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025870288949248 [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-27 00:15:57.031 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:57.031 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025870288949248 [0;39m ------------- LoginInterceptor 结束 耗时：12 ms -------------
+2021-06-27 00:15:57.031 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:57.181 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025860457500672 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:57.182 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025860457500672 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:57.182 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025860457500672 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:57.183 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025870972620800 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:57.183 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025870972620800 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:57.183 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025870972620800 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:57.183 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025870972620800 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:57.183 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025870972620800 [0;39m 请求参数: [2]
+2021-06-27 00:15:57.184 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025870972620800 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:57.184 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025870972620800 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.186 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025870972620800 [0;39m <==    Updates: 1
+2021-06-27 00:15:57.187 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025870972620800 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:57.187 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025870972620800 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.188 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025870972620800 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:57.188 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025870972620800 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 13
+2021-06-27 00:15:57.188 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025870972620800 [0;39m <==      Total: 1
+2021-06-27 00:15:57.192 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025870972620800 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:57.192 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025870972620800 [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-27 00:15:57.193 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025870972620800 [0;39m ------------- LoginInterceptor 结束 耗时：11 ms -------------
+2021-06-27 00:15:57.193 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:57.194 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:57.340 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025863783583744 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:57.340 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025863783583744 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:57.341 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025863783583744 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:57.341 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025871635320832 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:57.341 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025871635320832 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:57.341 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025871635320832 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:57.342 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025871635320832 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:57.342 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025871635320832 [0;39m 请求参数: [2]
+2021-06-27 00:15:57.342 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025871635320832 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:57.342 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025871635320832 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.345 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025871635320832 [0;39m <==    Updates: 1
+2021-06-27 00:15:57.346 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025871635320832 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:57.346 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025871635320832 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.347 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025871635320832 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:57.347 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025871635320832 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 14
+2021-06-27 00:15:57.347 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025871635320832 [0;39m <==      Total: 1
+2021-06-27 00:15:57.349 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025871635320832 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:57.349 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025871635320832 [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-27 00:15:57.350 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:57.350 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025871635320832 [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-27 00:15:57.350 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:57.525 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025864555335680 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:57.525 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025864555335680 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:57.526 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025864555335680 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:57.526 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025872411267072 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:57.527 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025872411267072 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:57.527 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025872411267072 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:57.527 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025872411267072 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:57.527 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025872411267072 [0;39m 请求参数: [2]
+2021-06-27 00:15:57.527 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025872411267072 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:57.528 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025872411267072 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.530 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025872411267072 [0;39m <==    Updates: 1
+2021-06-27 00:15:57.531 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025872411267072 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:57.531 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025872411267072 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.532 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025872411267072 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:57.532 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025872411267072 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 15
+2021-06-27 00:15:57.532 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025872411267072 [0;39m <==      Total: 1
+2021-06-27 00:15:57.534 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025872411267072 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:57.535 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025872411267072 [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-27 00:15:57.535 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:57.535 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025872411267072 [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-27 00:15:57.536 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:57.699 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025865293533184 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:57.700 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025865293533184 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:57.700 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025865293533184 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:57.700 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025873141075968 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:57.700 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025873141075968 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:57.701 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025873141075968 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:57.701 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025873141075968 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:57.701 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025873141075968 [0;39m 请求参数: [2]
+2021-06-27 00:15:57.701 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025873141075968 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:57.701 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025873141075968 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.704 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025873141075968 [0;39m <==    Updates: 1
+2021-06-27 00:15:57.705 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025873141075968 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:57.705 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025873141075968 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.706 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025873141075968 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:57.706 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025873141075968 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 16
+2021-06-27 00:15:57.707 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025873141075968 [0;39m <==      Total: 1
+2021-06-27 00:15:57.709 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025873141075968 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:57.710 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025873141075968 [0;39m ------------- 结束 耗时：10 ms -------------
+2021-06-27 00:15:57.710 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025873141075968 [0;39m ------------- LoginInterceptor 结束 耗时：10 ms -------------
+2021-06-27 00:15:57.712 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:57.712 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:15:57.876 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025866027536384 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:15:57.876 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025866027536384 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:15:57.876 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025866027536384 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:15:57.877 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64025873883467776 [0;39m ------------- 开始 -------------
+2021-06-27 00:15:57.877 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64025873883467776 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:15:57.877 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64025873883467776 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:15:57.877 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64025873883467776 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:15:57.877 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64025873883467776 [0;39m 请求参数: [2]
+2021-06-27 00:15:57.877 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025873883467776 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:15:57.878 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025873883467776 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.880 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64025873883467776 [0;39m <==    Updates: 1
+2021-06-27 00:15:57.880 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025873883467776 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:15:57.881 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025873883467776 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:15:57.882 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025873883467776 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:15:57.882 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64025873883467776 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 17
+2021-06-27 00:15:57.882 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64025873883467776 [0;39m <==      Total: 1
+2021-06-27 00:15:57.884 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64025873883467776 [0;39m 返回结果: {"success":true}
+2021-06-27 00:15:57.885 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64025873883467776 [0;39m ------------- 结束 耗时：8 ms -------------
+2021-06-27 00:15:57.885 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64025873883467776 [0;39m ------------- LoginInterceptor 结束 耗时：9 ms -------------
+2021-06-27 00:15:57.886 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:15:57.886 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:16:05.011 INFO  com.cq.wiki.job.DocJob                            :31   [32m64025903805632512 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:16:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025903805632512 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:16:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025903805632512 [0;39m ==> Parameters: 
+2021-06-27 00:16:05.025 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64025903805632512 [0;39m <==    Updates: 7
+2021-06-27 00:16:05.026 INFO  com.cq.wiki.job.DocJob                            :34   [32m64025903805632512 [0;39m 更新电子书下的文档数据结束，耗时：15毫秒
+2021-06-27 00:16:35.011 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026029634752512 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:16:35.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026029634752512 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:16:35.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026029634752512 [0;39m ==> Parameters: 
+2021-06-27 00:16:35.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026029634752512 [0;39m <==    Updates: 7
+2021-06-27 00:16:35.013 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026029634752512 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-06-27 00:17:05.012 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026155468066816 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:17:05.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026155468066816 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:17:05.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026155468066816 [0;39m ==> Parameters: 
+2021-06-27 00:17:05.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026155468066816 [0;39m <==    Updates: 7
+2021-06-27 00:17:05.016 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026155468066816 [0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-06-27 00:17:08.931 INFO  com.cq.wiki.interceptor.LoginInterceptor          :33   [32m64025868116299776 [0;39m ------------- LoginInterceptor 开始 -------------
+2021-06-27 00:17:08.931 INFO  com.cq.wiki.interceptor.LoginInterceptor          :38   [32m64025868116299776 [0;39m 从请求头里获取token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE
+2021-06-27 00:17:08.931 INFO  com.cq.wiki.interceptor.LoginInterceptor          :60   [32m64025868116299776 [0;39m token：eyJhbGciOiJIUzI1NiJ9.eyJsb2dpbk5hbWUiOiJ0ZXN0IiwibmFtZSI6Iua1i-ivlSIsImlkIjo2MjkwOTYxNTc0MTk5LCJleHAiOjE2MjQ4MDE3MTcsImlhdCI6MTYyNDcxNTMxN30.uC0_nn2osERpe-I31HnyBpcuZLZHFTnZ9Nk9Zsvl5lE验证通过
+2021-06-27 00:17:08.932 INFO  com.cq.wiki.aspect.LogAspect                      :52   [32m64026171909738496 [0;39m ------------- 开始 -------------
+2021-06-27 00:17:08.932 INFO  com.cq.wiki.aspect.LogAspect                      :53   [32m64026171909738496 [0;39m 请求地址: http://127.0.0.1:8880/doc/vote/2 GET
+2021-06-27 00:17:08.932 INFO  com.cq.wiki.aspect.LogAspect                      :54   [32m64026171909738496 [0;39m 类名方法: com.cq.wiki.controller.DocController.vote
+2021-06-27 00:17:08.932 INFO  com.cq.wiki.aspect.LogAspect                      :55   [32m64026171909738496 [0;39m 远程地址: 127.0.0.1
+2021-06-27 00:17:08.932 INFO  com.cq.wiki.aspect.LogAspect                      :77   [32m64026171909738496 [0;39m 请求参数: [2]
+2021-06-27 00:17:08.933 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64026171909738496 [0;39m ==>  Preparing: update doc set vote_count = vote_count + 1 where id = ?;
+2021-06-27 00:17:08.933 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64026171909738496 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:17:08.936 DEBUG com.cq.wiki.mapper.DocMapperCust.increaseVoteCount:137  [32m64026171909738496 [0;39m <==    Updates: 1
+2021-06-27 00:17:08.936 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64026171909738496 [0;39m ==>  Preparing: select id, ebook_id, parent, `name`, sort, view_count, vote_count from doc where id = ?
+2021-06-27 00:17:08.936 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64026171909738496 [0;39m ==> Parameters: 2(Long)
+2021-06-27 00:17:08.937 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64026171909738496 [0;39m <==    Columns: id, ebook_id, parent, name, sort, view_count, vote_count
+2021-06-27 00:17:08.938 TRACE com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :143  [32m64026171909738496 [0;39m <==        Row: 2, 1, 1, 文档1.1, 1, 11, 18
+2021-06-27 00:17:08.938 DEBUG com.cq.wiki.mapper.DocMapper.selectByPrimaryKey   :137  [32m64026171909738496 [0;39m <==      Total: 1
+2021-06-27 00:17:08.940 INFO  com.cq.wiki.aspect.LogAspect                      :89   [32m64026171909738496 [0;39m 返回结果: {"success":true}
+2021-06-27 00:17:08.941 INFO  com.cq.wiki.aspect.LogAspect                      :90   [32m64026171909738496 [0;39m ------------- 结束 耗时：9 ms -------------
+2021-06-27 00:17:08.941 INFO  com.cq.wiki.rocketmq.VoteTopicConsumer            :25   [32m                  [0;39m ROCKETMQ收到消息：【文档1.1】被点赞！
+2021-06-27 00:17:08.941 INFO  com.cq.wiki.websocket.WebSocketServer             :71   [32m                  [0;39m 推送消息：XB6QbHWK5H，内容：【文档1.1】被点赞！
+2021-06-27 00:17:08.942 INFO  com.cq.wiki.interceptor.LoginInterceptor          :73   [32m64026171909738496 [0;39m ------------- LoginInterceptor 结束 耗时：11 ms -------------
+2021-06-27 00:17:35.007 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026281276215296 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:17:35.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026281276215296 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:17:35.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026281276215296 [0;39m ==> Parameters: 
+2021-06-27 00:17:35.020 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026281276215296 [0;39m <==    Updates: 7
+2021-06-27 00:17:35.020 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026281276215296 [0;39m 更新电子书下的文档数据结束，耗时：13毫秒
+2021-06-27 00:18:05.010 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026407117918208 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:18:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026407117918208 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:18:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026407117918208 [0;39m ==> Parameters: 
+2021-06-27 00:18:05.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026407117918208 [0;39m <==    Updates: 7
+2021-06-27 00:18:05.015 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026407117918208 [0;39m 更新电子书下的文档数据结束，耗时：5毫秒
+2021-06-27 00:18:35.016 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026532972204032 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:18:35.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026532972204032 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:18:35.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026532972204032 [0;39m ==> Parameters: 
+2021-06-27 00:18:35.018 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026532972204032 [0;39m <==    Updates: 7
+2021-06-27 00:18:35.019 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026532972204032 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-27 00:19:05.001 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026658738409472 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:19:05.002 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026658738409472 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:19:05.002 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026658738409472 [0;39m ==> Parameters: 
+2021-06-27 00:19:05.003 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026658738409472 [0;39m <==    Updates: 7
+2021-06-27 00:19:05.005 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026658738409472 [0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-06-27 00:19:35.006 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026784588500992 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:19:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026784588500992 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:19:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026784588500992 [0;39m ==> Parameters: 
+2021-06-27 00:19:35.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026784588500992 [0;39m <==    Updates: 7
+2021-06-27 00:19:35.009 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026784588500992 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-27 00:20:05.010 INFO  com.cq.wiki.job.DocJob                            :31   [32m64026910434398208 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:20:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026910434398208 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:20:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026910434398208 [0;39m ==> Parameters: 
+2021-06-27 00:20:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64026910434398208 [0;39m <==    Updates: 7
+2021-06-27 00:20:05.012 INFO  com.cq.wiki.job.DocJob                            :34   [32m64026910434398208 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-06-27 00:20:35.014 INFO  com.cq.wiki.job.DocJob                            :31   [32m64027036280295424 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:20:35.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027036280295424 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:20:35.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027036280295424 [0;39m ==> Parameters: 
+2021-06-27 00:20:35.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027036280295424 [0;39m <==    Updates: 7
+2021-06-27 00:20:35.017 INFO  com.cq.wiki.job.DocJob                            :34   [32m64027036280295424 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-27 00:21:05.015 INFO  com.cq.wiki.job.DocJob                            :31   [32m64027162113609728 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:21:05.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027162113609728 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:21:05.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027162113609728 [0;39m ==> Parameters: 
+2021-06-27 00:21:05.018 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027162113609728 [0;39m <==    Updates: 7
+2021-06-27 00:21:05.018 INFO  com.cq.wiki.job.DocJob                            :34   [32m64027162113609728 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-27 00:21:35.006 INFO  com.cq.wiki.job.DocJob                            :31   [32m64027287904980992 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:21:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027287904980992 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:21:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027287904980992 [0;39m ==> Parameters: 
+2021-06-27 00:21:35.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027287904980992 [0;39m <==    Updates: 7
+2021-06-27 00:21:35.008 INFO  com.cq.wiki.job.DocJob                            :34   [32m64027287904980992 [0;39m 更新电子书下的文档数据结束，耗时：2毫秒
+2021-06-27 00:22:05.009 INFO  com.cq.wiki.job.DocJob                            :31   [32m64027413746683904 [0;39m 更新电子书下的文档数据开始
+2021-06-27 00:22:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027413746683904 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-27 00:22:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027413746683904 [0;39m ==> Parameters: 
+2021-06-27 00:22:05.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64027413746683904 [0;39m <==    Updates: 7
+2021-06-27 00:22:05.014 INFO  com.cq.wiki.job.DocJob                            :34   [32m64027413746683904 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-27 00:22:10.166 INFO  com.cq.wiki.websocket.WebSocketServer             :41   [32m                  [0;39m 连接关闭，token：XB6QbHWK5H，session id：0！当前连接数：0
+2021-06-27 00:22:10.174 INFO  o.a.r.s.support.DefaultRocketMQListenerContainer  :216  [32m                  [0;39m container destroyed, DefaultRocketMQListenerContainer{consumerGroup='default', nameServer='127.0.0.1:9876', topic='VOTE_TOPIC', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING}
+2021-06-27 00:22:10.174 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-06-27 00:22:10.175 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-27 00:22:10.176 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-2 - Shutdown initiated...
+2021-06-27 00:22:10.189 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-2 - Shutdown completed.
+2021-06-27 00:22:10.193 INFO  RocketmqRemoting                                  :95   [32m                  [0;39m closeChannel: close the connection to remote address[127.0.0.1:9876] result: true
+2021-06-27 00:22:10.194 INFO  RocketmqRemoting                                  :95   [32m                  [0;39m closeChannel: close the connection to remote address[192.168.0.107:10909] result: true
+2021-06-27 00:22:10.195 INFO  RocketmqRemoting                                  :95   [32m                  [0;39m closeChannel: close the connection to remote address[192.168.0.107:10911] result: true
+2021-06-27 00:22:10.198 INFO  RocketmqRemoting                                  :95   [32m                  [0;39m closeChannel: close the connection to remote address[127.0.0.1:9876] result: true
+2021-06-27 00:22:10.199 INFO  RocketmqRemoting                                  :95   [32m                  [0;39m closeChannel: close the connection to remote address[192.168.0.107:10911] result: true
