@@ -1,214 +1,23 @@
-2021-06-26 18:11:10.678 ERROR com.cq.wiki.controller.ControllerExceptionHandler :59   [32m                  [0;39m 系统异常：
-org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.cq.wiki.resp.CommonResp com.cq.wiki.controller.DocController.save(com.cq.wiki.req.DocSaveReq) with 3 errors: [Field error in object 'docSaveReq' on field 'sort': rejected value [null]; codes [NotNull.docSaveReq.sort,NotNull.sort,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.sort,sort]; arguments []; default message [sort]]; default message [【顺序】不能为空]] [Field error in object 'docSaveReq' on field 'name': rejected value [null]; codes [NotNull.docSaveReq.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.name,name]; arguments []; default message [name]]; default message [【名称】不能为空]] [Field error in object 'docSaveReq' on field 'parent': rejected value [null]; codes [NotNull.docSaveReq.parent,NotNull.parent,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [docSaveReq.parent,parent]; arguments []; default message [parent]]; default message [【父文档】不能为空]] 
-	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:139)
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:167)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:134)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2021-06-26 18:25:23.912 ERROR o.s.s.support.TaskUtils$LoggingErrorHandler       :95   [32m                  [0;39m Unexpected error occurred in scheduled task
-java.lang.InterruptedException: sleep interrupted
-	at java.lang.Thread.sleep(Native Method)
-	at com.cq.wiki.job.TestJob.simple(TestJob.java:23)
-	at sun.reflect.GeneratedMethodAccessor201.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-2021-06-26 21:33:56.205 ERROR org.springframework.boot.SpringApplication        :837  [32m                  [0;39m Application run failed
-java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.cq.wiki.config.WikiApplication.main(WikiApplication.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@56402b40]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
-	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
-	... 21 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
-	... 37 common frames omitted
-Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:348)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	... 41 common frames omitted
-2021-06-26 21:34:56.822 ERROR org.springframework.boot.SpringApplication        :837  [32m                  [0;39m Application run failed
-java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
-	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
-	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.cq.wiki.config.WikiApplication.main(WikiApplication.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.config.WebSocketConfig] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@31d68f29]
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
-	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
-	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
-	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1688)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
-	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
-	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
-	... 21 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: org/springframework/web/socket/server/standard/ServerEndpointExporter
-	at java.lang.Class.getDeclaredMethods0(Native Method)
-	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
-	at java.lang.Class.getDeclaredMethods(Class.java:1975)
-	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
-	... 37 common frames omitted
-Caused by: java.lang.ClassNotFoundException: org.springframework.web.socket.server.standard.ServerEndpointExporter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:348)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	... 41 common frames omitted
-2021-06-26 22:02:51.158 ERROR org.springframework.boot.SpringApplication        :837  [32m                  [0;39m Application run failed
-java.lang.IllegalStateException: Failed to register @ServerEndpoint class: class com.cq.wiki.websocket.WebSocketServer$$EnhancerBySpringCGLIB$$13ffa9cd
-	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoint(ServerEndpointExporter.java:159)
-	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoints(ServerEndpointExporter.java:134)
-	at org.springframework.web.socket.server.standard.ServerEndpointExporter.afterSingletonsInstantiated(ServerEndpointExporter.java:112)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:914)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.cq.wiki.config.WikiApplication.main(WikiApplication.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: javax.websocket.DeploymentException: Cannot deploy POJO class [com.cq.wiki.websocket.WebSocketServer$$EnhancerBySpringCGLIB$$13ffa9cd] as it is not annotated with @ServerEndpoint
-	at org.apache.tomcat.websocket.server.WsServerContainer.addEndpoint(WsServerContainer.java:245)
-	at org.apache.tomcat.websocket.server.WsServerContainer.addEndpoint(WsServerContainer.java:228)
-	at org.springframework.web.socket.server.standard.ServerEndpointExporter.registerEndpoint(ServerEndpointExporter.java:156)
-	... 16 common frames omitted
-2021-06-26 22:12:59.521 ERROR org.springframework.boot.SpringApplication        :837  [32m                  [0;39m Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [D:\IdeaProjects\wiki\target\classes\com\cq\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4ec42828]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
+2021-06-27 00:08:36.192 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.cq.wiki.websocket.WebSocketServer' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.cq.wiki.websocket.WebSocketServer' in your configuration.
+
+2021-06-27 00:12:04.465 ERROR org.springframework.boot.SpringApplication        :837  [32m                  [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docService' defined in file [D:\IdeaProjects\wiki\target\classes\com\cq\wiki\service\DocService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.service.DocService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1f4bc34]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
@@ -228,69 +37,22 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@4ec42828]
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
-	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:347)
-	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568)
-	... 19 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: Lcom/cq/wiki/service/DocService;
-	at java.lang.Class.getDeclaredFields0(Native Method)
-	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
-	at java.lang.Class.getDeclaredFields(Class.java:1916)
-	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
-	... 25 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.cq.wiki.service.DocService
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:348)
-	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	... 29 common frames omitted
-2021-06-26 22:14:43.448 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.cq.wiki.service.WsService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.cq.wiki.service.WsService' in your configuration.
-
-2021-06-26 22:16:51.526 ERROR org.springframework.boot.SpringApplication        :837  [32m                  [0;39m Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docController' defined in file [D:\IdeaProjects\wiki\target\classes\com\cq\wiki\controller\DocController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@68e7b822]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'docService' defined in file [D:\IdeaProjects\wiki\target\classes\com\cq\wiki\service\DocService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.service.DocService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1f4bc34]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
-	at com.cq.wiki.config.WikiApplication.main(WikiApplication.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.controller.DocController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@68e7b822]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cq.wiki.service.DocService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1f4bc34]
 	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
 	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
 	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:366)
@@ -298,14 +60,14 @@ Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.cq.w
 	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:295)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1093)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:568)
-	... 19 common frames omitted
-Caused by: java.lang.NoClassDefFoundError: Lcom/cq/wiki/service/DocService;
+	... 33 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lorg/apache/rocketmq/spring/core/RocketMQTemplate;
 	at java.lang.Class.getDeclaredFields0(Native Method)
 	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
 	at java.lang.Class.getDeclaredFields(Class.java:1916)
 	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
-	... 25 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.cq.wiki.service.DocService
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.apache.rocketmq.spring.core.RocketMQTemplate
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:382)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
@@ -314,64 +76,4 @@ Caused by: java.lang.ClassNotFoundException: com.cq.wiki.service.DocService
 	at java.lang.Class.forName(Class.java:348)
 	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
-	... 29 common frames omitted
-2021-06-26 22:21:16.382 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.cq.wiki.service.WsService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.cq.wiki.service.WsService' in your configuration.
-
-2021-06-26 22:22:05.096 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.cq.wiki.service.WsService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.cq.wiki.service.WsService' in your configuration.
-
-2021-06-26 22:22:49.294 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.cq.wiki.service.WsService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.cq.wiki.service.WsService' in your configuration.
-
-2021-06-26 22:23:19.695 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.cq.wiki.service.WsService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.cq.wiki.service.WsService' in your configuration.
-
+	... 43 common frames omitted
