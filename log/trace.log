@@ -7330,3 +7330,190 @@ Consider defining a bean of type 'com.cq.wiki.service.WsService' in your configu
 2021-06-26 22:46:05.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003254551449600 [0;39m ==> Parameters: 
 2021-06-26 22:46:05.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003254551449600 [0;39m <==    Updates: 7
 2021-06-26 22:46:05.008 INFO  com.cq.wiki.job.DocJob                            :34   [32m64003254551449600 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:46:35.016 INFO  com.cq.wiki.job.DocJob                            :31   [32m64003380414124032 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:46:35.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003380414124032 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:46:35.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003380414124032 [0;39m ==> Parameters: 
+2021-06-26 22:46:35.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003380414124032 [0;39m <==    Updates: 7
+2021-06-26 22:46:35.016 INFO  com.cq.wiki.job.DocJob                            :34   [32m64003380414124032 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:47:05.017 INFO  com.cq.wiki.job.DocJob                            :31   [32m64003506247438336 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:47:05.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003506247438336 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:47:05.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003506247438336 [0;39m ==> Parameters: 
+2021-06-26 22:47:05.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003506247438336 [0;39m <==    Updates: 7
+2021-06-26 22:47:05.017 INFO  com.cq.wiki.job.DocJob                            :34   [32m64003506247438336 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:47:35.011 INFO  com.cq.wiki.job.DocJob                            :31   [32m64003632051392512 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:47:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003632051392512 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:47:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003632051392512 [0;39m ==> Parameters: 
+2021-06-26 22:47:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003632051392512 [0;39m <==    Updates: 7
+2021-06-26 22:47:35.011 INFO  com.cq.wiki.job.DocJob                            :34   [32m64003632051392512 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:48:05.006 INFO  com.cq.wiki.job.DocJob                            :31   [32m64003757859540992 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:48:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003757859540992 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:48:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003757859540992 [0;39m ==> Parameters: 
+2021-06-26 22:48:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003757859540992 [0;39m <==    Updates: 7
+2021-06-26 22:48:05.006 INFO  com.cq.wiki.job.DocJob                            :34   [32m64003757859540992 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:48:35.007 INFO  com.cq.wiki.job.DocJob                            :31   [32m64003883692855296 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:48:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003883692855296 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:48:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003883692855296 [0;39m ==> Parameters: 
+2021-06-26 22:48:35.007 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64003883692855296 [0;39m <==    Updates: 7
+2021-06-26 22:48:35.007 INFO  com.cq.wiki.job.DocJob                            :34   [32m64003883692855296 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:49:05.011 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004009538752512 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:49:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004009538752512 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:49:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004009538752512 [0;39m ==> Parameters: 
+2021-06-26 22:49:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004009538752512 [0;39m <==    Updates: 7
+2021-06-26 22:49:05.011 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004009538752512 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:49:35.011 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004135367872512 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:49:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004135367872512 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:49:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004135367872512 [0;39m ==> Parameters: 
+2021-06-26 22:49:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004135367872512 [0;39m <==    Updates: 7
+2021-06-26 22:49:35.011 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004135367872512 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:50:05.018 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004261226352640 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:50:05.018 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004261226352640 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:50:05.018 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004261226352640 [0;39m ==> Parameters: 
+2021-06-26 22:50:05.018 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004261226352640 [0;39m <==    Updates: 7
+2021-06-26 22:50:05.018 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004261226352640 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:50:35.005 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004387000946688 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:50:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004387000946688 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:50:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004387000946688 [0;39m ==> Parameters: 
+2021-06-26 22:50:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004387000946688 [0;39m <==    Updates: 7
+2021-06-26 22:50:35.005 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004387000946688 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:51:05.020 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004512892981248 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:51:05.020 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004512892981248 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:51:05.020 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004512892981248 [0;39m ==> Parameters: 
+2021-06-26 22:51:05.020 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004512892981248 [0;39m <==    Updates: 7
+2021-06-26 22:51:05.020 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004512892981248 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:51:35.009 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004638675963904 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:51:35.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004638675963904 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:51:35.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004638675963904 [0;39m ==> Parameters: 
+2021-06-26 22:51:35.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004638675963904 [0;39m <==    Updates: 7
+2021-06-26 22:51:35.009 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004638675963904 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:52:05.019 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004764547026944 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:52:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004764547026944 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:52:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004764547026944 [0;39m ==> Parameters: 
+2021-06-26 22:52:05.019 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004764547026944 [0;39m <==    Updates: 7
+2021-06-26 22:52:05.019 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004764547026944 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:52:35.005 INFO  com.cq.wiki.job.DocJob                            :31   [32m64004890317426688 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:52:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004890317426688 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:52:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004890317426688 [0;39m ==> Parameters: 
+2021-06-26 22:52:35.008 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64004890317426688 [0;39m <==    Updates: 7
+2021-06-26 22:52:35.009 INFO  com.cq.wiki.job.DocJob                            :34   [32m64004890317426688 [0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-06-26 22:53:05.003 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005016138158080 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:53:05.003 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005016138158080 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:53:05.003 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005016138158080 [0;39m ==> Parameters: 
+2021-06-26 22:53:05.003 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005016138158080 [0;39m <==    Updates: 7
+2021-06-26 22:53:05.003 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005016138158080 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:53:35.009 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005141992443904 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:53:35.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005141992443904 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:53:35.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005141992443904 [0;39m ==> Parameters: 
+2021-06-26 22:53:35.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005141992443904 [0;39m <==    Updates: 7
+2021-06-26 22:53:35.009 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005141992443904 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:54:05.011 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005267829952512 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:54:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005267829952512 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:54:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005267829952512 [0;39m ==> Parameters: 
+2021-06-26 22:54:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005267829952512 [0;39m <==    Updates: 7
+2021-06-26 22:54:05.011 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005267829952512 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:54:18.660 INFO  com.cq.wiki.websocket.WebSocketServer             :41   [32m                  [0;39m 连接关闭，token：9bleTcfq8R，session id：2！当前连接数：0
+2021-06-26 22:54:18.665 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-06-26 22:54:18.666 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-26 22:54:18.667 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-3 - Shutdown initiated...
+2021-06-26 22:54:18.675 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-3 - Shutdown completed.
+2021-06-26 22:54:18.838 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 14592 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-26 22:54:18.838 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-26 22:54:19.223 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-26 22:54:19.224 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-26 22:54:19.224 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-26 22:54:19.224 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-26 22:54:19.224 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-26 22:54:19.225 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-26 22:54:19.225 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-26 22:54:19.225 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-26 22:54:19.225 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-26 22:54:19.235 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-26 22:54:19.235 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 395 ms
+2021-06-26 22:54:19.644 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-26 22:54:19.671 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-26 22:54:19.768 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-06-26 22:54:19.804 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-26 22:54:19.820 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-26 22:54:19.893 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.08 seconds (JVM running for 1693.736)
+2021-06-26 22:54:19.894 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-26 22:54:19.895 INFO  com.cq.wiki.config.WikiApplication                :26   [32m                  [0;39m 启动成功！！
+2021-06-26 22:54:19.895 INFO  com.cq.wiki.config.WikiApplication                :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-26 22:54:35.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005393667461120 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:54:35.018 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m64005393667461120 [0;39m HikariPool-4 - Starting...
+2021-06-26 22:54:35.032 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m64005393667461120 [0;39m HikariPool-4 - Start completed.
+2021-06-26 22:54:35.032 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005393667461120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:54:35.032 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005393667461120 [0;39m ==> Parameters: 
+2021-06-26 22:54:35.033 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005393667461120 [0;39m <==    Updates: 7
+2021-06-26 22:54:35.034 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005393667461120 [0;39m 更新电子书下的文档数据结束，耗时：19毫秒
+2021-06-26 22:55:05.003 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005519454638080 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:55:05.004 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005519454638080 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:55:05.004 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005519454638080 [0;39m ==> Parameters: 
+2021-06-26 22:55:05.006 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005519454638080 [0;39m <==    Updates: 7
+2021-06-26 22:55:05.006 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005519454638080 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-26 22:55:35.005 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005645292146688 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:55:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005645292146688 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:55:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005645292146688 [0;39m ==> Parameters: 
+2021-06-26 22:55:35.005 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005645292146688 [0;39m <==    Updates: 7
+2021-06-26 22:55:35.005 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005645292146688 [0;39m 更新电子书下的文档数据结束，耗时：0毫秒
+2021-06-26 22:55:45.944 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :218  [32m                  [0;39m Shutting down ExecutorService 'taskScheduler'
+2021-06-26 22:55:45.944 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-26 22:55:45.945 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2021-06-26 22:55:45.954 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2021-06-26 22:55:46.111 INFO  com.cq.wiki.config.WikiApplication                :55   [32m                  [0;39m Starting WikiApplication on LAPTOP-T0P8U4U3 with PID 14592 (D:\IdeaProjects\wiki\target\classes started by 程崎 in D:\IdeaProjects\wiki)
+2021-06-26 22:55:46.111 INFO  com.cq.wiki.config.WikiApplication                :651  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2021-06-26 22:55:46.438 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2021-06-26 22:55:46.438 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2021-06-26 22:55:46.438 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2021-06-26 22:55:46.438 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-26 22:55:46.439 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m An older version [1.2.14] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-06-26 22:55:46.439 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m Loaded Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-06-26 22:55:46.439 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-26 22:55:46.439 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-26 22:55:46.439 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m                  [0;39m OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-06-26 22:55:46.450 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2021-06-26 22:55:46.450 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :285  [32m                  [0;39m Root WebApplicationContext: initialization completed in 337 ms
+2021-06-26 22:55:46.842 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-26 22:55:46.865 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2021-06-26 22:55:46.960 INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler :181  [32m                  [0;39m Initializing ExecutorService 'taskScheduler'
+2021-06-26 22:55:47.014 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2021-06-26 22:55:47.019 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2021-06-26 22:55:47.086 INFO  com.cq.wiki.config.WikiApplication                :61   [32m                  [0;39m Started WikiApplication in 1.003 seconds (JVM running for 1780.928)
+2021-06-26 22:55:47.087 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2021-06-26 22:55:47.087 INFO  com.cq.wiki.config.WikiApplication                :26   [32m                  [0;39m 启动成功！！
+2021-06-26 22:55:47.088 INFO  com.cq.wiki.config.WikiApplication                :27   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2021-06-26 22:56:05.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005771154821120 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:56:05.018 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m64005771154821120 [0;39m HikariPool-5 - Starting...
+2021-06-26 22:56:05.032 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m64005771154821120 [0;39m HikariPool-5 - Start completed.
+2021-06-26 22:56:05.032 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005771154821120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:56:05.033 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005771154821120 [0;39m ==> Parameters: 
+2021-06-26 22:56:05.034 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005771154821120 [0;39m <==    Updates: 7
+2021-06-26 22:56:05.034 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005771154821120 [0;39m 更新电子书下的文档数据结束，耗时：19毫秒
+2021-06-26 22:56:35.009 INFO  com.cq.wiki.job.DocJob                            :31   [32m64005896967163904 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:56:35.010 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005896967163904 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:56:35.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005896967163904 [0;39m ==> Parameters: 
+2021-06-26 22:56:35.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64005896967163904 [0;39m <==    Updates: 7
+2021-06-26 22:56:35.012 INFO  com.cq.wiki.job.DocJob                            :34   [32m64005896967163904 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-26 22:57:05.012 INFO  com.cq.wiki.job.DocJob                            :31   [32m64006022808866816 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:57:05.012 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006022808866816 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:57:05.013 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006022808866816 [0;39m ==> Parameters: 
+2021-06-26 22:57:05.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006022808866816 [0;39m <==    Updates: 7
+2021-06-26 22:57:05.016 INFO  com.cq.wiki.job.DocJob                            :34   [32m64006022808866816 [0;39m 更新电子书下的文档数据结束，耗时：4毫秒
+2021-06-26 22:57:35.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m64006148642181120 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:57:35.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006148642181120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:57:35.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006148642181120 [0;39m ==> Parameters: 
+2021-06-26 22:57:35.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006148642181120 [0;39m <==    Updates: 7
+2021-06-26 22:57:35.016 INFO  com.cq.wiki.job.DocJob                            :34   [32m64006148642181120 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-26 22:58:05.008 INFO  com.cq.wiki.job.DocJob                            :31   [32m64006274450329600 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:58:05.009 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006274450329600 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:58:05.010 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006274450329600 [0;39m ==> Parameters: 
+2021-06-26 22:58:05.011 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006274450329600 [0;39m <==    Updates: 7
+2021-06-26 22:58:05.011 INFO  com.cq.wiki.job.DocJob                            :34   [32m64006274450329600 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-26 22:58:35.013 INFO  com.cq.wiki.job.DocJob                            :31   [32m64006400300421120 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:58:35.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006400300421120 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:58:35.014 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006400300421120 [0;39m ==> Parameters: 
+2021-06-26 22:58:35.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006400300421120 [0;39m <==    Updates: 7
+2021-06-26 22:58:35.016 INFO  com.cq.wiki.job.DocJob                            :34   [32m64006400300421120 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
+2021-06-26 22:59:05.014 INFO  com.cq.wiki.job.DocJob                            :31   [32m64006526133735424 [0;39m 更新电子书下的文档数据开始
+2021-06-26 22:59:05.015 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006526133735424 [0;39m ==>  Preparing: update ebook t1,(select ebook_id, count(1) doc_count , sum(view_count) view_count,sum(vote_count) vote_count from doc group by ebook_id) t2 set t1.doc_count = t2.doc_count , t1.view_count = t2.view_count , t1.vote_count = t2.vote_count where t1.id = t2.ebook_id
+2021-06-26 22:59:05.016 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006526133735424 [0;39m ==> Parameters: 
+2021-06-26 22:59:05.017 DEBUG com.cq.wiki.mapper.DocMapperCust.updateEbookInfo  :137  [32m64006526133735424 [0;39m <==    Updates: 7
+2021-06-26 22:59:05.017 INFO  com.cq.wiki.job.DocJob                            :34   [32m64006526133735424 [0;39m 更新电子书下的文档数据结束，耗时：3毫秒
