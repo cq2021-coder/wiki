@@ -1,6 +1,7 @@
 package com.cq.wiki.service;
 
 import com.cq.wiki.websocket.WebSocketServer;
+import org.slf4j.MDC;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +15,8 @@ public class WsService {
 
 
     @Async
-    public void sentInfo(String message){
+    public void sentInfo(String message , String logId){
+        MDC.put("LOG_ID",logId);
         webSocketServer.sendInfo(message);
     }
 }
