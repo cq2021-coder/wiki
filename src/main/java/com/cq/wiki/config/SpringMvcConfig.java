@@ -23,7 +23,8 @@ public class SpringMvcConfig implements WebMvcConfigurer {
                         "/swagger-resources/**",
                         "/v2/**",
                         "/swagger-resources/**",
-                        "/swagger-ui/**"
+                        "/swagger-ui/**",
+                        "/ebook-snapshot/**"
                 );
     }
 }
