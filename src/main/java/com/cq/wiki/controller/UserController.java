@@ -41,7 +41,7 @@ public class UserController {
     }
 
     @PostMapping("/save")
-    public CommonResp save(@Valid @RequestBody UserSaveReq req) {
+    public CommonResp save(@RequestBody UserSaveReq req) {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp resp = new CommonResp<>();
         userService.save(req);
@@ -49,7 +49,7 @@ public class UserController {
     }
 
     @PostMapping("/reset-password")
-    public CommonResp resetPassword(@Valid @RequestBody UserResetPasswordReq req) {
+    public CommonResp resetPassword(@RequestBody UserResetPasswordReq req) {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp resp = new CommonResp<>();
         userService.resetPassword(req);
@@ -58,7 +58,7 @@ public class UserController {
 
     @PassToken
     @PostMapping("/login")
-    public CommonResp login(@Valid @RequestBody UserLoginReq req) {
+    public CommonResp login(@RequestBody UserLoginReq req) {
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp<UserLoginResp> resp = new CommonResp<>();
         UserLoginResp userLoginResp = userService.login(req);
