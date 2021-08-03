@@ -10,7 +10,6 @@ import com.cq.wiki.resp.PageResp;
 import com.cq.wiki.resp.UserLoginResp;
 import com.cq.wiki.resp.UserQueryResp;
 import com.cq.wiki.service.UserService;
-import com.cq.wiki.util.SnowFlake;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.DigestUtils;
@@ -28,9 +27,6 @@ public class UserController {
 
     @Resource
     private UserService userService;
-
-    @Resource
-    private SnowFlake snowFlake;
 
     @GetMapping("/list")
     public CommonResp list(@Valid UserQueryReq req) {

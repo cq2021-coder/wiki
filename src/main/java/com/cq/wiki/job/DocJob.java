@@ -1,3 +1,4 @@
+/*
 package com.cq.wiki.job;
 
 import com.cq.wiki.service.DocService;
@@ -21,9 +22,11 @@ public class DocJob {
     @Resource
     private SnowFlake snowFlake;
 
-    /**
+    */
+/**
      * 每30秒更新电子书信息
-     */
+     *//*
+
     @Scheduled(cron = "5/30 * * * * ?")
     public void cron() {
         // 增加日志流水号
@@ -35,3 +38,4 @@ public class DocJob {
     }
 
 }
+*/
